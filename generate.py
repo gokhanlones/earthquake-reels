@@ -23,11 +23,11 @@ def generate(magnitude, region, country, depth, time_str, output_path="output.jp
     img = Image.fromarray(arr.astype(np.uint8))
     draw = ImageDraw.Draw(img)
 
-    # Fontlar
-    f_region    = ImageFont.truetype("/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf", 88)
-    f_country   = ImageFont.truetype("/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf", 58)
-    f_magnitude = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf", 420)
-    f_details   = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf", 52)
+    # Fontlar (repo içinden)
+    f_region    = ImageFont.truetype("Poppins-Bold.ttf", 88)
+    f_country   = ImageFont.truetype("Poppins-Bold.ttf", 58)
+    f_magnitude = ImageFont.truetype("LiberationSans-Bold.ttf", 420)
+    f_details   = ImageFont.truetype("LiberationSans-Regular.ttf", 52)
 
     def center(text, font, y, color=(255,255,255,255)):
         bbox = draw.textbbox((0,0), text, font=font)
