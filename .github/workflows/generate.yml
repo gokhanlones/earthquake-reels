@@ -28,7 +28,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: pip install pillow numpy
+        run: pip install pillow numpy requests
 
       - name: Generate image
         run: |
@@ -38,6 +38,12 @@ jobs:
             "${{ github.event.inputs.country }}" \
             "${{ github.event.inputs.depth }}" \
             "${{ github.event.inputs.time_str }}"
+
+      - name: Post to Instagram
+        env:
+          IG_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          IG_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+        run: python post_instagram.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
