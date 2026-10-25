@@ -3,11 +3,35 @@ import sys
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 
+def wrap_text(text, font, max_width, draw):
+    words = text.split()
+    lines = []
+    current = ""
+    for word in words:
+        test = (current + " " + word).strip()
+        bbox = draw.textbbox((0,0), test, font=font)
+        if bbox[2] - bbox[0] <= max_width:
+            current = test
+        else:
+            if current:
+                lines.append(current)
+            current = word
+    if current:
+        lines.append(current)
+    return lines
+
+def draw_multiline_centered(lines, font, y_start, color, draw, W, line_gap=20):
+    for line in lines:
+        bbox = draw.textbbox((0,0), line, font=font)
+        tw = bbox[2] - bbox[0]
+        draw.text(((W - tw) / 2, y_start), line, font=font, fill=color)
+        y_start += (bbox[3] - bbox[1]) + line_gap
+    return y_start
+
 def generate(magnitude, region, country, depth, time_str, output_path="output.jpg"):
     img = Image.open("template.png").convert("RGBA")
     W, H = img.size
 
-    # Radyal gradient overlay
     arr = np.array(img, dtype=np.float32)
     cx, cy = W / 2, H / 2
     Y, X = np.ogrid[:H, :W]
@@ -23,22 +47,33 @@ def generate(magnitude, region, country, depth, time_str, output_path="output.jp
     img = Image.fromarray(arr.astype(np.uint8))
     draw = ImageDraw.Draw(img)
 
-    # Fontlar (repo içinden)
     f_region    = ImageFont.truetype("Poppins-Bold.ttf", 88)
     f_country   = ImageFont.truetype("Poppins-Bold.ttf", 58)
     f_magnitude = ImageFont.truetype("LiberationSans-Bold.ttf", 420)
     f_details   = ImageFont.truetype("LiberationSans-Regular.ttf", 52)
+
+    max_w = W - 80
 
     def center(text, font, y, color=(255,255,255,255)):
         bbox = draw.textbbox((0,0), text, font=font)
         tw = bbox[2] - bbox[0]
         draw.text(((W - tw) / 2, y), text, font=font, fill=color)
 
-    center(region.upper(),  f_region,    100, (255,255,255,230))
-    center(country.upper(), f_country,   205, (200,200,200,180))
-    center(magnitude,       f_magnitude, 650, (255,255,255,255))
-    center(depth,           f_details,  1650, (200,200,200,200))
-    center(time_str,        f_details,  1720, (200,200,200,200))
+    # Üst — Region (çok satırlı)
+    region_lines = wrap_text(region.upper(), f_region, max_w, draw)
+    draw_multiline_centered(region_lines, f_region, 80, (255,255,255,230), draw, W, line_gap=10)
+
+    # Country
+    country_lines = wrap_text(country.upper(), f_country, max_w, draw)
+    country_y = 80 + len(region_lines) * (88 + 10) + 10
+    draw_multiline_centered(country_lines, f_country, country_y, (200,200,200,180), draw, W, line_gap=8)
+
+    # Orta — Büyüklük
+    center(magnitude, f_magnitude, 650, (255,255,255,255))
+
+    # Alt — Detaylar
+    center(depth,    f_details, 1650, (200,200,200,200))
+    center(time_str, f_details, 1720, (200,200,200,200))
 
     img.convert("RGB").save(output_path, "JPEG", quality=95)
     print(f"Kaydedildi: {output_path}")
