@@ -18,6 +18,12 @@ on:
       time_str:
         description: 'Time UTC'
         required: true
+      lat:
+        description: 'Latitude'
+        required: true
+      lon:
+        description: 'Longitude'
+        required: true
 
 jobs:
   generate:
@@ -43,11 +49,13 @@ jobs:
         env:
           TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          LAT: ${{ github.event.inputs.lat }}
+          LON: ${{ github.event.inputs.lon }}
         run: |
           curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendPhoto" \
             -F chat_id="${TG_CHAT_ID}" \
             -F photo="@output.jpg" \
-            -F caption="🌍 Earthquake Alert"
+            -F caption="🌍 Earthquake Alert%0A📍 https://maps.google.com/?q=${LAT},${LON}"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
