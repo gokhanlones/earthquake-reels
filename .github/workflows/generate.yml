@@ -28,7 +28,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: pip install pillow numpy
+        run: pip install pillow numpy requests
 
       - name: Generate image
         run: |
@@ -38,6 +38,16 @@ jobs:
             "${{ github.event.inputs.country }}" \
             "${{ github.event.inputs.depth }}" \
             "${{ github.event.inputs.time_str }}"
+
+      - name: Send to Telegram
+        env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendPhoto" \
+            -F chat_id="${TG_CHAT_ID}" \
+            -F photo="@output.jpg" \
+            -F caption="🌍 Earthquake Alert"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
