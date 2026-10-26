@@ -49,7 +49,7 @@ def generate(magnitude, region, country, depth, time_str, output_path="output.jp
 
     f_region    = ImageFont.truetype("Poppins-Bold.ttf", 88)
     f_country   = ImageFont.truetype("Poppins-Bold.ttf", 58)
-    f_magnitude = ImageFont.truetype("LiberationSans-Bold.ttf", 420)
+    f_magnitude = ImageFont.truetype("Jersey M54.ttf", 420)
     f_details   = ImageFont.truetype("LiberationSans-Regular.ttf", 52)
 
     max_w = W - 80
