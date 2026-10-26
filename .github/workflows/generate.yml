@@ -37,6 +37,46 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Send to Telegram
+        env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          LAT: ${{ github.event.inputs.lat }}
+          LON: ${{ github.event.inputs.lon }}
+          SOURCE: ${{ github.event.inputs.source }}
+          MAG: ${{ github.event.inputs.magnitude }}
+          REGION: ${{ github.event.inputs.region }}
+          COUNTRY: ${{ github.event.inputs.country }}
+          DEPTH: ${{ github.event.inputs.depth }}
+          TIME_STR: ${{ github.event.inputs.time_str }}
+        run: |
+          python3 -c "
+          import requests, os
+          token = os.environ['TG_TOKEN']
+          chat_id = os.environ['TG_CHAT_ID']
+          lat = os.environ['LAT']
+          lon = os.environ['LON']
+          source = os.environ['SOURCE']
+          mag = os.environ['MAG']
+          region = os.environ['REGION']
+          country = os.environ['COUNTRY']
+          depth = os.environ['DEPTH']
+          time_str = os.environ['TIME_STR']
+          text = (
+              '🌍 EARTHQUAKE ALERT\n\n'
+              f'📍 {region.upper()}, {country.upper()}\n'
+              f'💥 Magnitude: {mag}\n'
+              f'🔽 {depth}\n'
+              f'🕐 {time_str}\n\n'
+              f'🗺 https://maps.google.com/?q={lat},{lon}\n'
+              f'🔗 Source: {source}'
+          )
+          requests.post(
+              f'https://api.telegram.org/bot{token}/sendMessage',
+              data={'chat_id': chat_id, 'text': text}
+          )
+          "
+
       - name: Install dependencies
         run: pip install pillow numpy requests
 
@@ -48,30 +88,6 @@ jobs:
             "${{ github.event.inputs.country }}" \
             "${{ github.event.inputs.depth }}" \
             "${{ github.event.inputs.time_str }}"
-
-      - name: Send to Telegram
-        env:
-          TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          TG_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          LAT: ${{ github.event.inputs.lat }}
-          LON: ${{ github.event.inputs.lon }}
-          SOURCE: ${{ github.event.inputs.source }}
-        run: |
-          python3 -c "
-          import requests, os
-          token = os.environ['TG_TOKEN']
-          chat_id = os.environ['TG_CHAT_ID']
-          lat = os.environ['LAT']
-          lon = os.environ['LON']
-          source = os.environ['SOURCE']
-          caption = '🌍 Earthquake Alert\n📍 https://maps.google.com/?q=' + lat + ',' + lon + '\n🔗 Source: ' + source
-          with open('output.jpg', 'rb') as f:
-              requests.post(
-                  f'https://api.telegram.org/bot{token}/sendPhoto',
-                  data={'chat_id': chat_id, 'caption': caption},
-                  files={'photo': f}
-              )
-          "
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
