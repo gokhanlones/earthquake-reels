@@ -27,7 +27,7 @@ on:
       source:
         description: 'Source'
         required: true
-        default: 'USGS'
+        default: 'EMSC'
 
 jobs:
   generate:
@@ -57,18 +57,29 @@ jobs:
           lat = os.environ['LAT']
           lon = os.environ['LON']
           source = os.environ['SOURCE']
-          mag = os.environ['MAG']
+          mag = float(os.environ['MAG'])
           region = os.environ['REGION']
           country = os.environ['COUNTRY']
           depth = os.environ['DEPTH']
           time_str = os.environ['TIME_STR']
+
+          if mag < 4.0:
+              dot = '🟢'
+          elif mag < 5.0:
+              dot = '🟡'
+          elif mag < 6.0:
+              dot = '🟠'
+          else:
+              dot = '🔴'
+
           text = (
-              f'📍 {region.upper()}, {country.upper()}\n\n'
-              f'💥 Magnitude: {mag}\n'
+              '🌍 EARTHQUAKE ALERT\n\n'
+              f'📍 {region.upper()}, {country.upper()}\n'
+              f'{dot} Magnitude: {mag}\n'
               f'🔽 {depth}\n'
-              f'🕐 {time_str}\n'
-              f'🔗 Source: {source}\n'
-              f'🗺 https://maps.google.com/?q={lat},{lon}
+              f'🕐 {time_str}\n\n'
+              f'🗺 https://maps.google.com/?q={lat},{lon}\n'
+              f'🔗 Source: {source}'
           )
           requests.post(
               f'https://api.telegram.org/bot{token}/sendMessage',
