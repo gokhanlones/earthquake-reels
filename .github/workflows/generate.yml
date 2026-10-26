@@ -52,10 +52,20 @@ jobs:
           LAT: ${{ github.event.inputs.lat }}
           LON: ${{ github.event.inputs.lon }}
         run: |
-          curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendPhoto" \
-            -F chat_id="${TG_CHAT_ID}" \
-            -F photo="@output.jpg" \
-            -F caption="🌍 Earthquake Alert%0A📍 https://maps.google.com/?q=${LAT},${LON}"
+          python3 -c "
+          import requests, os
+          token = os.environ['TG_TOKEN']
+          chat_id = os.environ['TG_CHAT_ID']
+          lat = os.environ['LAT']
+          lon = os.environ['LON']
+          caption = '🌍 Earthquake Alert\n📍 https://maps.google.com/?q=' + lat + ',' + lon
+          with open('output.jpg', 'rb') as f:
+              requests.post(
+                  f'https://api.telegram.org/bot{token}/sendPhoto',
+                  data={'chat_id': chat_id, 'caption': caption},
+                  files={'photo': f}
+              )
+          "
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
