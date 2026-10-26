@@ -67,7 +67,6 @@ jobs:
               f'💥 Magnitude: {mag}\n'
               f'🔽 {depth}\n'
               f'🕐 {time_str}\n\n'
-              f'🗺 https://maps.google.com/?q={lat},{lon}\n'
               f'🔗 Source: {source}'
           )
           requests.post(
