@@ -63,11 +63,12 @@ jobs:
           depth = os.environ['DEPTH']
           time_str = os.environ['TIME_STR']
           text = (
-              f'📍 {region.upper()}, {country.upper()}\n'
+              f'📍 {region.upper()}, {country.upper()}\n\n'
               f'💥 Magnitude: {mag}\n'
               f'🔽 {depth}\n'
-              f'🕐 {time_str}\n\n'
-              f'🔗 Source: {source}'
+              f'🕐 {time_str}\n'
+              f'🔗 Source: {source}\n'
+              f'🗺 https://maps.google.com/?q={lat},{lon}
           )
           requests.post(
               f'https://api.telegram.org/bot{token}/sendMessage',
