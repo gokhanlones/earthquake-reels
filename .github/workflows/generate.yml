@@ -194,35 +194,17 @@ jobs:
           else:
               # M3-5.9 → Story
               print(f"Publishing M{mag:.1f} as Facebook Story...")
-
-              # Önce görseli yükle
               with open("output.jpg", "rb") as f:
-                  upload_response = requests.post(
-                      f"https://graph.facebook.com/v20.0/{page_id}/photo_medias",
+                  response = requests.post(
+                      f"https://graph.facebook.com/v20.0/{page_id}/photo_stories",
                       data={"access_token": token},
                       files={"source": f},
                       timeout=60,
                   )
-              upload_result = upload_response.json()
-              if not upload_response.ok or not upload_result.get("id"):
-                  raise SystemExit(f"Facebook Story yükleme başarısız: {upload_result}")
-
-              photo_id = upload_result["id"]
-
-              # Story olarak yayınla
-              story_response = requests.post(
-                  f"https://graph.facebook.com/v20.0/{page_id}/stories",
-                  data={
-                      "photo_id": photo_id,
-                      "access_token": token,
-                  },
-                  timeout=60,
-              )
-              story_result = story_response.json()
-              if not story_response.ok or not story_result.get("id"):
-                  raise SystemExit(f"Facebook Story yayınlama başarısız: {story_result}")
-
-              print(f"Facebook Story published. ID: {story_result['id']}")
+              result = response.json()
+              if not response.ok or not result.get("id"):
+                  raise SystemExit(f"Facebook Story başarısız: {result}")
+              print(f"Facebook Story published. ID: {result['id']}")
           PY
 
       - name: Upload earthquake image artifact
