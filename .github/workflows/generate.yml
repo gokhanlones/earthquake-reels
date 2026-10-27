@@ -7,37 +7,30 @@ on:
         description: "Magnitude"
         required: true
         type: string
-
       region:
         description: "Region"
         required: true
         type: string
-
       country:
         description: "Country"
         required: true
         type: string
-
       depth:
         description: "Depth"
         required: true
         type: string
-
       time_str:
         description: "Time UTC"
         required: true
         type: string
-
       lat:
         description: "Latitude"
         required: true
         type: string
-
       lon:
         description: "Longitude"
         required: true
         type: string
-
       source:
         description: "Earthquake data source"
         required: true
@@ -80,29 +73,21 @@ jobs:
         run: |
           python - <<'PY'
           import os
-
           try:
               mag = float(os.environ["MAG"])
               lat = float(os.environ["LAT"])
               lon = float(os.environ["LON"])
           except (ValueError, TypeError) as exc:
-              raise SystemExit(
-                  f"Magnitude, latitude veya longitude sayısal olmalı: {exc}"
-              )
-
+              raise SystemExit(f"Magnitude, latitude veya longitude sayısal olmalı: {exc}")
           if not 0 <= mag <= 10:
               raise SystemExit("Magnitude must be between 0 and 10.")
-
           if not -90 <= lat <= 90:
               raise SystemExit("Latitude must be between -90 and 90.")
-
           if not -180 <= lon <= 180:
               raise SystemExit("Longitude must be between -180 and 180.")
-
           for key in ("REGION", "COUNTRY", "DEPTH", "TIME_STR", "SOURCE"):
               if not os.environ.get(key, "").strip():
                   raise SystemExit(f"Missing input: {key}")
-
           print("Input validation successful.")
           PY
 
@@ -114,7 +99,6 @@ jobs:
             "$COUNTRY" \
             "$DEPTH" \
             "$TIME_STR"
-
           test -s output.jpg
           echo "Earthquake image generated successfully."
 
@@ -124,114 +108,66 @@ jobs:
           TG_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           python - <<'PY'
-          import os
-          import requests
-
+          import os, requests
           token = os.environ.get("TG_TOKEN", "").strip()
           chat_id = os.environ.get("TG_CHAT_ID", "").strip()
-
           if not token or not chat_id:
-              raise SystemExit(
-                  "TELEGRAM_TOKEN veya TELEGRAM_CHAT_ID eksik."
-              )
-
+              raise SystemExit("TELEGRAM_TOKEN veya TELEGRAM_CHAT_ID eksik.")
           mag = float(os.environ["MAG"])
-
-          if mag < 4.0:
-              dot = "🟢"
-          elif mag < 5.0:
-              dot = "🟡"
-          elif mag < 6.0:
-              dot = "🟠"
-          else:
-              dot = "🔴"
-
+          if mag < 4.0: dot = "🟢"
+          elif mag < 5.0: dot = "🟡"
+          elif mag < 6.0: dot = "🟠"
+          else: dot = "🔴"
           lat = os.environ["LAT"]
           lon = os.environ["LON"]
-
-          maps_url = (
-              f"https://www.google.com/maps?q={lat},{lon}"
-          )
-
+          maps_url = f"https://www.google.com/maps?q={lat},{lon}"
           message = (
               "🌍 EARTHQUAKE ALERT\n\n"
-              f"📍 {os.environ['REGION'].upper()}, "
-              f"{os.environ['COUNTRY'].upper()}\n"
+              f"📍 {os.environ['REGION'].upper()}, {os.environ['COUNTRY'].upper()}\n"
               f"{dot} Magnitude: {mag:.1f}\n"
               f"🔽 Depth: {os.environ['DEPTH']}\n"
               f"🕐 UTC: {os.environ['TIME_STR']}\n\n"
               f"🗺 {maps_url}\n"
               f"🔗 Source: {os.environ['SOURCE']}"
           )
-
-          url = f"https://api.telegram.org/bot{token}/sendMessage"
-
           response = requests.post(
-              url,
-              data={
-                  "chat_id": chat_id,
-                  "text": message,
-                  "disable_web_page_preview": True,
-              },
+              f"https://api.telegram.org/bot{token}/sendMessage",
+              data={"chat_id": chat_id, "text": message, "disable_web_page_preview": True},
               timeout=30,
           )
-
-          try:
-              result = response.json()
-          except ValueError:
-              raise SystemExit(
-                  f"Telegram geçersiz yanıt döndürdü: HTTP {response.status_code}"
-              )
-
+          result = response.json()
           if not response.ok or not result.get("ok"):
-              raise SystemExit(
-                  f"Telegram gönderimi başarısız: {result}"
-              )
-
+              raise SystemExit(f"Telegram gönderimi başarısız: {result}")
           print("Telegram alert sent successfully.")
           PY
 
-      - name: Publish text post to Facebook
+      - name: Publish to Facebook
         env:
           FB_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
-          FB_API_VERSION: v26.0
         run: |
           python - <<'PY'
-          import os
-          import requests
+          import os, requests
 
           token = os.environ.get("FB_TOKEN", "").strip()
           page_id = os.environ.get("FB_PAGE_ID", "").strip()
-          api_version = os.environ["FB_API_VERSION"]
-
           if not token or not page_id:
-              raise SystemExit(
-                  "FACEBOOK_PAGE_TOKEN veya FACEBOOK_PAGE_ID eksik. "
-                  "GitHub Secrets ayarlarını kontrol edin."
-              )
+              raise SystemExit("FACEBOOK_PAGE_TOKEN veya FACEBOOK_PAGE_ID eksik.")
 
           mag = float(os.environ["MAG"])
           lat = os.environ["LAT"]
           lon = os.environ["LON"]
 
-          if mag < 4.0:
-              dot = "🟢"
-          elif mag < 5.0:
-              dot = "🟡"
-          elif mag < 6.0:
-              dot = "🟠"
-          else:
-              dot = "🔴"
+          if mag < 4.0: dot = "🟢"
+          elif mag < 5.0: dot = "🟡"
+          elif mag < 6.0: dot = "🟠"
+          else: dot = "🔴"
 
-          maps_url = (
-              f"https://www.google.com/maps?q={lat},{lon}"
-          )
+          maps_url = f"https://www.google.com/maps?q={lat},{lon}"
 
           message = (
               "🌍 EARTHQUAKE ALERT\n\n"
-              f"📍 Region: {os.environ['REGION'].upper()}, "
-              f"{os.environ['COUNTRY'].upper()}\n"
+              f"📍 Region: {os.environ['REGION'].upper()}, {os.environ['COUNTRY'].upper()}\n"
               f"{dot} Magnitude: {mag:.1f}\n"
               f"🔽 Depth: {os.environ['DEPTH']}\n"
               f"🕐 Time (UTC): {os.environ['TIME_STR']}\n\n"
@@ -240,36 +176,30 @@ jobs:
               "#earthquake #seismic #earthquakereels #seismicalert"
           )
 
-          url = (
-              f"https://graph.facebook.com/"
-              f"{api_version}/{page_id}/feed"
-          )
-
-          print(f"Publishing M{mag:.1f} Facebook text post...")
-
-          response = requests.post(
-              url,
-              data={
-                  "message": message,
-                  "access_token": token,
-              },
-              timeout=60,
-          )
-
-          try:
-              result = response.json()
-          except ValueError:
-              raise SystemExit(
-                  f"Facebook geçersiz yanıt döndürdü: HTTP {response.status_code}"
+          if mag >= 6.0:
+              # M6+ → görsel ile feed post
+              print(f"Publishing M{mag:.1f} as Facebook photo post...")
+              with open("output.jpg", "rb") as f:
+                  response = requests.post(
+                      f"https://graph.facebook.com/v20.0/{page_id}/photos",
+                      data={"caption": message, "access_token": token},
+                      files={"source": f},
+                      timeout=60,
+                  )
+          else:
+              # M3-5.9 → text post
+              print(f"Publishing M{mag:.1f} as Facebook text post...")
+              response = requests.post(
+                  f"https://graph.facebook.com/v20.0/{page_id}/feed",
+                  data={"message": message, "access_token": token},
+                  timeout=60,
               )
 
+          result = response.json()
           if not response.ok or not result.get("id"):
-              raise SystemExit(
-                  f"Facebook gönderisi başarısız: {result}"
-              )
+              raise SystemExit(f"Facebook gönderisi başarısız: {result}")
 
-          print("Facebook text post published successfully.")
-          print(f"Facebook Post ID: {result['id']}")
+          print(f"Facebook post published successfully. ID: {result['id']}")
           PY
 
       - name: Upload earthquake image artifact
