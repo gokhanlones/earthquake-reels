@@ -124,21 +124,11 @@ jobs:
           time_str = os.environ["TIME_STR"]
           maps_url = f"https://maps.google.com/?q={lat},{lon}"
 
-          col1 = ["Region:", "Magnitude:", "Depth:", "Time:", "Maps:"]
-          col2 = [
-              f"{region}, {country}",
-              f"{mag:.1f}",
-              depth,
-              time_str,
-              maps_url,
-          ]
-
-          max_len = max(len(l) for l in col1)
-          lines = []
-          for label, value in zip(col1, col2):
-              lines.append(f"{label.rjust(max_len)}  {value}")
-
-          message = "\n".join(lines)
+          message = (
+              f"{region}, {country}\n"
+              f"M {mag:.1f}  |  {depth}  |  {time_str}\n"
+              f"{maps_url}"
+          )
 
           response = requests.post(
               f"https://api.telegram.org/bot{token}/sendMessage",
@@ -177,22 +167,12 @@ jobs:
           time_str = os.environ["TIME_STR"]
           maps_url = f"https://maps.google.com/?q={lat},{lon}"
 
-          col1 = ["Region:", "Magnitude:", "Depth:", "Time:", "Maps:"]
-          col2 = [
-              f"{region}, {country}",
-              f"{mag:.1f}",
-              depth,
-              time_str,
-              maps_url,
-          ]
-
-          max_len = max(len(l) for l in col1)
-          lines = []
-          for label, value in zip(col1, col2):
-              lines.append(f"{label.rjust(max_len)}  {value}")
-
-          message = "\n".join(lines)
-          message += "\n\n#earthquake #seismic #earthquakereels #seismicalert"
+          message = (
+              f"{region}, {country}\n"
+              f"M {mag:.1f}  |  {depth}  |  {time_str}\n"
+              f"{maps_url}\n\n"
+              "#earthquake #seismic #earthquakereels #seismicalert"
+          )
 
           if mag >= 6.0:
               print(f"Publishing M{mag:.1f} as Facebook photo post...")
