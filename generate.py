@@ -1,7 +1,6 @@
 import os
 import sys
 from PIL import Image, ImageDraw, ImageFont
-import numpy as np
 
 def wrap_text(text, font, max_width, draw):
     words = text.split()
@@ -21,42 +20,44 @@ def wrap_text(text, font, max_width, draw):
     return lines
 
 def generate(magnitude, region, country, depth, time_str, output_path="output.jpg"):
+    # Şablonu aç (1080x1920 veya benzeri dik dikey şablon)
     img = Image.open("template.png").convert("RGBA")
     W, H = img.size
     draw = ImageDraw.Draw(img)
 
-    f_region    = ImageFont.truetype("Poppins-Bold.ttf", 80)
-    f_country   = ImageFont.truetype("Poppins-Bold.ttf", 54)
-    f_magnitude = ImageFont.truetype("Jersey M54.ttf", 380)
-    f_details   = ImageFont.truetype("LiberationSans-Regular.ttf", 52)
+    # Font tanımlamaları
+    f_region    = ImageFont.truetype("Poppins-Bold.ttf", 75)
+    f_country   = ImageFont.truetype("Poppins-Bold.ttf", 50)
+    f_magnitude = ImageFont.truetype("Jersey M54.ttf", 420) # Ortada devasa büyüklük
+    f_depth     = ImageFont.truetype("LiberationSans-Regular.ttf", 55)
+    f_time      = ImageFont.truetype("LiberationSans-Regular.ttf", 48)
 
     def center(text, font, y, color=(255,255,255,255)):
         bbox = draw.textbbox((0,0), text, font=font)
         tw = bbox[2] - bbox[0]
         draw.text(((W - tw) / 2, y), text, font=font, fill=color)
 
-    # Üst - Region
+    # 1. ÜST: Lokasyon Adı (Region ve Country ardışık)
+    y = 120
     region_lines = wrap_text(region.upper(), f_region, W - 80, draw)
-    y = 60
     for line in region_lines:
-        center(line, f_region, y, (255,255,255,230))
-        y += 95
+        center(line, f_region, y, (255,255,255,255))
+        y += 90
 
-    # Country
     country_lines = wrap_text(country.upper(), f_country, W - 80, draw)
     for line in country_lines:
-        center(line, f_country, y, (200,200,200,180))
-        y += 68
+        center(line, f_country, y, (200,200,200,200))
+        y += 65
 
-    # Orta - Büyüklük
-    center(magnitude, f_magnitude, 580, (255,255,255,255))
+    # 2. ORTA: Büyük Jersey Fontunda Büyüklük (Dikeyde ortalanmış alan)
+    center(magnitude, f_magnitude, 750, (255,255,255,255))
 
-    # Alt - Detaylar
-    center(depth,    f_details, 1480, (220,220,220,210))
-    center(time_str, f_details, 1550, (220,220,220,210))
+    # 3. ALT: Derinlik ve Altında Zaman (İkonlar tamamen kaldırıldı)
+    center(depth.upper(), f_depth, 1450, (230,220,220,230))
+    center(time_str.upper(), f_time, 1530, (180,180,180,200))
 
     img.convert("RGB").save(output_path, "JPEG", quality=95)
-    print(f"Kaydedildi: {output_path}")
+    print(f"Yeni tasarımlı görsel kaydedildi: {output_path}")
 
 if __name__ == "__main__":
     generate(
