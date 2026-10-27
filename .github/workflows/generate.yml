@@ -123,11 +123,13 @@ jobs:
           depth = os.environ["DEPTH"]
           time_str = os.environ["TIME_STR"]
           maps_url = f"https://maps.google.com/?q={lat},{lon}"
+          country_tag = "#" + country.lower().replace(" ", "")
 
           message = (
               f"{region}, {country}\n"
               f"M {mag:.1f}  |  {depth}  |  {time_str}\n"
-              f"{maps_url}"
+              f"{maps_url}\n\n"
+              f"#earthquake #seismic #earthquakereels {country_tag}"
           )
 
           response = requests.post(
@@ -166,12 +168,13 @@ jobs:
           depth = os.environ["DEPTH"]
           time_str = os.environ["TIME_STR"]
           maps_url = f"https://maps.google.com/?q={lat},{lon}"
+          country_tag = "#" + country.lower().replace(" ", "")
 
           message = (
               f"{region}, {country}\n"
               f"M {mag:.1f}  |  {depth}  |  {time_str}\n"
               f"{maps_url}\n\n"
-              "#earthquake #seismic #earthquakereels #seismicalert"
+              f"#earthquake #seismic #earthquakereels {country_tag}"
           )
 
           if mag >= 6.0:
