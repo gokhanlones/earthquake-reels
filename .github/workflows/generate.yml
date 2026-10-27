@@ -192,6 +192,7 @@ jobs:
           lat = os.environ["LAT"]
           lon = os.environ["LON"]
 
+          # Completely English post message for Facebook
           text = (
               "🌍 EARTHQUAKE ALERT\n\n"
               f"📍 Region: {os.environ['REGION'].upper()}, "
@@ -204,8 +205,8 @@ jobs:
               "#earthquake #seismic #earthquakereels #seismicalert"
           )
 
-          # v26.0 feed endpoint for text-only publishing
-          url = f"https://graph.facebook.com/{api_version}/{page_id}/feed"
+          # v26.0 /feed endpoint for text post
+          url = f"https://facebook.com{api_version}/{page_id}/feed"
 
           print(f"Publishing M{mag:.1f} earthquake text post...")
 
