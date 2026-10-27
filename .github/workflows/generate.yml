@@ -144,11 +144,11 @@ jobs:
               f"{dot} Magnitude: {mag:.1f}\n"
               f"🔽 Depth: {os.environ['DEPTH']}\n"
               f"🕐 UTC: {os.environ['TIME_STR']}\n\n"
-              f"🗺 https://www.google.com/maps?q={lat},{lon}\n"
+              f"🗺 https://google.com{lat},{lon}\n"
               f"🔗 Source: {os.environ['SOURCE']}"
           )
 
-          url = f"https://api.telegram.org/bot{token}/sendMessage"
+          url = f"https://telegram.org{token}/sendMessage"
 
           response = requests.post(
               url,
@@ -169,7 +169,7 @@ jobs:
           print("Telegram alert sent successfully.")
           PY
 
-      - name: Publish earthquake photo to Facebook
+      - name: Publish earthquake post to Facebook
         env:
           FB_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
@@ -193,48 +193,40 @@ jobs:
           lon = os.environ["LON"]
 
           text = (
-              "EARTHQUAKE ALERT / DEPREM BİLDİRİMİ\n\n"
-              f"Bölge: {os.environ['REGION'].upper()}, "
+              "🌍 EARTHQUAKE ALERT\n\n"
+              f"📍 Region: {os.environ['REGION'].upper()}, "
               f"{os.environ['COUNTRY'].upper()}\n"
-              f"Büyüklük / Magnitude: {mag:.1f}\n"
-              f"Derinlik / Depth: {os.environ['DEPTH']}\n"
-              f"Zaman / Time (UTC): {os.environ['TIME_STR']}\n\n"
-              f"Google Maps: https://www.google.com/maps?q={lat},{lon}\n"
-              f"Source: {os.environ['SOURCE']}\n\n"
-              "#deprem #earthquake #seismic #earthquakereels"
+              f"📊 Magnitude: {mag:.1f}\n"
+              f"🔽 Depth: {os.environ['DEPTH']}\n"
+              f"🕐 Time (UTC): {os.environ['TIME_STR']}\n\n"
+              f"🗺 Google Maps: https://google.com{lat},{lon}\n"
+              f"🔗 Source: {os.environ['SOURCE']}\n\n"
+              "#earthquake #seismic #earthquakereels #seismicalert"
           )
 
-          # Publish a normal Page photo post.
-          # This endpoint does not create a Facebook Story.
-          url = (
-              f"https://graph.facebook.com/"
-              f"{api_version}/{page_id}/photos"
+          # v26.0 feed endpoint for text-only publishing
+          url = f"https://graph.facebook.com/{api_version}/{page_id}/feed"
+
+          print(f"Publishing M{mag:.1f} earthquake text post...")
+
+          response = requests.post(
+              url,
+              data={
+                  "message": text,
+                  "access_token": token,
+              },
+              timeout=90,
           )
-
-          print(f"Publishing M{mag:.1f} earthquake photo...")
-
-          with open("output.jpg", "rb") as image:
-              response = requests.post(
-                  url,
-                  data={
-                      "caption": text,
-                      "access_token": token,
-                  },
-                  files={
-                      "source": ("output.jpg", image, "image/jpeg"),
-                  },
-                  timeout=90,
-              )
 
           response.raise_for_status()
           result = response.json()
 
-          if not result.get("id") and not result.get("post_id"):
+          if not result.get("id"):
               raise RuntimeError(
-                  f"Facebook did not return a photo/post ID: {result}"
+                  f"Facebook did not return a post ID: {result}"
               )
 
-          print("Facebook photo post published successfully.")
+          print("Facebook text post published successfully.")
           print(f"Facebook response: {result}")
           PY
 
