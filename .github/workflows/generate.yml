@@ -176,35 +176,18 @@ jobs:
               "#earthquake #seismic #earthquakereels #seismicalert"
           )
 
-          if mag >= 6.0:
-              # M6+ → görsel ile feed post
-              print(f"Publishing M{mag:.1f} as Facebook photo post...")
-              with open("output.jpg", "rb") as f:
-                  response = requests.post(
-                      f"https://graph.facebook.com/v20.0/{page_id}/photos",
-                      data={"caption": message, "access_token": token},
-                      files={"source": f},
-                      timeout=60,
-                  )
-              result = response.json()
-              if not response.ok or not result.get("id"):
-                  raise SystemExit(f"Facebook photo post başarısız: {result}")
-              print(f"Facebook photo post published. ID: {result['id']}")
-
-          else:
-              # M3-5.9 → Story
-              print(f"Publishing M{mag:.1f} as Facebook Story...")
-              with open("output.jpg", "rb") as f:
-                  response = requests.post(
-                      f"https://graph.facebook.com/v20.0/{page_id}/photo_stories",
-                      data={"access_token": token},
-                      files={"source": f},
-                      timeout=60,
-                  )
-              result = response.json()
-              if not response.ok or not result.get("id"):
-                  raise SystemExit(f"Facebook Story başarısız: {result}")
-              print(f"Facebook Story published. ID: {result['id']}")
+          print(f"Publishing M{mag:.1f} as Facebook photo post...")
+          with open("output.jpg", "rb") as f:
+              response = requests.post(
+                  f"https://graph.facebook.com/v20.0/{page_id}/photos",
+                  data={"caption": message, "access_token": token},
+                  files={"source": f},
+                  timeout=60,
+              )
+          result = response.json()
+          if not response.ok or not result.get("id"):
+              raise SystemExit(f"Facebook photo post başarısız: {result}")
+          print(f"Facebook photo post published. ID: {result['id']}")
           PY
 
       - name: Upload earthquake image artifact
