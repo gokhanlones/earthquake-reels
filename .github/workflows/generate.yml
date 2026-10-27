@@ -109,30 +109,44 @@ jobs:
         run: |
           python - <<'PY'
           import os, requests
+
           token = os.environ.get("TG_TOKEN", "").strip()
           chat_id = os.environ.get("TG_CHAT_ID", "").strip()
           if not token or not chat_id:
               raise SystemExit("TELEGRAM_TOKEN veya TELEGRAM_CHAT_ID eksik.")
+
           mag = float(os.environ["MAG"])
-          if mag < 4.0: dot = "🟢"
-          elif mag < 5.0: dot = "🟡"
-          elif mag < 6.0: dot = "🟠"
-          else: dot = "🔴"
           lat = os.environ["LAT"]
           lon = os.environ["LON"]
-          maps_url = f"https://www.google.com/maps?q={lat},{lon}"
-          message = (
-              "🌍 EARTHQUAKE ALERT\n\n"
-              f"📍 {os.environ['REGION'].upper()}, {os.environ['COUNTRY'].upper()}\n"
-              f"{dot} Magnitude: {mag:.1f}\n"
-              f"🔽 Depth: {os.environ['DEPTH']}\n"
-              f"🕐 UTC: {os.environ['TIME_STR']}\n\n"
-              f"🗺 {maps_url}\n"
-              f"🔗 Source: {os.environ['SOURCE']}"
-          )
+          region = os.environ["REGION"].upper()
+          country = os.environ["COUNTRY"].upper()
+          depth = os.environ["DEPTH"]
+          time_str = os.environ["TIME_STR"]
+          maps_url = f"https://maps.google.com/?q={lat},{lon}"
+
+          col1 = ["Region:", "Magnitude:", "Depth:", "Time:", "Maps:"]
+          col2 = [
+              f"{region}, {country}",
+              f"{mag:.1f}",
+              depth,
+              time_str,
+              maps_url,
+          ]
+
+          max_len = max(len(l) for l in col1)
+          lines = []
+          for label, value in zip(col1, col2):
+              lines.append(f"{label.rjust(max_len)}  {value}")
+
+          message = "\n".join(lines)
+
           response = requests.post(
               f"https://api.telegram.org/bot{token}/sendMessage",
-              data={"chat_id": chat_id, "text": message, "disable_web_page_preview": True},
+              data={
+                  "chat_id": chat_id,
+                  "text": message,
+                  "disable_web_page_preview": True,
+              },
               timeout=30,
           )
           result = response.json()
@@ -157,37 +171,50 @@ jobs:
           mag = float(os.environ["MAG"])
           lat = os.environ["LAT"]
           lon = os.environ["LON"]
+          region = os.environ["REGION"].upper()
+          country = os.environ["COUNTRY"].upper()
+          depth = os.environ["DEPTH"]
+          time_str = os.environ["TIME_STR"]
+          maps_url = f"https://maps.google.com/?q={lat},{lon}"
 
-          if mag < 4.0: dot = "🟢"
-          elif mag < 5.0: dot = "🟡"
-          elif mag < 6.0: dot = "🟠"
-          else: dot = "🔴"
+          col1 = ["Region:", "Magnitude:", "Depth:", "Time:", "Maps:"]
+          col2 = [
+              f"{region}, {country}",
+              f"{mag:.1f}",
+              depth,
+              time_str,
+              maps_url,
+          ]
 
-          maps_url = f"https://www.google.com/maps?q={lat},{lon}"
+          max_len = max(len(l) for l in col1)
+          lines = []
+          for label, value in zip(col1, col2):
+              lines.append(f"{label.rjust(max_len)}  {value}")
 
-          message = (
-              "🌍 EARTHQUAKE ALERT\n\n"
-              f"📍 Region: {os.environ['REGION'].upper()}, {os.environ['COUNTRY'].upper()}\n"
-              f"{dot} Magnitude: {mag:.1f}\n"
-              f"🔽 Depth: {os.environ['DEPTH']}\n"
-              f"🕐 Time (UTC): {os.environ['TIME_STR']}\n\n"
-              f"🗺 Google Maps: {maps_url}\n"
-              f"🔗 Source: {os.environ['SOURCE']}\n\n"
-              "#earthquake #seismic #earthquakereels #seismicalert"
-          )
+          message = "\n".join(lines)
+          message += "\n\n#earthquake #seismic #earthquakereels #seismicalert"
 
-          print(f"Publishing M{mag:.1f} as Facebook photo post...")
-          with open("output.jpg", "rb") as f:
+          if mag >= 6.0:
+              print(f"Publishing M{mag:.1f} as Facebook photo post...")
+              with open("output.jpg", "rb") as f:
+                  response = requests.post(
+                      f"https://graph.facebook.com/v20.0/{page_id}/photos",
+                      data={"caption": message, "access_token": token},
+                      files={"source": f},
+                      timeout=60,
+                  )
+          else:
+              print(f"Publishing M{mag:.1f} as Facebook text post...")
               response = requests.post(
-                  f"https://graph.facebook.com/v20.0/{page_id}/photos",
-                  data={"caption": message, "access_token": token},
-                  files={"source": f},
+                  f"https://graph.facebook.com/v20.0/{page_id}/feed",
+                  data={"message": message, "access_token": token},
                   timeout=60,
               )
+
           result = response.json()
           if not response.ok or not result.get("id"):
-              raise SystemExit(f"Facebook photo post başarısız: {result}")
-          print(f"Facebook photo post published. ID: {result['id']}")
+              raise SystemExit(f"Facebook gönderisi başarısız: {result}")
+          print(f"Facebook post published. ID: {result['id']}")
           PY
 
       - name: Upload earthquake image artifact
