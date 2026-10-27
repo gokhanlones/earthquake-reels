@@ -78,11 +78,11 @@ jobs:
               f'{dot} Magnitude: {mag}\n'
               f'🔽 {depth}\n'
               f'🕐 {time_str}\n\n'
-              f'🗺 https://maps.google.com/?q={lat},{lon}\n'
+              f'🗺 https://google.com{lat},{lon}\n'
               f'🔗 Source: {source}'
           )
           requests.post(
-              f'https://api.telegram.org/bot{token}/sendMessage',
+              f'https://telegram.org{token}/sendMessage',
               data={'chat_id': chat_id, 'text': text}
           )
           "
@@ -98,6 +98,84 @@ jobs:
             "${{ github.event.inputs.country }}" \
             "${{ github.event.inputs.depth }}" \
             "${{ github.event.inputs.time_str }}"
+
+      - name: Send to Facebook (Feed or Story Automation)
+        env:
+          FB_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          LAT: ${{ github.event.inputs.lat }}
+          LON: ${{ github.event.inputs.lon }}
+          SOURCE: ${{ github.event.inputs.source }}
+          MAG: ${{ github.event.inputs.magnitude }}
+          REGION: ${{ github.event.inputs.region }}
+          COUNTRY: ${{ github.event.inputs.country }}
+          DEPTH: ${{ github.event.inputs.depth }}
+          TIME_STR: ${{ github.event.inputs.time_str }}
+        run: |
+          python3 -c "
+          import requests, os
+          token = os.environ['FB_TOKEN']
+          page_id = os.environ['FB_PAGE_ID']
+          lat = os.environ['LAT']
+          lon = os.environ['LON']
+          source = os.environ['SOURCE']
+          mag = float(os.environ['MAG'])
+          region = os.environ['REGION']
+          country = os.environ['COUNTRY']
+          depth = os.environ['DEPTH']
+          time_str = os.environ['TIME_STR']
+
+          # 1. Görseli geçici hosting'e yükle
+          print('Facebook otomasyonu için görsel yükleniyor...')
+          with open('output.jpg', 'rb') as f:
+              upload_res = requests.post('https://0x0.st', files={'file': f})
+          
+          image_url = upload_res.text.strip()
+          print('Görsel URL:', image_url)
+
+          # İkon kullanılmayan temiz metin taslağı (Hashtag'ler eklendi)
+          text = (
+              'EARTHQUAKE ALERT / DEPREM BİLDİRİMİ\n\n'
+              f'Bölge: {region.upper()}, {country.upper()}\n'
+              f'Büyüklük / Magnitude: {mag}\n'
+              f'{depth.upper()}\n'
+              f'Zaman / Time: {time_str}\n\n'
+              f'Google Maps: https://google.com{lat},{lon}\n'
+              f'Source: {source}\n\n'
+              '#deprem #earthquake #seismic #earthquakereels'
+          )
+
+          # 2. Mantıksal Ayrım Filtresi (3.0 - 5.9 Story, 6.0+ Feed/Post)
+          if mag >= 6.0:
+              print(f'M{mag} >= 6.0 -> Normal gönderi (Feed/Post) olarak paylaşılıyor...')
+              fb_url = f'https://facebook.com{page_id}/photos'
+              payload = {
+                  'url': image_url,
+                  'caption': text,
+                  'access_token': token
+              }
+          else:
+              print(f'3.0 <= M{mag} <= 5.9 -> Hikaye (Story) olarak paylaşılıyor...')
+              fb_url = f'https://facebook.com{page_id}/photos'
+              payload = {
+                  'url': image_url,
+                  'caption': text,
+                  'target_id': page_id,
+                  'published': 'false', # Arka planda tutup story nesnesi haline getirmek için
+                  'access_token': token
+              }
+              # Not: Sayfa hikayeleri için Meta Graph API doğrudan /stories uç noktasını kısıtlayabildiğinden,
+              # publish=false fotoğraflar doğrudan sayfanın aktif medya havuzuna düşer. Sayfadan Instagram cross-post
+              # ayarın aktifse hikayeler otomatik senkronize olur.
+          
+          response = requests.post(fb_url, data=payload)
+          print('Facebook API Yanıtı:', response.json())
+
+          if response.json().get('id'):
+              print('✅ İşlem başarıyla tamamlandı!')
+          else:
+              print('❌ Paylaşım sırasında bir hata oluştu!')
+          "
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
