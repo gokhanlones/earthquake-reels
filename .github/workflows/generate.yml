@@ -124,11 +124,13 @@ jobs:
           time_str = os.environ["TIME_STR"]
           maps_url = f"https://maps.google.com/?q={lat},{lon}"
           country_tag = "#" + country.lower().replace(" ", "")
+          location = f"{region}, {country}" if region != country else region
 
           message = (
-              f"{region}, {country}\n"
+              f"{location}\n"
               f"M {mag:.1f}  |  {depth}  |  {time_str}\n"
               f"{maps_url}\n\n"
+              f"Did you feel this earthquake?\n\n"
               f"#earthquake #seismic #earthquakereels {country_tag}"
           )
 
@@ -169,11 +171,13 @@ jobs:
           time_str = os.environ["TIME_STR"]
           maps_url = f"https://maps.google.com/?q={lat},{lon}"
           country_tag = "#" + country.lower().replace(" ", "")
+          location = f"{region}, {country}" if region != country else region
 
           message = (
-              f"{region}, {country}\n"
+              f"{location}\n"
               f"M {mag:.1f}  |  {depth}  |  {time_str}\n"
               f"{maps_url}\n\n"
+              f"Did you feel this earthquake?\n\n"
               f"#earthquake #seismic #earthquakereels {country_tag}"
           )
 
