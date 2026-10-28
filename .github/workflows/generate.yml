@@ -130,7 +130,7 @@ jobs:
               f"{location}\n"
               f"M {mag:.1f}  |  {depth}  |  {time_str}\n"
               f"{maps_url}\n\n"
-              f"Did you feel this earthquake?\n\n"
+              f"Stay safe. 🙏\n\n"
               f"#earthquake #seismic #earthquakereels {country_tag}"
           )
 
@@ -177,7 +177,7 @@ jobs:
               f"{location}\n"
               f"M {mag:.1f}  |  {depth}  |  {time_str}\n"
               f"{maps_url}\n\n"
-              f"Did you feel this earthquake?\n\n"
+              f"Stay safe. 🙏\n\n"
               f"#earthquake #seismic #earthquakereels {country_tag}"
           )
 
