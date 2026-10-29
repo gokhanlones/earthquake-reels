@@ -3,6 +3,10 @@ name: Generate Earthquake Visual
 on:
   workflow_dispatch:
     inputs:
+      quake_id:
+        description: "Earthquake ID"
+        required: true
+        type: string
       magnitude:
         description: "Magnitude"
         required: true
@@ -38,7 +42,7 @@ on:
         type: string
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   generate:
@@ -46,6 +50,7 @@ jobs:
     timeout-minutes: 10
 
     env:
+      QUAKE_ID: ${{ inputs.quake_id }}
       MAG: ${{ inputs.magnitude }}
       REGION: ${{ inputs.region }}
       COUNTRY: ${{ inputs.country }}
@@ -59,17 +64,47 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Check duplicate
+        id: check
+        run: |
+          python - <<'PY'
+          import json, os, sys
+
+          quake_id = os.environ["QUAKE_ID"]
+
+          with open("ids.json", "r") as f:
+              ids = json.load(f)
+
+          if quake_id in ids:
+              print(f"Duplicate: {quake_id} — atlanıyor.")
+              with open(os.environ["GITHUB_OUTPUT"], "a") as out:
+                  out.write("duplicate=true\n")
+          else:
+              print(f"Yeni deprem: {quake_id}")
+              with open(os.environ["GITHUB_OUTPUT"], "a") as out:
+                  out.write("duplicate=false\n")
+          PY
+
+      - name: Stop if duplicate
+        if: steps.check.outputs.duplicate == 'true'
+        run: |
+          echo "Duplicate deprem, işlem durduruldu."
+          exit 0
+
       - name: Set up Python
+        if: steps.check.outputs.duplicate == 'false'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Install dependencies
+        if: steps.check.outputs.duplicate == 'false'
         run: |
           python -m pip install --upgrade pip
           pip install pillow numpy requests pycountry
 
       - name: Validate inputs
+        if: steps.check.outputs.duplicate == 'false'
         run: |
           python - <<'PY'
           import os
@@ -78,20 +113,12 @@ jobs:
               lat = float(os.environ["LAT"])
               lon = float(os.environ["LON"])
           except (ValueError, TypeError) as exc:
-              raise SystemExit(f"Magnitude, latitude veya longitude sayısal olmalı: {exc}")
-          if not 0 <= mag <= 10:
-              raise SystemExit("Magnitude must be between 0 and 10.")
-          if not -90 <= lat <= 90:
-              raise SystemExit("Latitude must be between -90 and 90.")
-          if not -180 <= lon <= 180:
-              raise SystemExit("Longitude must be between -180 and 180.")
-          for key in ("REGION", "COUNTRY", "DEPTH", "TIME_STR", "SOURCE"):
-              if not os.environ.get(key, "").strip():
-                  raise SystemExit(f"Missing input: {key}")
+              raise SystemExit(f"Hatalı input: {exc}")
           print("Input validation successful.")
           PY
 
       - name: Generate earthquake image
+        if: steps.check.outputs.duplicate == 'false'
         run: |
           python generate.py \
             "$MAG" \
@@ -100,9 +127,10 @@ jobs:
             "$DEPTH" \
             "$TIME_STR"
           test -s output.jpg
-          echo "Earthquake image generated successfully."
+          echo "Image generated successfully."
 
       - name: Send alert to Telegram
+        if: steps.check.outputs.duplicate == 'false'
         env:
           TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -162,11 +190,7 @@ jobs:
                       files={"photo": ("map.jpg", map_response.content, "image/jpeg")},
                       timeout=30,
                   )
-                  result = response.json()
-                  if not response.ok or not result.get("ok"):
-                      raise SystemExit(f"Telegram gönderimi başarısız: {result}")
               else:
-                  # Harita alınamazsa sadece text gönder
                   response = requests.post(
                       f"https://api.telegram.org/bot{token}/sendMessage",
                       data={"chat_id": chat_id, "text": message, "disable_web_page_preview": True},
@@ -178,11 +202,11 @@ jobs:
                   data={"chat_id": chat_id, "text": message, "disable_web_page_preview": True},
                   timeout=30,
               )
-
           print("Telegram alert sent successfully.")
           PY
 
       - name: Publish to Facebook
+        if: steps.check.outputs.duplicate == 'false'
         env:
           FB_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
@@ -248,6 +272,38 @@ jobs:
               raise SystemExit(f"Facebook gönderisi başarısız: {result}")
           print(f"Facebook post published. ID: {result['id']}")
           PY
+
+      - name: Save earthquake ID
+        if: steps.check.outputs.duplicate == 'false'
+        run: |
+          python - <<'PY'
+          import json, os
+
+          quake_id = os.environ["QUAKE_ID"]
+
+          with open("ids.json", "r") as f:
+              ids = json.load(f)
+
+          ids.append(quake_id)
+
+          # Son 1000 ID'yi tut
+          if len(ids) > 1000:
+              ids = ids[-1000:]
+
+          with open("ids.json", "w") as f:
+              json.dump(ids, f)
+
+          print(f"ID kaydedildi. Toplam: {len(ids)}")
+          PY
+
+      - name: Commit ids.json
+        if: steps.check.outputs.duplicate == 'false'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add ids.json
+          git commit -m "Add earthquake ID: ${{ inputs.quake_id }}"
+          git push
 
       - name: Upload earthquake image artifact
         if: always()
