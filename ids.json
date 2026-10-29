@@ -158,5 +158,13 @@
     "depth": "4 km",
     "time": "2026-10-29 18:54 UTC",
     "maps": "https://maps.google.com/?q=7.4592,-80.3097"
+  },
+  {
+    "id": "20261029_0000292",
+    "location": "COSTA RICA 🇨🇷",
+    "magnitude": "3.3",
+    "depth": "19 km",
+    "time": "2026-10-29 19:14 UTC",
+    "maps": "https://maps.google.com/?q=8.4962,-83.1512"
   }
 ]
