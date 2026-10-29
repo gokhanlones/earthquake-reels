@@ -1,0 +1,111 @@
+name: Daily Earthquake Report
+
+on:
+  schedule:
+    - cron: '0 21 * * *'  # Her gece 00:00 TR saati (UTC+3)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Generate and post daily report
+        env:
+          FB_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+        run: |
+          python - <<'PY'
+          import json, os, requests
+          from datetime import datetime, timezone
+
+          token = os.environ.get("FB_TOKEN", "").strip()
+          page_id = os.environ.get("FB_PAGE_ID", "").strip()
+
+          with open("ids.json", "r") as f:
+              ids = json.load(f)
+
+          if not ids:
+              print("Rapor için veri yok.")
+              exit(0)
+
+          # Ülkeye göre grupla
+          countries = {}
+          for item in ids:
+              if not isinstance(item, dict):
+                  continue
+              country = item.get("location", "UNKNOWN")
+              # Bayrak ve ülke adını ayır
+              parts = item.get("location", "").split(", ")
+              if len(parts) >= 2:
+                  region = parts[0]
+                  country_with_flag = parts[1] if len(parts) > 1 else parts[0]
+              else:
+                  region = parts[0]
+                  country_with_flag = parts[0]
+
+              if country_with_flag not in countries:
+                  countries[country_with_flag] = []
+
+              countries[country_with_flag].append({
+                  "region": region,
+                  "magnitude": item.get("magnitude", "?"),
+                  "time": item.get("time", "?").replace(" UTC", "").split(" ")[-1] + " UTC"
+              })
+
+          today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+          lines = [f"🌍 Earthquakes above M3.0 in the last 24 hours\n{today}\n"]
+
+          for country, quakes in sorted(countries.items()):
+              lines.append(f"\n{country}")
+              for q in quakes:
+                  lines.append(f"  {q['region']}")
+                  lines.append(f"  M{q['magnitude']} | {q['time']}")
+                  lines.append("")
+
+          message = "\n".join(lines)
+          message += "\n#earthquake #seismic #earthquakereels #dailyreport"
+
+          print(message)
+
+          response = requests.post(
+              f"https://graph.facebook.com/v20.0/{page_id}/feed",
+              data={"message": message, "access_token": token},
+              timeout=60,
+          )
+
+          result = response.json()
+          if not response.ok or not result.get("id"):
+              raise SystemExit(f"Facebook rapor gönderisi başarısız: {result}")
+
+          print(f"Rapor yayınlandı. ID: {result['id']}")
+          PY
+
+      - name: Reset ids.json
+        run: |
+          echo "[]" > ids.json
+
+      - name: Commit empty ids.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add ids.json
+          git commit -m "Reset ids.json after daily report"
+          git push
