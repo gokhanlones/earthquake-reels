@@ -30,5 +30,13 @@
     "depth": "194 km",
     "time": "2026-10-29 19:54 UTC",
     "maps": "https://maps.google.com/?q=-23.9000,-66.9000"
+  },
+  {
+    "id": "20261029_0000334",
+    "location": "SUMBA REGION, INDONESIA 🇮🇩",
+    "magnitude": "4.3",
+    "depth": "10 km",
+    "time": "2026-10-29 21:34 UTC",
+    "maps": "https://maps.google.com/?q=-9.6300,119.1100"
   }
 ]
