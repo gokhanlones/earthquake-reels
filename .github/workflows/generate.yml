@@ -102,23 +102,16 @@ jobs:
           test -s output.jpg
           echo "Earthquake image generated successfully."
 
-      - name: Send alert to Telegram & Publish based on Magnitude
+      - name: Send alert to Telegram
         env:
           TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          FB_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
-          FB_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
-          IG_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
         run: |
           python - <<'PY'
           import os, requests, pycountry
 
           token = os.environ.get("TG_TOKEN", "").strip()
           chat_id = os.environ.get("TG_CHAT_ID", "").strip()
-          fb_token = os.environ.get("FB_TOKEN", "").strip()
-          page_id = os.environ.get("FB_PAGE_ID", "").strip()
-          ig_user_id = os.environ.get("IG_USER_ID", "").strip()
-
           if not token or not chat_id:
               raise SystemExit("TELEGRAM_TOKEN veya TELEGRAM_CHAT_ID eksik.")
 
@@ -132,7 +125,6 @@ jobs:
           maps_url = f"https://maps.google.com/?q={lat},{lon}"
           country_tag = "#" + country.lower().replace(" ", "")
 
-          # Dinamik bayrak bulma fonksiyonu
           def get_flag(country_name):
               try:
                   match = pycountry.countries.search_fuzzy(country_name)
@@ -154,76 +146,86 @@ jobs:
               f"#earthquake #seismic #earthquakereels {country_tag}"
           )
 
-          # 1. Telegram'a gönder ve public görsel URL'sini al
-          public_image_url = None
-          with open("output.jpg", "rb") as photo_file:
-              tg_resp = requests.post(
-                  f"https://api.telegram.org/bot{token}/sendPhoto",
-                  data={"chat_id": chat_id, "caption": message},
-                  files={"photo": photo_file},
-                  timeout=30,
-              )
-          tg_json = tg_resp.json()
-          if tg_resp.ok and tg_json.get("ok"):
-              photos = tg_json["result"].get("photo", [])
-              if photos:
-                  file_id = photos[-1]["file_id"]
-                  file_resp = requests.get(f"https://api.telegram.org/bot{token}/getFile?file_id={file_id}")
-                  if file_resp.ok:
-                      file_path = file_resp.json()["result"].get("file_path")
-                      public_image_url = f"https://api.telegram.org/file/bot{token}/{file_path}"
+          response = requests.post(
+              f"https://api.telegram.org/bot{token}/sendMessage",
+              data={
+                  "chat_id": chat_id,
+                  "text": message,
+                  "disable_web_page_preview": True,
+              },
+              timeout=30,
+          )
+          result = response.json()
+          if not response.ok or not result.get("ok"):
+              raise SystemExit(f"Telegram gönderimi başarısız: {result}")
           print("Telegram alert sent successfully.")
+          PY
 
-          # 2. Mantık Ayrımı: M < 6.0 ise Instagram Hikayesi, M >= 6.0 ise Facebook Gönderisi
-          if mag < 6.0:
-              print(f"Magnitude is M{mag:.1f} (< 6.0). Publishing to Instagram Story...")
-              if not fb_token or not ig_user_id:
-                  print("UYARI: INSTAGRAM_USER_ID veya FACEBOOK_PAGE_TOKEN eksik olduğu için Instagram Hikayesi atılamadı.")
-              elif not public_image_url:
-                  print("UYARI: Telegram'dan görsel URL'si alınamadığı için Instagram Hikayesi atılamadı.")
-              else:
-                  # Adım A: IG Medya Konteyneri Oluştur (Stories türünde)
-                  container_resp = requests.post(
-                      f"https://graph.facebook.com/v20.0/{ig_user_id}/media",
-                      data={
-                          "image_url": public_image_url,
-                          "media_type": "STORIES",
-                          "access_token": fb_token
-                      },
-                      timeout=30
+      - name: Publish to Facebook
+        env:
+          FB_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+        run: |
+          python - <<'PY'
+          import os, requests, pycountry
+
+          token = os.environ.get("FB_TOKEN", "").strip()
+          page_id = os.environ.get("FB_PAGE_ID", "").strip()
+          if not token or not page_id:
+              raise SystemExit("FACEBOOK_PAGE_TOKEN veya FACEBOOK_PAGE_ID eksik.")
+
+          mag = float(os.environ["MAG"])
+          lat = os.environ["LAT"]
+          lon = os.environ["LON"]
+          region = os.environ["REGION"].upper()
+          country = os.environ["COUNTRY"].upper()
+          depth = os.environ["DEPTH"]
+          time_str = os.environ["TIME_STR"]
+          maps_url = f"https://maps.google.com/?q={lat},{lon}"
+          country_tag = "#" + country.lower().replace(" ", "")
+
+          def get_flag(country_name):
+              try:
+                  match = pycountry.countries.search_fuzzy(country_name)
+                  if match:
+                      code = match[0].alpha_2
+                      return "".join(chr(127397 + ord(char)) for char in code.upper())
+              except Exception:
+                  pass
+              return "🌍"
+
+          flag = get_flag(os.environ["COUNTRY"])
+          location = f"{region}, {country} {flag}" if region != country else f"{country} {flag}"
+
+          message = (
+              f"{location}\n"
+              f"M {mag:.1f}  |  {depth}  |  {time_str}\n"
+              f"{maps_url}\n\n"
+              f"Stay safe. 🙏\n\n"
+              f"#earthquake #seismic #earthquakereels {country_tag}"
+          )
+
+          if mag >= 6.0:
+              print(f"Publishing M{mag:.1f} as Facebook photo post...")
+              with open("output.jpg", "rb") as f:
+                  response = requests.post(
+                      f"https://graph.facebook.com/v20.0/{page_id}/photos",
+                      data={"caption": message, "access_token": token},
+                      files={"source": f},
+                      timeout=60,
                   )
-                  container_data = container_resp.json()
-                  creation_id = container_data.get("id")
-                  
-                  if creation_id:
-                      # Adım B: Konteyneri Yayınla
-                      publish_resp = requests.post(
-                          f"https://graph.facebook.com/v20.0/{ig_user_id}/media_publish",
-                          data={
-                              "creation_id": creation_id,
-                              "access_token": fb_token
-                          },
-                          timeout=30
-                      )
-                      print("Instagram Story published successfully:", publish_resp.json())
-                  else:
-                      print("Instagram Container oluşturulamadı:", container_data)
           else:
-              print(f"Magnitude is M{mag:.1f} (>= 6.0). Publishing to Facebook Post...")
-              if not fb_token or not page_id:
-                  print("UYARI: FACEBOOK_PAGE_TOKEN veya FACEBOOK_PAGE_ID eksik.")
-              else:
-                  with open("output.jpg", "rb") as f:
-                      fb_resp = requests.post(
-                          f"https://graph.facebook.com/v20.0/{page_id}/photos",
-                          data={"caption": message, "access_token": fb_token},
-                          files={"source": f},
-                          timeout=60,
-                      )
-                  result = fb_resp.json()
-                  if not fb_resp.ok or not result.get("id"):
-                      raise SystemExit(f"Facebook gönderisi başarısız: {result}")
-                  print(f"Facebook post published. ID: {result['id']}")
+              print(f"Publishing M{mag:.1f} as Facebook text post...")
+              response = requests.post(
+                  f"https://graph.facebook.com/v20.0/{page_id}/feed",
+                  data={"message": message, "access_token": token},
+                  timeout=60,
+              )
+
+          result = response.json()
+          if not response.ok or not result.get("id"):
+              raise SystemExit(f"Facebook gönderisi başarısız: {result}")
+          print(f"Facebook post published. ID: {result['id']}")
           PY
 
       - name: Upload earthquake image artifact
