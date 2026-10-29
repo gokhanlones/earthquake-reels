@@ -279,9 +279,14 @@ jobs:
           print(f"Facebook post published. ID: {result['id']}")
           PY
 
-      - name: Save earthquake ID
+      - name: Save and commit ids.json
         if: steps.check.outputs.duplicate == 'false'
+        env:
+          QUAKE_ID: ${{ inputs.quake_id }}
         run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git pull origin main --no-rebase
           python - <<'PY'
           import json, os, pycountry
 
@@ -311,14 +316,16 @@ jobs:
           with open("ids.json", "r") as f:
               ids = json.load(f)
 
-          ids.append({
-              "id": quake_id,
-              "location": location,
-              "magnitude": mag,
-              "depth": depth,
-              "time": time_str,
-              "maps": maps_url
-          })
+          existing_ids = [item["id"] if isinstance(item, dict) else item for item in ids]
+          if quake_id not in existing_ids:
+              ids.append({
+                  "id": quake_id,
+                  "location": location,
+                  "magnitude": mag,
+                  "depth": depth,
+                  "time": time_str,
+                  "maps": maps_url
+              })
 
           if len(ids) > 1000:
               ids = ids[-1000:]
@@ -328,13 +335,6 @@ jobs:
 
           print(f"ID kaydedildi. Toplam: {len(ids)}")
           PY
-
-      - name: Commit ids.json
-        if: steps.check.outputs.duplicate == 'false'
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git pull origin main --no-rebase
           git add ids.json
           git commit -m "Add earthquake ID: ${{ inputs.quake_id }}" || echo "Nothing to commit"
           git push
