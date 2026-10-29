@@ -67,7 +67,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pillow numpy requests
+          pip install pillow numpy requests pycountry
 
       - name: Validate inputs
         run: |
@@ -109,7 +109,7 @@ jobs:
           MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
         run: |
           python - <<'PY'
-          import os, requests
+          import os, requests, pycountry
 
           token = os.environ.get("TG_TOKEN", "").strip()
           chat_id = os.environ.get("TG_CHAT_ID", "").strip()
@@ -126,7 +126,19 @@ jobs:
           time_str = os.environ["TIME_STR"]
           maps_url = f"https://maps.google.com/?q={lat},{lon}"
           country_tag = "#" + country.lower().replace(" ", "")
-          location = f"{region}, {country}" if region != country else region
+
+          def get_flag(country_name):
+              try:
+                  match = pycountry.countries.search_fuzzy(country_name)
+                  if match:
+                      code = match[0].alpha_2
+                      return "".join(chr(127397 + ord(char)) for char in code.upper())
+              except Exception:
+                  pass
+              return "🌍"
+
+          flag = get_flag(os.environ["COUNTRY"])
+          location = f"{region}, {country} {flag}" if region != country else f"{country} {flag}"
 
           message = (
               f"{location}\n"
@@ -136,18 +148,6 @@ jobs:
               f"#earthquake #seismic #earthquakereels {country_tag}"
           )
 
-          # Text mesajı gönder
-          requests.post(
-              f"https://api.telegram.org/bot{token}/sendMessage",
-              data={
-                  "chat_id": chat_id,
-                  "text": message,
-                  "disable_web_page_preview": True,
-              },
-              timeout=30,
-          )
-
-          # Haritayı indir ve gönder
           if mapbox_token:
               map_url = (
                   f"https://api.mapbox.com/styles/v1/mapbox/outdoors-v12/static/"
@@ -156,13 +156,28 @@ jobs:
               )
               map_response = requests.get(map_url, timeout=30)
               if map_response.ok:
-                  requests.post(
+                  response = requests.post(
                       f"https://api.telegram.org/bot{token}/sendPhoto",
-                      data={"chat_id": chat_id},
+                      data={"chat_id": chat_id, "caption": message},
                       files={"photo": ("map.jpg", map_response.content, "image/jpeg")},
                       timeout=30,
                   )
-                  print("Telegram map sent successfully.")
+                  result = response.json()
+                  if not response.ok or not result.get("ok"):
+                      raise SystemExit(f"Telegram gönderimi başarısız: {result}")
+              else:
+                  # Harita alınamazsa sadece text gönder
+                  response = requests.post(
+                      f"https://api.telegram.org/bot{token}/sendMessage",
+                      data={"chat_id": chat_id, "text": message, "disable_web_page_preview": True},
+                      timeout=30,
+                  )
+          else:
+              response = requests.post(
+                  f"https://api.telegram.org/bot{token}/sendMessage",
+                  data={"chat_id": chat_id, "text": message, "disable_web_page_preview": True},
+                  timeout=30,
+              )
 
           print("Telegram alert sent successfully.")
           PY
@@ -173,7 +188,7 @@ jobs:
           FB_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
         run: |
           python - <<'PY'
-          import os, requests
+          import os, requests, pycountry
 
           token = os.environ.get("FB_TOKEN", "").strip()
           page_id = os.environ.get("FB_PAGE_ID", "").strip()
@@ -189,7 +204,19 @@ jobs:
           time_str = os.environ["TIME_STR"]
           maps_url = f"https://maps.google.com/?q={lat},{lon}"
           country_tag = "#" + country.lower().replace(" ", "")
-          location = f"{region}, {country}" if region != country else region
+
+          def get_flag(country_name):
+              try:
+                  match = pycountry.countries.search_fuzzy(country_name)
+                  if match:
+                      code = match[0].alpha_2
+                      return "".join(chr(127397 + ord(char)) for char in code.upper())
+              except Exception:
+                  pass
+              return "🌍"
+
+          flag = get_flag(os.environ["COUNTRY"])
+          location = f"{region}, {country} {flag}" if region != country else f"{country} {flag}"
 
           message = (
               f"{location}\n"
