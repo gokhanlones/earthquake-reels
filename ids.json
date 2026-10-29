@@ -38,5 +38,13 @@
     "depth": "10 km",
     "time": "2026-10-29 21:34 UTC",
     "maps": "https://maps.google.com/?q=-9.6300,119.1100"
+  },
+  {
+    "id": "20261029_0000281",
+    "location": "VANCOUVER ISLAND, CANADA REGION 🌍",
+    "magnitude": "3.2",
+    "depth": "24 km",
+    "time": "2026-10-29 18:06 UTC",
+    "maps": "https://maps.google.com/?q=49.6291,-127.0601"
   }
 ]
