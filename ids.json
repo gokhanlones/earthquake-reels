@@ -78,5 +78,13 @@
     "depth": "16 km",
     "time": "2026-10-29 20:14 UTC",
     "maps": "https://maps.google.com/?q=53.5843,-163.0279"
+  },
+  {
+    "id": "20261029_0000306",
+    "location": "ORURO, BOLIVIA 🇧🇴",
+    "magnitude": "3.3",
+    "depth": "195 km",
+    "time": "2026-10-29 20:06 UTC",
+    "maps": "https://maps.google.com/?q=-19.3300,-68.0600"
   }
 ]
