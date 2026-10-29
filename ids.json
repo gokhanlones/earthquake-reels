@@ -14,5 +14,13 @@
     "depth": "528 km",
     "time": "2026-10-29 16:08 UTC",
     "maps": "https://maps.google.com/?q=-22.0285,-63.7000"
+  },
+  {
+    "id": "20261029_0000276",
+    "location": "NIAS REGION, INDONESIA 🇮🇩",
+    "magnitude": "3.5",
+    "depth": "25 km",
+    "time": "2026-10-29 18:04 UTC",
+    "maps": "https://maps.google.com/?q=1.1200,97.0300"
   }
 ]
