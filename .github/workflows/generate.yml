@@ -67,7 +67,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pillow numpy requests
+          pip install pillow numpy requests pycountry
 
       - name: Validate inputs
         run: |
@@ -108,7 +108,7 @@ jobs:
           TG_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           python - <<'PY'
-          import os, requests
+          import os, requests, pycountry
 
           token = os.environ.get("TG_TOKEN", "").strip()
           chat_id = os.environ.get("TG_CHAT_ID", "").strip()
@@ -124,7 +124,19 @@ jobs:
           time_str = os.environ["TIME_STR"]
           maps_url = f"https://maps.google.com/?q={lat},{lon}"
           country_tag = "#" + country.lower().replace(" ", "")
-          location = f"{region}, {country}" if region != country else region
+
+          def get_flag(country_name):
+              try:
+                  match = pycountry.countries.search_fuzzy(country_name)
+                  if match:
+                      code = match[0].alpha_2
+                      return "".join(chr(127397 + ord(char)) for char in code.upper())
+              except Exception:
+                  pass
+              return "🌍"
+
+          flag = get_flag(os.environ["COUNTRY"])
+          location = f"{region}, {country} {flag}" if region != country else f"{country} {flag}"
 
           message = (
               f"{location}\n"
@@ -155,7 +167,7 @@ jobs:
           FB_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
         run: |
           python - <<'PY'
-          import os, requests
+          import os, requests, pycountry
 
           token = os.environ.get("FB_TOKEN", "").strip()
           page_id = os.environ.get("FB_PAGE_ID", "").strip()
@@ -171,7 +183,19 @@ jobs:
           time_str = os.environ["TIME_STR"]
           maps_url = f"https://maps.google.com/?q={lat},{lon}"
           country_tag = "#" + country.lower().replace(" ", "")
-          location = f"{region}, {country}" if region != country else region
+
+          def get_flag(country_name):
+              try:
+                  match = pycountry.countries.search_fuzzy(country_name)
+                  if match:
+                      code = match[0].alpha_2
+                      return "".join(chr(127397 + ord(char)) for char in code.upper())
+              except Exception:
+                  pass
+              return "🌍"
+
+          flag = get_flag(os.environ["COUNTRY"])
+          location = f"{region}, {country} {flag}" if region != country else f"{country} {flag}"
 
           message = (
               f"{location}\n"
