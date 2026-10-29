@@ -190,5 +190,13 @@
     "depth": "11 km",
     "time": "2026-10-29 20:45 UTC",
     "maps": "https://maps.google.com/?q=42.4577,13.3055"
+  },
+  {
+    "id": "20261029_0000285",
+    "location": "NORTHERN XINJIANG, CHINA 🇨🇳",
+    "magnitude": "4.3",
+    "depth": "11 km",
+    "time": "2026-10-29 17:53 UTC",
+    "maps": "https://maps.google.com/?q=44.3532,82.4306"
   }
 ]
