@@ -150,5 +150,13 @@
     "depth": "36 km",
     "time": "2026-10-29 18:59 UTC",
     "maps": "https://maps.google.com/?q=-32.1600,-72.2100"
+  },
+  {
+    "id": "20261029_0000321",
+    "location": "CENTRAL ITALY 🌍",
+    "magnitude": "3",
+    "depth": "11 km",
+    "time": "2026-10-29 20:45 UTC",
+    "maps": "https://maps.google.com/?q=42.4577,13.3055"
   }
 ]
