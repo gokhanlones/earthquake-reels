@@ -214,5 +214,13 @@
     "depth": "30 km",
     "time": "2026-10-29 22:53 UTC",
     "maps": "https://maps.google.com/?q=-32.1900,-72.1800"
+  },
+  {
+    "id": "20261029_0000317",
+    "location": "TAIWAN 🇹🇼",
+    "magnitude": "4.4",
+    "depth": "23 km",
+    "time": "2026-10-29 20:37 UTC",
+    "maps": "https://maps.google.com/?q=24.1700,121.8300"
   }
 ]
