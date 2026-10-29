@@ -142,5 +142,13 @@
     "depth": "131 km",
     "time": "2026-10-29 17:48 UTC",
     "maps": "https://maps.google.com/?q=16.9220,-94.2710"
+  },
+  {
+    "id": "20261029_0000269",
+    "location": "OFF COAST OF OREGON 🌍",
+    "magnitude": "3.5",
+    "depth": "10 km",
+    "time": "2026-10-29 17:04 UTC",
+    "maps": "https://maps.google.com/?q=44.5018,-129.0980"
   }
 ]
