@@ -54,5 +54,13 @@
     "depth": "10 km",
     "time": "2026-10-29 19:19 UTC",
     "maps": "https://maps.google.com/?q=7.5132,-80.6392"
+  },
+  {
+    "id": "20261029_0000336",
+    "location": "VANUATU 🇻🇺",
+    "magnitude": "6.3",
+    "depth": "116 km",
+    "time": "2026-10-29 21:46 UTC",
+    "maps": "https://maps.google.com/?q=-15.2090,167.4160"
   }
 ]
