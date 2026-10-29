@@ -79,7 +79,9 @@ jobs:
           with open("ids.json", "r") as f:
               ids = json.load(f)
 
-          if quake_id in ids:
+          existing_ids = [item["id"] if isinstance(item, dict) else item for item in ids]
+
+          if quake_id in existing_ids:
               print(f"Duplicate: {quake_id} — atlanıyor.")
               with open(os.environ["GITHUB_OUTPUT"], "a") as out:
                   out.write("duplicate=true\n")
@@ -281,20 +283,48 @@ jobs:
         if: steps.check.outputs.duplicate == 'false'
         run: |
           python - <<'PY'
-          import json, os
+          import json, os, pycountry
 
           quake_id = os.environ["QUAKE_ID"]
+          mag = os.environ["MAG"]
+          lat = os.environ["LAT"]
+          lon = os.environ["LON"]
+          region = os.environ["REGION"].upper()
+          country = os.environ["COUNTRY"].upper()
+          depth = os.environ["DEPTH"]
+          time_str = os.environ["TIME_STR"]
+          maps_url = f"https://maps.google.com/?q={lat},{lon}"
+
+          def get_flag(country_name):
+              try:
+                  match = pycountry.countries.search_fuzzy(country_name)
+                  if match:
+                      code = match[0].alpha_2
+                      return "".join(chr(127397 + ord(char)) for char in code.upper())
+              except Exception:
+                  pass
+              return "🌍"
+
+          flag = get_flag(os.environ["COUNTRY"])
+          location = f"{region}, {country} {flag}" if region != country else f"{country} {flag}"
 
           with open("ids.json", "r") as f:
               ids = json.load(f)
 
-          ids.append(quake_id)
+          ids.append({
+              "id": quake_id,
+              "location": location,
+              "magnitude": mag,
+              "depth": depth,
+              "time": time_str,
+              "maps": maps_url
+          })
 
           if len(ids) > 1000:
               ids = ids[-1000:]
 
           with open("ids.json", "w") as f:
-              json.dump(ids, f)
+              json.dump(ids, f, indent=2, ensure_ascii=False)
 
           print(f"ID kaydedildi. Toplam: {len(ids)}")
           PY
@@ -304,6 +334,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
+          git pull --rebase origin main
           git add ids.json
           git commit -m "Add earthquake ID: ${{ inputs.quake_id }}"
           git push
