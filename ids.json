@@ -174,5 +174,13 @@
     "depth": "23 km",
     "time": "2026-10-29 20:37 UTC",
     "maps": "https://maps.google.com/?q=24.1700,121.8300"
+  },
+  {
+    "id": "20261029_0000288",
+    "location": "OFFSHORE VALPARAISO, CHILE 🇨🇱",
+    "magnitude": "3.5",
+    "depth": "36 km",
+    "time": "2026-10-29 18:59 UTC",
+    "maps": "https://maps.google.com/?q=-32.1600,-72.2100"
   }
 ]
