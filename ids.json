@@ -126,5 +126,13 @@
     "depth": "10 km",
     "time": "2026-10-29 19:12 UTC",
     "maps": "https://maps.google.com/?q=7.5320,-80.6622"
+  },
+  {
+    "id": "20261029_0000311",
+    "location": "UNIMAK ISLAND REGION, ALASKA 🇺🇸",
+    "magnitude": "5.1",
+    "depth": "24 km",
+    "time": "2026-10-29 20:14 UTC",
+    "maps": "https://maps.google.com/?q=53.9249,-163.1218"
   }
 ]
