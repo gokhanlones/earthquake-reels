@@ -566,5 +566,13 @@
     "depth": "269 km",
     "time": "2026-10-30 11:00 UTC",
     "maps": "https://maps.google.com/?q=-38.0392,175.8377"
+  },
+  {
+    "id": "20261030_0000142",
+    "location": "OFF E. COAST OF N. ISLAND, N.Z. 🌍",
+    "magnitude": "3",
+    "depth": "113 km",
+    "time": "2026-10-30 10:25 UTC",
+    "maps": "https://maps.google.com/?q=-36.2128,179.0986"
   }
 ]
