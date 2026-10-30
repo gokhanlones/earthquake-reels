@@ -646,5 +646,13 @@
     "depth": "20 km",
     "time": "2026-10-30 13:18 UTC",
     "maps": "https://maps.google.com/?q=40.3000,142.7000"
+  },
+  {
+    "id": "20261030_0000188",
+    "location": "IRAQ 🇮🇶",
+    "magnitude": "3",
+    "depth": "7 km",
+    "time": "2026-10-30 11:55 UTC",
+    "maps": "https://maps.google.com/?q=36.9147,42.4793"
   }
 ]
