@@ -374,5 +374,13 @@
     "depth": "112 km",
     "time": "2026-10-30 07:20 UTC",
     "maps": "https://maps.google.com/?q=-21.8500,-68.6900"
+  },
+  {
+    "id": "20261030_0000102",
+    "location": "WYOMING 🇺🇸",
+    "magnitude": "3.1",
+    "depth": "3 km",
+    "time": "2026-10-30 07:32 UTC",
+    "maps": "https://maps.google.com/?q=41.5727,-109.8857"
   }
 ]
