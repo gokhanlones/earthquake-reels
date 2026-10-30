@@ -542,5 +542,13 @@
     "depth": "81 km",
     "time": "2026-10-30 10:48 UTC",
     "maps": "https://maps.google.com/?q=-30.2500,-70.7800"
+  },
+  {
+    "id": "20261030_0000154",
+    "location": "NORTHERN ALGERIA 🌍",
+    "magnitude": "3.2",
+    "depth": "10 km",
+    "time": "2026-10-30 10:54 UTC",
+    "maps": "https://maps.google.com/?q=35.6857,-1.3821"
   }
 ]
