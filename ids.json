@@ -902,5 +902,13 @@
     "depth": "10 km",
     "time": "2026-10-30 16:38 UTC",
     "maps": "https://maps.google.com/?q=32.4300,93.8600"
+  },
+  {
+    "id": "20261030_0000307",
+    "location": "SOUTHERN ALASKA 🌍",
+    "magnitude": "4.4",
+    "depth": "14 km",
+    "time": "2026-10-30 19:11 UTC",
+    "maps": "https://maps.google.com/?q=61.8320,-147.0070"
   }
 ]
