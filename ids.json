@@ -294,5 +294,13 @@
     "depth": "16 km",
     "time": "2026-10-30 06:06 UTC",
     "maps": "https://maps.google.com/?q=40.6290,28.8170"
+  },
+  {
+    "id": "20261030_0000081",
+    "location": "SICILY, ITALY 🇮🇹",
+    "magnitude": "3.6",
+    "depth": "10 km",
+    "time": "2026-10-30 05:34 UTC",
+    "maps": "https://maps.google.com/?q=38.8183,14.1482"
   }
 ]
