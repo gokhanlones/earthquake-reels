@@ -774,5 +774,13 @@
     "depth": "57 km",
     "time": "2026-10-30 16:48 UTC",
     "maps": "https://maps.google.com/?q=38.9777,22.1401"
+  },
+  {
+    "id": "20261030_0000262",
+    "location": "COOK STRAIT, NEW ZEALAND 🇳🇿",
+    "magnitude": "3.7",
+    "depth": "260 km",
+    "time": "2026-10-30 16:52 UTC",
+    "maps": "https://maps.google.com/?q=-40.3653,173.6304"
   }
 ]
