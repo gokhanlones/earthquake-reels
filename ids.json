@@ -934,5 +934,13 @@
     "depth": "5 km",
     "time": "2026-10-30 19:13 UTC",
     "maps": "https://maps.google.com/?q=5.4600,125.2300"
+  },
+  {
+    "id": "20261030_0000315",
+    "location": "NEAR THE COAST OF GUJARAT, INDIA 🇮🇳",
+    "magnitude": "3.2",
+    "depth": "7 km",
+    "time": "2026-10-30 19:24 UTC",
+    "maps": "https://maps.google.com/?q=20.0130,72.9180"
   }
 ]
