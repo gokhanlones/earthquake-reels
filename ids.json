@@ -750,5 +750,13 @@
     "depth": "115 km",
     "time": "2026-10-30 16:30 UTC",
     "maps": "https://maps.google.com/?q=-21.8800,-68.6700"
+  },
+  {
+    "id": "20261030_0000235",
+    "location": "MYANMAR-INDIA BORDER REGION 🌍",
+    "magnitude": "3",
+    "depth": "93 km",
+    "time": "2026-10-30 14:45 UTC",
+    "maps": "https://maps.google.com/?q=23.5800,93.9680"
   }
 ]
