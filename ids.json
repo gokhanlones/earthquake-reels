@@ -78,5 +78,13 @@
     "depth": "15 km",
     "time": "2026-10-29 22:28 UTC",
     "maps": "https://maps.google.com/?q=-8.2900,121.1000"
+  },
+  {
+    "id": "20261030_0000011",
+    "location": "KENAI PENINSULA, ALASKA 🇺🇸",
+    "magnitude": "3.6",
+    "depth": "59 km",
+    "time": "2026-10-30 01:05 UTC",
+    "maps": "https://maps.google.com/?q=59.8190,-150.7780"
   }
 ]
