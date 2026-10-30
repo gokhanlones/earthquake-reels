@@ -870,5 +870,13 @@
     "depth": "10 km",
     "time": "2026-10-30 18:28 UTC",
     "maps": "https://maps.google.com/?q=32.4800,93.9000"
+  },
+  {
+    "id": "20261030_0000265",
+    "location": "ARUNACHAL PRADESH, INDIA 🇮🇳",
+    "magnitude": "3",
+    "depth": "6 km",
+    "time": "2026-10-30 15:39 UTC",
+    "maps": "https://maps.google.com/?q=27.1930,92.4240"
   }
 ]
