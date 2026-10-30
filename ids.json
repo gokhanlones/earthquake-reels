@@ -862,5 +862,13 @@
     "depth": "10 km",
     "time": "2026-10-30 16:51 UTC",
     "maps": "https://maps.google.com/?q=32.4500,93.8600"
+  },
+  {
+    "id": "20261030_0000294",
+    "location": "XIZANG-QINGHAI BORDER REGION 🌍",
+    "magnitude": "3",
+    "depth": "10 km",
+    "time": "2026-10-30 18:28 UTC",
+    "maps": "https://maps.google.com/?q=32.4800,93.9000"
   }
 ]
