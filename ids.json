@@ -14,5 +14,13 @@
     "depth": "35 km",
     "time": "2026-10-29 21:12 UTC",
     "maps": "https://maps.google.com/?q=44.1091,148.1794"
+  },
+  {
+    "id": "20261029_0000327",
+    "location": "POLAND 🇵🇱",
+    "magnitude": "4.8",
+    "depth": "10 km",
+    "time": "2026-10-29 21:00 UTC",
+    "maps": "https://maps.google.com/?q=51.5757,16.0776"
   }
 ]
