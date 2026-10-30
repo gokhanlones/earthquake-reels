@@ -686,5 +686,13 @@
     "depth": "10 km",
     "time": "2026-10-30 14:15 UTC",
     "maps": "https://maps.google.com/?q=-21.5835,110.1308"
+  },
+  {
+    "id": "20261030_0000219",
+    "location": "WESTERN HONSHU, JAPAN 🇯🇵",
+    "magnitude": "3.5",
+    "depth": "10 km",
+    "time": "2026-10-30 14:11 UTC",
+    "maps": "https://maps.google.com/?q=35.3000,133.2000"
   }
 ]
