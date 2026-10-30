@@ -206,5 +206,13 @@
     "depth": "41 km",
     "time": "2026-10-30 02:31 UTC",
     "maps": "https://maps.google.com/?q=-31.8100,-72.0200"
+  },
+  {
+    "id": "20261030_0000012",
+    "location": "UKRAINE 🇺🇦",
+    "magnitude": "3.2",
+    "depth": "8 km",
+    "time": "2026-10-30 00:14 UTC",
+    "maps": "https://maps.google.com/?q=49.5300,34.4000"
   }
 ]
