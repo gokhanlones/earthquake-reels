@@ -710,5 +710,13 @@
     "depth": "231 km",
     "time": "2026-10-30 13:14 UTC",
     "maps": "https://maps.google.com/?q=-23.4400,-67.0200"
+  },
+  {
+    "id": "20261030_0000196",
+    "location": "OFF COAST OF NAYARIT, MEXICO 🇲🇽",
+    "magnitude": "4.3",
+    "depth": "10 km",
+    "time": "2026-10-30 13:16 UTC",
+    "maps": "https://maps.google.com/?q=21.6090,-107.9970"
   }
 ]
