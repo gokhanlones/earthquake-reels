@@ -614,5 +614,13 @@
     "depth": "13 km",
     "time": "2026-10-30 10:06 UTC",
     "maps": "https://maps.google.com/?q=15.8580,-98.2790"
+  },
+  {
+    "id": "20261030_0000147",
+    "location": "NORTHERN SUMATRA, INDONESIA 🇮🇩",
+    "magnitude": "3.9",
+    "depth": "10 km",
+    "time": "2026-10-30 10:29 UTC",
+    "maps": "https://maps.google.com/?q=2.6500,98.6800"
   }
 ]
