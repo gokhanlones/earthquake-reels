@@ -838,5 +838,13 @@
     "depth": "5 km",
     "time": "2026-10-30 18:01 UTC",
     "maps": "https://maps.google.com/?q=19.8270,95.9360"
+  },
+  {
+    "id": "20261030_0000267",
+    "location": "NEPAL-INDIA BORDER REGION 🌍",
+    "magnitude": "3",
+    "depth": "14 km",
+    "time": "2026-10-30 15:48 UTC",
+    "maps": "https://maps.google.com/?q=29.5960,80.8200"
   }
 ]
