@@ -942,5 +942,13 @@
     "depth": "207 km",
     "time": "2026-10-31 23:23 UTC",
     "maps": "https://maps.google.com/?q=-24.1300,-67.4400"
+  },
+  {
+    "id": "20261031_0000305",
+    "location": "ROMANIA 🇷🇴",
+    "magnitude": "3.4",
+    "depth": "140 km",
+    "time": "2026-10-31 23:35 UTC",
+    "maps": "https://maps.google.com/?q=45.7536,26.7140"
   }
 ]
