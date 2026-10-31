@@ -414,5 +414,13 @@
     "depth": "10 km",
     "time": "2026-10-31 09:18 UTC",
     "maps": "https://maps.google.com/?q=-13.7894,165.2951"
+  },
+  {
+    "id": "20261031_0000109",
+    "location": "MONA PASSAGE, DOMINICAN REPUBLIC 🇩🇴",
+    "magnitude": "3.2",
+    "depth": "76 km",
+    "time": "2026-10-31 08:45 UTC",
+    "maps": "https://maps.google.com/?q=18.0782,-68.1297"
   }
 ]
