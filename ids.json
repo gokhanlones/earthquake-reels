@@ -166,5 +166,13 @@
     "depth": "16 km",
     "time": "2026-10-30 22:34 UTC",
     "maps": "https://maps.google.com/?q=23.0220,-109.7260"
+  },
+  {
+    "id": "20261030_0000395",
+    "location": "CHIAPAS, MEXICO 🇲🇽",
+    "magnitude": "3.5",
+    "depth": "98 km",
+    "time": "2026-10-30 22:58 UTC",
+    "maps": "https://maps.google.com/?q=15.4360,-92.7300"
   }
 ]
