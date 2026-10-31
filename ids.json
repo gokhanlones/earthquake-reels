@@ -238,5 +238,13 @@
     "depth": "5 km",
     "time": "2026-10-31 03:53 UTC",
     "maps": "https://maps.google.com/?q=7.3038,-80.0118"
+  },
+  {
+    "id": "20261031_0000055",
+    "location": "DODECANESE IS.-TURKEY BORDER REG 🌍",
+    "magnitude": "3",
+    "depth": "2 km",
+    "time": "2026-10-31 04:21 UTC",
+    "maps": "https://maps.google.com/?q=36.3156,27.7267"
   }
 ]
