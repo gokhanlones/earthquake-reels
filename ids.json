@@ -358,5 +358,13 @@
     "depth": "192 km",
     "time": "2026-10-31 07:11 UTC",
     "maps": "https://maps.google.com/?q=-24.2200,-67.3700"
+  },
+  {
+    "id": "20261031_0000093",
+    "location": "SOUTH OF KERMADEC ISLANDS 🌍",
+    "magnitude": "3.8",
+    "depth": "166 km",
+    "time": "2026-10-31 08:04 UTC",
+    "maps": "https://maps.google.com/?q=-34.9752,179.1747"
   }
 ]
