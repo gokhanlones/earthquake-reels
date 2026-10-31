@@ -654,5 +654,13 @@
     "depth": "35 km",
     "time": "2026-10-31 15:50 UTC",
     "maps": "https://maps.google.com/?q=7.5711,-80.2349"
+  },
+  {
+    "id": "20261031_0000205",
+    "location": "SUMBAWA REGION, INDONESIA 🇮🇩",
+    "magnitude": "3.4",
+    "depth": "162 km",
+    "time": "2026-10-31 15:57 UTC",
+    "maps": "https://maps.google.com/?q=-8.3900,118.8700"
   }
 ]
