@@ -350,5 +350,13 @@
     "depth": "97 km",
     "time": "2026-10-31 05:29 UTC",
     "maps": "https://maps.google.com/?q=52.6834,158.7423"
+  },
+  {
+    "id": "20261031_0000084",
+    "location": "SALTA, ARGENTINA 🇦🇷",
+    "magnitude": "3.4",
+    "depth": "192 km",
+    "time": "2026-10-31 07:11 UTC",
+    "maps": "https://maps.google.com/?q=-24.2200,-67.3700"
   }
 ]
