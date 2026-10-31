@@ -286,5 +286,13 @@
     "depth": "10 km",
     "time": "2026-10-31 05:39 UTC",
     "maps": "https://maps.google.com/?q=-9.4700,118.0900"
+  },
+  {
+    "id": "20261031_0000070",
+    "location": "DRAKE PASSAGE 🌍",
+    "magnitude": "3.3",
+    "depth": "10 km",
+    "time": "2026-10-31 05:01 UTC",
+    "maps": "https://maps.google.com/?q=-56.9900,-67.6200"
   }
 ]
