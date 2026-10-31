@@ -558,5 +558,13 @@
     "depth": "20 km",
     "time": "2026-10-31 11:36 UTC",
     "maps": "https://maps.google.com/?q=15.3910,-96.4400"
+  },
+  {
+    "id": "20261031_0000156",
+    "location": "TURKEY-SYRIA-IRAQ BORDER REGION 🌍",
+    "magnitude": "3.8",
+    "depth": "7 km",
+    "time": "2026-10-31 12:51 UTC",
+    "maps": "https://maps.google.com/?q=37.0290,42.4585"
   }
 ]
