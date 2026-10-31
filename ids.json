@@ -222,5 +222,13 @@
     "depth": "10 km",
     "time": "2026-10-31 03:13 UTC",
     "maps": "https://maps.google.com/?q=15.3400,122.1000"
+  },
+  {
+    "id": "20261031_0000047",
+    "location": "IZU ISLANDS, JAPAN REGION 🌍",
+    "magnitude": "4.6",
+    "depth": "10 km",
+    "time": "2026-10-31 03:14 UTC",
+    "maps": "https://maps.google.com/?q=30.9098,142.5186"
   }
 ]
