@@ -822,5 +822,13 @@
     "depth": "15 km",
     "time": "2026-10-31 19:58 UTC",
     "maps": "https://maps.google.com/?q=17.9428,-66.8773"
+  },
+  {
+    "id": "20261031_0000263",
+    "location": "OFF COAST OF CENTRAL AMERICA 🌍",
+    "magnitude": "3.7",
+    "depth": "26 km",
+    "time": "2026-10-31 20:06 UTC",
+    "maps": "https://maps.google.com/?q=11.5936,-88.7445"
   }
 ]
