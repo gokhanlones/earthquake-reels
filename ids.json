@@ -590,5 +590,13 @@
     "depth": "20 km",
     "time": "2026-10-31 13:17 UTC",
     "maps": "https://maps.google.com/?q=18.9686,-64.2266"
+  },
+  {
+    "id": "20261031_0000169",
+    "location": "SOUTHERN QINGHAI, CHINA 🇨🇳",
+    "magnitude": "3.4",
+    "depth": "10 km",
+    "time": "2026-10-31 13:38 UTC",
+    "maps": "https://maps.google.com/?q=33.1400,91.6800"
   }
 ]
