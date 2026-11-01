@@ -638,5 +638,13 @@
     "depth": "127 km",
     "time": "2026-11-01 10:22 UTC",
     "maps": "https://maps.google.com/?q=16.9840,-94.7200"
+  },
+  {
+    "id": "20261101_0000175",
+    "location": "HAITI REGION 🌍",
+    "magnitude": "3.7",
+    "depth": "4 km",
+    "time": "2026-11-01 14:41 UTC",
+    "maps": "https://maps.google.com/?q=18.4900,-73.5200"
   }
 ]
