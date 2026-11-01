@@ -670,5 +670,13 @@
     "depth": "10 km",
     "time": "2026-11-01 15:26 UTC",
     "maps": "https://maps.google.com/?q=7.6148,-80.6903"
+  },
+  {
+    "id": "20261101_0000191",
+    "location": "OFF COAST OF COSTA RICA 🌍",
+    "magnitude": "3.2",
+    "depth": "21 km",
+    "time": "2026-11-01 15:51 UTC",
+    "maps": "https://maps.google.com/?q=8.0761,-85.3993"
   }
 ]
