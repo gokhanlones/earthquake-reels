@@ -886,5 +886,13 @@
     "depth": "10 km",
     "time": "2026-11-01 17:57 UTC",
     "maps": "https://maps.google.com/?q=37.3900,75.1600"
+  },
+  {
+    "id": "20261101_0000249",
+    "location": "MEGHALAYA, INDIA REGION 🌍",
+    "magnitude": "3.4",
+    "depth": "10 km",
+    "time": "2026-11-01 20:23 UTC",
+    "maps": "https://maps.google.com/?q=25.6690,90.6250"
   }
 ]
