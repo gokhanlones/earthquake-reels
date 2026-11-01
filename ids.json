@@ -150,5 +150,13 @@
     "depth": "26 km",
     "time": "2026-10-31 20:06 UTC",
     "maps": "https://maps.google.com/?q=11.5936,-88.7445"
+  },
+  {
+    "id": "20261031_0000288",
+    "location": "NEAR S. COAST OF WESTERN HONSHU 🌍",
+    "magnitude": "6",
+    "depth": "352 km",
+    "time": "2026-10-31 22:15 UTC",
+    "maps": "https://maps.google.com/?q=33.8220,136.9854"
   }
 ]
