@@ -278,5 +278,13 @@
     "depth": "10 km",
     "time": "2026-11-01 04:28 UTC",
     "maps": "https://maps.google.com/?q=7.6144,-81.0171"
+  },
+  {
+    "id": "20261101_0000055",
+    "location": "EASTERN HONSHU, JAPAN 🇯🇵",
+    "magnitude": "3.6",
+    "depth": "40 km",
+    "time": "2026-11-01 04:39 UTC",
+    "maps": "https://maps.google.com/?q=35.2000,137.3000"
   }
 ]
