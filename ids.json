@@ -510,5 +510,13 @@
     "depth": "39 km",
     "time": "2026-11-01 10:19 UTC",
     "maps": "https://maps.google.com/?q=39.8128,143.3008"
+  },
+  {
+    "id": "20261101_0000123",
+    "location": "ARMENIA 🇦🇲",
+    "magnitude": "3",
+    "depth": "13 km",
+    "time": "2026-11-01 10:41 UTC",
+    "maps": "https://maps.google.com/?q=41.1567,43.9369"
   }
 ]
