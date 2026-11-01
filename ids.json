@@ -574,5 +574,13 @@
     "depth": "19 km",
     "time": "2026-11-01 12:55 UTC",
     "maps": "https://maps.google.com/?q=19.0380,-65.0370"
+  },
+  {
+    "id": "20261101_0000151",
+    "location": "OFF COAST OF CENTRAL AMERICA 🌍",
+    "magnitude": "3.2",
+    "depth": "25 km",
+    "time": "2026-11-01 10:39 UTC",
+    "maps": "https://maps.google.com/?q=11.7310,-88.4490"
   }
 ]
