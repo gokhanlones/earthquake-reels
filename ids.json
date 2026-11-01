@@ -462,5 +462,13 @@
     "depth": "24 km",
     "time": "2026-11-01 07:50 UTC",
     "maps": "https://maps.google.com/?q=-30.1700,-69.3900"
+  },
+  {
+    "id": "20261101_0000111",
+    "location": "PHILIPPINE ISLANDS REGION 🌍",
+    "magnitude": "4.2",
+    "depth": "13 km",
+    "time": "2026-11-01 09:12 UTC",
+    "maps": "https://maps.google.com/?q=8.3400,127.4100"
   }
 ]
