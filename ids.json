@@ -438,5 +438,13 @@
     "depth": "10 km",
     "time": "2026-11-01 07:37 UTC",
     "maps": "https://maps.google.com/?q=-13.9872,165.6642"
+  },
+  {
+    "id": "20261101_0000081",
+    "location": "CYPRUS REGION 🌍",
+    "magnitude": "3.2",
+    "depth": "35 km",
+    "time": "2026-11-01 06:20 UTC",
+    "maps": "https://maps.google.com/?q=35.1155,34.5232"
   }
 ]
