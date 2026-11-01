@@ -406,5 +406,13 @@
     "depth": "5 km",
     "time": "2026-11-01 07:55 UTC",
     "maps": "https://maps.google.com/?q=7.6001,-80.9729"
+  },
+  {
+    "id": "20261101_0000096",
+    "location": "COLORADO 🇺🇸",
+    "magnitude": "3.7",
+    "depth": "9 km",
+    "time": "2026-11-01 07:55 UTC",
+    "maps": "https://maps.google.com/?q=37.0038,-104.9525"
   }
 ]
