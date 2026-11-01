@@ -134,5 +134,13 @@
     "depth": "37 km",
     "time": "2026-10-31 23:17 UTC",
     "maps": "https://maps.google.com/?q=60.9391,-149.8660"
+  },
+  {
+    "id": "20261101_0000017",
+    "location": "BIO-BIO, CHILE 🇨🇱",
+    "magnitude": "3.3",
+    "depth": "52 km",
+    "time": "2026-11-01 01:04 UTC",
+    "maps": "https://maps.google.com/?q=-37.1500,-72.2100"
   }
 ]
