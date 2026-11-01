@@ -766,5 +766,13 @@
     "depth": "18 km",
     "time": "2026-11-01 17:01 UTC",
     "maps": "https://maps.google.com/?q=23.8055,123.2705"
+  },
+  {
+    "id": "20261101_0000208",
+    "location": "SOUTH SANDWICH ISLANDS REGION 🌍",
+    "magnitude": "5.1",
+    "depth": "108 km",
+    "time": "2026-11-01 17:11 UTC",
+    "maps": "https://maps.google.com/?q=-56.2566,-27.1985"
   }
 ]
