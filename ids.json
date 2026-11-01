@@ -286,5 +286,13 @@
     "depth": "40 km",
     "time": "2026-11-01 04:39 UTC",
     "maps": "https://maps.google.com/?q=35.2000,137.3000"
+  },
+  {
+    "id": "20261101_0000058",
+    "location": "THAILAND-LAOS BORDER REGION 🌍",
+    "magnitude": "3.9",
+    "depth": "1 km",
+    "time": "2026-11-01 05:01 UTC",
+    "maps": "https://maps.google.com/?q=19.1220,100.3110"
   }
 ]
