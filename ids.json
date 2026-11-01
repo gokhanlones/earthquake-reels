@@ -814,5 +814,13 @@
     "depth": "9 km",
     "time": "2026-11-01 18:48 UTC",
     "maps": "https://maps.google.com/?q=19.6500,120.9400"
+  },
+  {
+    "id": "20261101_0000236",
+    "location": "MANIPUR, INDIA REGION 🌍",
+    "magnitude": "3.1",
+    "depth": "29 km",
+    "time": "2026-11-01 19:03 UTC",
+    "maps": "https://maps.google.com/?q=24.5460,93.4480"
   }
 ]
