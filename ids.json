@@ -862,5 +862,13 @@
     "depth": "35 km",
     "time": "2026-11-01 17:29 UTC",
     "maps": "https://maps.google.com/?q=12.5740,-88.5020"
+  },
+  {
+    "id": "20261101_0000245",
+    "location": "GUATEMALA 🇬🇹",
+    "magnitude": "3.6",
+    "depth": "5 km",
+    "time": "2026-11-01 19:59 UTC",
+    "maps": "https://maps.google.com/?q=14.3740,-90.1040"
   }
 ]
