@@ -422,5 +422,13 @@
     "depth": "10 km",
     "time": "2026-11-01 08:11 UTC",
     "maps": "https://maps.google.com/?q=12.5900,123.5900"
+  },
+  {
+    "id": "20261101_0000103",
+    "location": "TAIWAN REGION 🌍",
+    "magnitude": "4.8",
+    "depth": "119 km",
+    "time": "2026-11-01 08:20 UTC",
+    "maps": "https://maps.google.com/?q=24.8805,122.0621"
   }
 ]
