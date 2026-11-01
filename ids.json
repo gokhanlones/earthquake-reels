@@ -646,5 +646,13 @@
     "depth": "4 km",
     "time": "2026-11-01 14:41 UTC",
     "maps": "https://maps.google.com/?q=18.4900,-73.5200"
+  },
+  {
+    "id": "20261101_0000180",
+    "location": "VIETNAM 🇻🇳",
+    "magnitude": "3.3",
+    "depth": "10 km",
+    "time": "2026-11-01 14:43 UTC",
+    "maps": "https://maps.google.com/?q=19.0440,105.2840"
   }
 ]
