@@ -542,5 +542,13 @@
     "depth": "134 km",
     "time": "2026-11-01 11:03 UTC",
     "maps": "https://maps.google.com/?q=36.2745,70.0514"
+  },
+  {
+    "id": "20261101_0000130",
+    "location": "ANDREANOF ISLANDS, ALEUTIAN IS. 🌍",
+    "magnitude": "4.2",
+    "depth": "32 km",
+    "time": "2026-11-01 10:56 UTC",
+    "maps": "https://maps.google.com/?q=51.1595,-178.4305"
   }
 ]
