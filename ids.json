@@ -350,5 +350,13 @@
     "depth": "221 km",
     "time": "2026-11-01 06:22 UTC",
     "maps": "https://maps.google.com/?q=-23.9200,-66.8500"
+  },
+  {
+    "id": "20261101_0000068",
+    "location": "SOUTHERN XINJIANG, CHINA 🇨🇳",
+    "magnitude": "3",
+    "depth": "10 km",
+    "time": "2026-11-01 05:30 UTC",
+    "maps": "https://maps.google.com/?q=41.0800,83.7900"
   }
 ]
