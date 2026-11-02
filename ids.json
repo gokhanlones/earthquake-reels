@@ -950,5 +950,13 @@
     "depth": "399 km",
     "time": "2026-11-02 16:58 UTC",
     "maps": "https://maps.google.com/?q=29.9620,139.1534"
+  },
+  {
+    "id": "20261102_0000271",
+    "location": "COCHABAMBA, BOLIVIA 🇧🇴",
+    "magnitude": "4.3",
+    "depth": "27 km",
+    "time": "2026-11-02 18:54 UTC",
+    "maps": "https://maps.google.com/?q=-17.4130,-64.5070"
   }
 ]
