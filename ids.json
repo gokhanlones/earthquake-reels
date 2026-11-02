@@ -622,5 +622,13 @@
     "depth": "89 km",
     "time": "2026-11-02 13:09 UTC",
     "maps": "https://maps.google.com/?q=2.5900,128.8000"
+  },
+  {
+    "id": "20261102_0000144",
+    "location": "EL SALVADOR 🇸🇻",
+    "magnitude": "3.9",
+    "depth": "5 km",
+    "time": "2026-11-02 11:57 UTC",
+    "maps": "https://maps.google.com/?q=13.8703,-89.7395"
   }
 ]
