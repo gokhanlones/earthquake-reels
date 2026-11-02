@@ -86,5 +86,13 @@
     "depth": "10 km",
     "time": "2026-11-01 21:09 UTC",
     "maps": "https://maps.google.com/?q=31.0594,80.5698"
+  },
+  {
+    "id": "20261102_0000014",
+    "location": "SOUTH OF JAVA, INDONESIA 🇮🇩",
+    "magnitude": "4.2",
+    "depth": "10 km",
+    "time": "2026-11-02 01:04 UTC",
+    "maps": "https://maps.google.com/?q=-9.1700,110.4300"
   }
 ]
