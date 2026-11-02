@@ -294,5 +294,13 @@
     "depth": "526 km",
     "time": "2026-11-02 02:46 UTC",
     "maps": "https://maps.google.com/?q=-23.9467,179.7114"
+  },
+  {
+    "id": "20261102_0000052",
+    "location": "ARAUCANIA, CHILE 🇨🇱",
+    "magnitude": "3.6",
+    "depth": "98 km",
+    "time": "2026-11-02 04:01 UTC",
+    "maps": "https://maps.google.com/?q=-38.7500,-72.1000"
   }
 ]
