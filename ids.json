@@ -374,5 +374,13 @@
     "depth": "1 km",
     "time": "2026-11-02 07:08 UTC",
     "maps": "https://maps.google.com/?q=15.2770,-90.2900"
+  },
+  {
+    "id": "20261102_0000083",
+    "location": "WESTERN SICHUAN, CHINA 🇨🇳",
+    "magnitude": "3",
+    "depth": "16 km",
+    "time": "2026-11-02 07:21 UTC",
+    "maps": "https://maps.google.com/?q=28.1800,100.7400"
   }
 ]
