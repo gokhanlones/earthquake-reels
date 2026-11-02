@@ -214,5 +214,13 @@
     "depth": "58 km",
     "time": "2026-11-01 22:39 UTC",
     "maps": "https://maps.google.com/?q=15.9980,-96.0850"
+  },
+  {
+    "id": "20261102_0000022",
+    "location": "KERMADEC ISLANDS REGION 🌍",
+    "magnitude": "5.1",
+    "depth": "10 km",
+    "time": "2026-11-02 01:18 UTC",
+    "maps": "https://maps.google.com/?q=-31.2244,-177.7236"
   }
 ]
