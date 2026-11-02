@@ -1046,5 +1046,13 @@
     "depth": "10 km",
     "time": "2026-11-02 20:18 UTC",
     "maps": "https://maps.google.com/?q=25.8960,102.7490"
+  },
+  {
+    "id": "20261102_0000286",
+    "location": "YUNNAN, CHINA 🇨🇳",
+    "magnitude": "3.4",
+    "depth": "10 km",
+    "time": "2026-11-02 20:19 UTC",
+    "maps": "https://maps.google.com/?q=22.6620,100.5400"
   }
 ]
