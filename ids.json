@@ -198,5 +198,13 @@
     "depth": "5 km",
     "time": "2026-11-02 02:29 UTC",
     "maps": "https://maps.google.com/?q=38.7174,23.5478"
+  },
+  {
+    "id": "20261102_0000027",
+    "location": "SOUTHEAST OF SHIKOKU, JAPAN 🇯🇵",
+    "magnitude": "4.5",
+    "depth": "510 km",
+    "time": "2026-11-02 01:54 UTC",
+    "maps": "https://maps.google.com/?q=30.8406,135.1987"
   }
 ]
