@@ -1118,5 +1118,13 @@
     "depth": "10 km",
     "time": "2026-11-02 23:40 UTC",
     "maps": "https://maps.google.com/?q=7.4924,-80.7102"
+  },
+  {
+    "id": "20261102_0000320",
+    "location": "EAST TIMOR REGION 🌍",
+    "magnitude": "3.7",
+    "depth": "10 km",
+    "time": "2026-11-02 23:04 UTC",
+    "maps": "https://maps.google.com/?q=-8.6200,127.4800"
   }
 ]
