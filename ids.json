@@ -734,5 +734,13 @@
     "depth": "44 km",
     "time": "2026-11-02 14:49 UTC",
     "maps": "https://maps.google.com/?q=-42.5900,-74.2800"
+  },
+  {
+    "id": "20261102_0000201",
+    "location": "PERU-ECUADOR BORDER REGION 🌍",
+    "magnitude": "4",
+    "depth": "5 km",
+    "time": "2026-11-02 15:29 UTC",
+    "maps": "https://maps.google.com/?q=-3.1500,-78.6100"
   }
 ]
