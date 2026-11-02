@@ -646,5 +646,13 @@
     "depth": "109 km",
     "time": "2026-11-02 13:40 UTC",
     "maps": "https://maps.google.com/?q=59.3220,-153.4470"
+  },
+  {
+    "id": "20261102_0000177",
+    "location": "COQUIMBO, CHILE 🇨🇱",
+    "magnitude": "3.9",
+    "depth": "50 km",
+    "time": "2026-11-02 14:08 UTC",
+    "maps": "https://maps.google.com/?q=-29.2300,-71.2400"
   }
 ]
