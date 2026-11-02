@@ -302,5 +302,13 @@
     "depth": "98 km",
     "time": "2026-11-02 04:01 UTC",
     "maps": "https://maps.google.com/?q=-38.7500,-72.1000"
+  },
+  {
+    "id": "20261102_0000044",
+    "location": "ADMIRALTY ISLANDS REGION, P.N.G. 🌍",
+    "magnitude": "4.5",
+    "depth": "10 km",
+    "time": "2026-11-02 02:24 UTC",
+    "maps": "https://maps.google.com/?q=-2.9446,146.4573"
   }
 ]
