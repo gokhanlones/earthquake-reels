@@ -1102,5 +1102,13 @@
     "depth": "269 km",
     "time": "2026-11-02 23:16 UTC",
     "maps": "https://maps.google.com/?q=-38.4493,175.1989"
+  },
+  {
+    "id": "20261102_0000323",
+    "location": "SOUTH ISLAND OF NEW ZEALAND 🌍",
+    "magnitude": "3.2",
+    "depth": "0 km",
+    "time": "2026-11-02 23:24 UTC",
+    "maps": "https://maps.google.com/?q=-44.4708,168.3180"
   }
 ]
