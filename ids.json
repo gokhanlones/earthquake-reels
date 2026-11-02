@@ -190,5 +190,13 @@
     "depth": "64 km",
     "time": "2026-11-02 02:07 UTC",
     "maps": "https://maps.google.com/?q=-8.4300,108.7500"
+  },
+  {
+    "id": "20261102_0000030",
+    "location": "GREECE 🇬🇷",
+    "magnitude": "3.1",
+    "depth": "5 km",
+    "time": "2026-11-02 02:29 UTC",
+    "maps": "https://maps.google.com/?q=38.7174,23.5478"
   }
 ]
