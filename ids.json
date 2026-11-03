@@ -294,5 +294,13 @@
     "depth": "19 km",
     "time": "2026-11-03 06:55 UTC",
     "maps": "https://maps.google.com/?q=-18.6500,-71.1700"
+  },
+  {
+    "id": "20261103_0000086",
+    "location": "LA RIOJA, ARGENTINA 🇦🇷",
+    "magnitude": "3.2",
+    "depth": "99 km",
+    "time": "2026-11-03 07:28 UTC",
+    "maps": "https://maps.google.com/?q=-28.7400,-68.8900"
   }
 ]
