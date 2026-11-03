@@ -526,5 +526,13 @@
     "depth": "10 km",
     "time": "2026-11-03 14:24 UTC",
     "maps": "https://maps.google.com/?q=36.6700,25.7900"
+  },
+  {
+    "id": "20261103_0000175",
+    "location": "OAXACA, MEXICO 🇲🇽",
+    "magnitude": "3.5",
+    "depth": "15 km",
+    "time": "2026-11-03 10:31 UTC",
+    "maps": "https://maps.google.com/?q=16.1890,-97.5580"
   }
 ]
