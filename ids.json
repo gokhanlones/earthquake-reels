@@ -758,5 +758,13 @@
     "depth": "10 km",
     "time": "2026-11-03 18:27 UTC",
     "maps": "https://maps.google.com/?q=32.4001,-115.1634"
+  },
+  {
+    "id": "20261103_0000260",
+    "location": "FOX ISLANDS, ALEUTIAN ISLANDS 🌍",
+    "magnitude": "3.1",
+    "depth": "9 km",
+    "time": "2026-11-03 16:38 UTC",
+    "maps": "https://maps.google.com/?q=51.9060,-169.4150"
   }
 ]
