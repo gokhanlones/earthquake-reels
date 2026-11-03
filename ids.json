@@ -350,5 +350,13 @@
     "depth": "30 km",
     "time": "2026-11-03 08:56 UTC",
     "maps": "https://maps.google.com/?q=-8.7500,111.3100"
+  },
+  {
+    "id": "20261103_0000108",
+    "location": "COLOMBIA 🇨🇴",
+    "magnitude": "5.8",
+    "depth": "35 km",
+    "time": "2026-11-03 09:13 UTC",
+    "maps": "https://maps.google.com/?q=3.8880,-75.6426"
   }
 ]
