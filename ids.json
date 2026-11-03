@@ -790,5 +790,13 @@
     "depth": "500 km",
     "time": "2026-11-03 16:30 UTC",
     "maps": "https://maps.google.com/?q=-25.2880,179.7187"
+  },
+  {
+    "id": "20261103_0000225",
+    "location": "VOLCANO ISLANDS, JAPAN REGION 🌍",
+    "magnitude": "5.2",
+    "depth": "139 km",
+    "time": "2026-11-03 16:48 UTC",
+    "maps": "https://maps.google.com/?q=24.1441,141.6725"
   }
 ]
