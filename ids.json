@@ -598,5 +598,13 @@
     "depth": "12 km",
     "time": "2026-11-03 15:25 UTC",
     "maps": "https://maps.google.com/?q=-8.1500,120.5600"
+  },
+  {
+    "id": "20261103_0000206",
+    "location": "SULAWESI, INDONESIA 🇮🇩",
+    "magnitude": "4.8",
+    "depth": "150 km",
+    "time": "2026-11-03 15:37 UTC",
+    "maps": "https://maps.google.com/?q=-0.1974,123.2577"
   }
 ]
