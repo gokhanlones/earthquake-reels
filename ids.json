@@ -670,5 +670,13 @@
     "depth": "128 km",
     "time": "2026-11-03 15:31 UTC",
     "maps": "https://maps.google.com/?q=17.4550,-95.0760"
+  },
+  {
+    "id": "20261103_0000234",
+    "location": "SOUTHEASTERN IRAN 🌍",
+    "magnitude": "4.1",
+    "depth": "10 km",
+    "time": "2026-11-03 17:07 UTC",
+    "maps": "https://maps.google.com/?q=29.1514,60.4194"
   }
 ]
