@@ -870,5 +870,13 @@
     "depth": "131 km",
     "time": "2026-11-03 22:00 UTC",
     "maps": "https://maps.google.com/?q=-23.2600,-68.2600"
+  },
+  {
+    "id": "20261103_0000294",
+    "location": "TAJIKISTAN 🇹🇯",
+    "magnitude": "5.2",
+    "depth": "10 km",
+    "time": "2026-11-03 21:34 UTC",
+    "maps": "https://maps.google.com/?q=39.3619,73.3023"
   }
 ]
