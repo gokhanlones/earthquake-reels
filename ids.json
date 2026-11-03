@@ -1134,5 +1134,13 @@
     "depth": "5 km",
     "time": "2026-11-02 23:52 UTC",
     "maps": "https://maps.google.com/?q=7.5523,-80.5197"
+  },
+  {
+    "id": "20261102_0000317",
+    "location": "HALMAHERA, INDONESIA 🇮🇩",
+    "magnitude": "3.1",
+    "depth": "10 km",
+    "time": "2026-11-02 22:44 UTC",
+    "maps": "https://maps.google.com/?q=-0.4300,127.0200"
   }
 ]
