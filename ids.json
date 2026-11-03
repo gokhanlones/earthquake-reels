@@ -1158,5 +1158,13 @@
     "depth": "28 km",
     "time": "2026-11-02 23:38 UTC",
     "maps": "https://maps.google.com/?q=19.5600,121.5400"
+  },
+  {
+    "id": "20261103_0000004",
+    "location": "ALASKA PENINSULA 🌍",
+    "magnitude": "3.4",
+    "depth": "25 km",
+    "time": "2026-11-03 00:27 UTC",
+    "maps": "https://maps.google.com/?q=56.8720,-155.5910"
   }
 ]
