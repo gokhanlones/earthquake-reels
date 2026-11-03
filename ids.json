@@ -590,5 +590,13 @@
     "depth": "15 km",
     "time": "2026-11-03 15:22 UTC",
     "maps": "https://maps.google.com/?q=24.4400,121.8400"
+  },
+  {
+    "id": "20261103_0000202",
+    "location": "FLORES REGION, INDONESIA 🇮🇩",
+    "magnitude": "3",
+    "depth": "12 km",
+    "time": "2026-11-03 15:25 UTC",
+    "maps": "https://maps.google.com/?q=-8.1500,120.5600"
   }
 ]
