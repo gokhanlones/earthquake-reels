@@ -518,5 +518,13 @@
     "depth": "123 km",
     "time": "2026-11-03 10:20 UTC",
     "maps": "https://maps.google.com/?q=16.8130,-94.1140"
+  },
+  {
+    "id": "20261103_0000188",
+    "location": "DODECANESE ISLANDS, GREECE 🇬🇷",
+    "magnitude": "3.8",
+    "depth": "10 km",
+    "time": "2026-11-03 14:24 UTC",
+    "maps": "https://maps.google.com/?q=36.6700,25.7900"
   }
 ]
