@@ -118,5 +118,13 @@
     "depth": "108 km",
     "time": "2026-11-03 01:41 UTC",
     "maps": "https://maps.google.com/?q=-19.0200,-69.3800"
+  },
+  {
+    "id": "20261103_0000044",
+    "location": "OFFSHORE COQUIMBO, CHILE 🇨🇱",
+    "magnitude": "3",
+    "depth": "24 km",
+    "time": "2026-11-03 03:42 UTC",
+    "maps": "https://maps.google.com/?q=-29.5000,-71.6300"
   }
 ]
