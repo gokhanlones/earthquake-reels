@@ -422,5 +422,13 @@
     "depth": "10 km",
     "time": "2026-11-03 11:43 UTC",
     "maps": "https://maps.google.com/?q=-8.2400,120.6500"
+  },
+  {
+    "id": "20261103_0000133",
+    "location": "EASTERN SICHUAN, CHINA 🇨🇳",
+    "magnitude": "3.1",
+    "depth": "11 km",
+    "time": "2026-11-03 10:56 UTC",
+    "maps": "https://maps.google.com/?q=28.5200,104.6800"
   }
 ]
