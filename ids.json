@@ -574,5 +574,13 @@
     "depth": "10 km",
     "time": "2026-11-03 10:37 UTC",
     "maps": "https://maps.google.com/?q=18.6250,-106.3930"
+  },
+  {
+    "id": "20261103_0000198",
+    "location": "MAULE, CHILE 🇨🇱",
+    "magnitude": "4",
+    "depth": "112 km",
+    "time": "2026-11-03 15:11 UTC",
+    "maps": "https://maps.google.com/?q=-36.1700,-71.4400"
   }
 ]
