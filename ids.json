@@ -726,5 +726,13 @@
     "depth": "174 km",
     "time": "2026-11-03 18:31 UTC",
     "maps": "https://maps.google.com/?q=-21.3100,-68.0400"
+  },
+  {
+    "id": "20261103_0000262",
+    "location": "NEI MONGOL-NINGXIA BDR, CHINA 🇨🇳",
+    "magnitude": "3.4",
+    "depth": "10 km",
+    "time": "2026-11-03 18:37 UTC",
+    "maps": "https://maps.google.com/?q=39.8000,106.4200"
   }
 ]
