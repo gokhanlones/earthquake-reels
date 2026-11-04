@@ -726,5 +726,13 @@
     "depth": "10 km",
     "time": "2026-11-04 16:19 UTC",
     "maps": "https://maps.google.com/?q=-28.7100,-68.5800"
+  },
+  {
+    "id": "20261104_0000223",
+    "location": "KYRGYZSTAN 🇰🇬",
+    "magnitude": "4.1",
+    "depth": "10 km",
+    "time": "2026-11-04 14:50 UTC",
+    "maps": "https://maps.google.com/?q=39.5500,73.2100"
   }
 ]
