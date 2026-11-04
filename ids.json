@@ -94,5 +94,13 @@
     "depth": "131 km",
     "time": "2026-11-03 23:34 UTC",
     "maps": "https://maps.google.com/?q=-21.0900,-68.6900"
+  },
+  {
+    "id": "20261104_0000003",
+    "location": "OKLAHOMA 🇺🇸",
+    "magnitude": "3.7",
+    "depth": "7 km",
+    "time": "2026-11-04 00:48 UTC",
+    "maps": "https://maps.google.com/?q=36.3632,-98.1537"
   }
 ]
