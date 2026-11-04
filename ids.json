@@ -622,5 +622,13 @@
     "depth": "12 km",
     "time": "2026-11-04 10:54 UTC",
     "maps": "https://maps.google.com/?q=17.3430,-93.8530"
+  },
+  {
+    "id": "20261104_0000180",
+    "location": "NEW BRITAIN REGION, P.N.G. 🌍",
+    "magnitude": "4.3",
+    "depth": "10 km",
+    "time": "2026-11-04 12:14 UTC",
+    "maps": "https://maps.google.com/?q=-5.4706,152.0301"
   }
 ]
