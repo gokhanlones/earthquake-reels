@@ -862,5 +862,13 @@
     "depth": "10 km",
     "time": "2026-11-04 19:55 UTC",
     "maps": "https://maps.google.com/?q=10.6284,-83.4926"
+  },
+  {
+    "id": "20261104_0000257",
+    "location": "DOMINICAN REPUBLIC REGION 🌍",
+    "magnitude": "3.5",
+    "depth": "10 km",
+    "time": "2026-11-04 17:09 UTC",
+    "maps": "https://maps.google.com/?q=19.4948,-68.0753"
   }
 ]
