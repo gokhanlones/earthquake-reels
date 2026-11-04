@@ -798,5 +798,13 @@
     "depth": "66 km",
     "time": "2026-11-04 18:51 UTC",
     "maps": "https://maps.google.com/?q=-29.4300,-70.8600"
+  },
+  {
+    "id": "20261104_0000256",
+    "location": "CENTRAL CALIFORNIA 🌍",
+    "magnitude": "3.3",
+    "depth": "1 km",
+    "time": "2026-11-04 18:59 UTC",
+    "maps": "https://maps.google.com/?q=35.9598,-117.3977"
   }
 ]
