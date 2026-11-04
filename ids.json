@@ -966,5 +966,13 @@
     "depth": "10 km",
     "time": "2026-11-03 20:19 UTC",
     "maps": "https://maps.google.com/?q=44.7000,86.0900"
+  },
+  {
+    "id": "20261103_0000328",
+    "location": "VERACRUZ, MEXICO 🇲🇽",
+    "magnitude": "4",
+    "depth": "135 km",
+    "time": "2026-11-03 23:50 UTC",
+    "maps": "https://maps.google.com/?q=17.2550,-94.7410"
   }
 ]
