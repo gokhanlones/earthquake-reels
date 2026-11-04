@@ -838,5 +838,13 @@
     "depth": "10 km",
     "time": "2026-11-04 19:28 UTC",
     "maps": "https://maps.google.com/?q=32.2000,130.2000"
+  },
+  {
+    "id": "20261104_0000272",
+    "location": "BATAN ISL REGION, PHILIPPINES 🇵🇭",
+    "magnitude": "3.3",
+    "depth": "45 km",
+    "time": "2026-11-04 19:36 UTC",
+    "maps": "https://maps.google.com/?q=20.0400,121.5600"
   }
 ]
