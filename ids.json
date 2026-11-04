@@ -118,5 +118,13 @@
     "depth": "135 km",
     "time": "2026-11-03 23:50 UTC",
     "maps": "https://maps.google.com/?q=17.2550,-94.7410"
+  },
+  {
+    "id": "20261103_0000319",
+    "location": "AZORES ISLANDS, PORTUGAL 🇵🇹",
+    "magnitude": "3.1",
+    "depth": "1 km",
+    "time": "2026-11-03 23:30 UTC",
+    "maps": "https://maps.google.com/?q=37.8490,-26.2710"
   }
 ]
