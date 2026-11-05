@@ -654,5 +654,13 @@
     "depth": "24 km",
     "time": "2026-11-05 17:57 UTC",
     "maps": "https://maps.google.com/?q=13.5140,-90.5690"
+  },
+  {
+    "id": "20261105_0000230",
+    "location": "ICELAND REGION 🌍",
+    "magnitude": "3.5",
+    "depth": "1 km",
+    "time": "2026-11-05 17:34 UTC",
+    "maps": "https://maps.google.com/?q=67.2090,-18.8290"
   }
 ]
