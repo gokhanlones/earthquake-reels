@@ -78,5 +78,13 @@
     "depth": "10 km",
     "time": "2026-11-04 23:40 UTC",
     "maps": "https://maps.google.com/?q=32.4900,93.9200"
+  },
+  {
+    "id": "20261104_0000316",
+    "location": "ISLAND OF HAWAII, HAWAII 🇺🇸",
+    "magnitude": "3.2",
+    "depth": "5 km",
+    "time": "2026-11-04 21:59 UTC",
+    "maps": "https://maps.google.com/?q=19.3923,-155.6058"
   }
 ]
