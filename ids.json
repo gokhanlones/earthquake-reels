@@ -990,5 +990,13 @@
     "depth": "10 km",
     "time": "2026-11-04 23:40 UTC",
     "maps": "https://maps.google.com/?q=32.4900,93.9200"
+  },
+  {
+    "id": "20261105_0000001",
+    "location": "WESTERN TURKEY 🌍",
+    "magnitude": "4",
+    "depth": "6 km",
+    "time": "2026-11-05 00:23 UTC",
+    "maps": "https://maps.google.com/?q=37.9980,30.0728"
   }
 ]
