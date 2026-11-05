@@ -558,5 +558,13 @@
     "depth": "5 km",
     "time": "2026-11-05 15:32 UTC",
     "maps": "https://maps.google.com/?q=7.5928,-81.1871"
+  },
+  {
+    "id": "20261105_0000206",
+    "location": "NEUQUEN, ARGENTINA 🇦🇷",
+    "magnitude": "3.1",
+    "depth": "10 km",
+    "time": "2026-11-05 15:27 UTC",
+    "maps": "https://maps.google.com/?q=-37.6100,-69.1200"
   }
 ]
