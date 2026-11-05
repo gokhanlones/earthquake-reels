@@ -374,5 +374,13 @@
     "depth": "10 km",
     "time": "2026-11-05 08:22 UTC",
     "maps": "https://maps.google.com/?q=7.3285,-80.0950"
+  },
+  {
+    "id": "20261105_0000124",
+    "location": "LAKE VICTORIA REGION, TANZANIA 🇹🇿",
+    "magnitude": "5.2",
+    "depth": "10 km",
+    "time": "2026-11-05 09:22 UTC",
+    "maps": "https://maps.google.com/?q=-3.4817,32.0862"
   }
 ]
