@@ -734,5 +734,13 @@
     "depth": "542 km",
     "time": "2026-11-05 16:44 UTC",
     "maps": "https://maps.google.com/?q=-17.7580,-178.5590"
+  },
+  {
+    "id": "20261105_0000263",
+    "location": "LA PAZ, BOLIVIA 🇧🇴",
+    "magnitude": "4",
+    "depth": "310 km",
+    "time": "2026-11-05 19:10 UTC",
+    "maps": "https://maps.google.com/?q=-17.3920,-67.1230"
   }
 ]
