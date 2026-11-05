@@ -62,5 +62,13 @@
     "depth": "45 km",
     "time": "2026-11-04 19:36 UTC",
     "maps": "https://maps.google.com/?q=20.0400,121.5600"
+  },
+  {
+    "id": "20261104_0000329",
+    "location": "PANAMA 🇵🇦",
+    "magnitude": "3.8",
+    "depth": "5 km",
+    "time": "2026-11-04 23:47 UTC",
+    "maps": "https://maps.google.com/?q=7.3997,-80.0594"
   }
 ]
