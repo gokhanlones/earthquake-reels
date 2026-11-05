@@ -302,5 +302,13 @@
     "depth": "10 km",
     "time": "2026-11-05 05:29 UTC",
     "maps": "https://maps.google.com/?q=-6.6800,102.5900"
+  },
+  {
+    "id": "20261105_0000080",
+    "location": "TOBAGO REGION, TRINIDAD-TOBAGO 🌍",
+    "magnitude": "3.5",
+    "depth": "10 km",
+    "time": "2026-11-05 05:43 UTC",
+    "maps": "https://maps.google.com/?q=11.4940,-60.0050"
   }
 ]
