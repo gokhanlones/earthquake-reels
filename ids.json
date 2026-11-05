@@ -478,5 +478,13 @@
     "depth": "10 km",
     "time": "2026-11-05 13:41 UTC",
     "maps": "https://maps.google.com/?q=0.5200,121.9800"
+  },
+  {
+    "id": "20261105_0000181",
+    "location": "KALIMANTAN, INDONESIA 🇮🇩",
+    "magnitude": "3.9",
+    "depth": "10 km",
+    "time": "2026-11-05 13:48 UTC",
+    "maps": "https://maps.google.com/?q=0.6200,108.5100"
   }
 ]
