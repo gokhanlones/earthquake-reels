@@ -534,5 +534,13 @@
     "depth": "111 km",
     "time": "2026-11-05 09:38 UTC",
     "maps": "https://maps.google.com/?q=15.6900,-93.1290"
+  },
+  {
+    "id": "20261105_0000184",
+    "location": "OFFSHORE VERACRUZ, MEXICO 🇲🇽",
+    "magnitude": "3.6",
+    "depth": "16 km",
+    "time": "2026-11-05 10:42 UTC",
+    "maps": "https://maps.google.com/?q=18.9780,-95.5910"
   }
 ]
