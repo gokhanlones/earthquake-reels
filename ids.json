@@ -598,5 +598,13 @@
     "depth": "5 km",
     "time": "2026-11-05 14:08 UTC",
     "maps": "https://maps.google.com/?q=7.6941,-81.0055"
+  },
+  {
+    "id": "20261105_0000221",
+    "location": "LEYTE, PHILIPPINES 🇵🇭",
+    "magnitude": "3.7",
+    "depth": "10 km",
+    "time": "2026-11-05 16:48 UTC",
+    "maps": "https://maps.google.com/?q=11.2400,124.6100"
   }
 ]
