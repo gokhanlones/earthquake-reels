@@ -646,5 +646,13 @@
     "depth": "0 km",
     "time": "2026-11-05 17:51 UTC",
     "maps": "https://maps.google.com/?q=67.2210,-18.7760"
+  },
+  {
+    "id": "20261105_0000235",
+    "location": "OFFSHORE GUATEMALA 🌍",
+    "magnitude": "3.8",
+    "depth": "24 km",
+    "time": "2026-11-05 17:57 UTC",
+    "maps": "https://maps.google.com/?q=13.5140,-90.5690"
   }
 ]
