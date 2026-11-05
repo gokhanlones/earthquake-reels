@@ -574,5 +574,13 @@
     "depth": "10 km",
     "time": "2026-11-05 16:18 UTC",
     "maps": "https://maps.google.com/?q=7.6843,-81.5500"
+  },
+  {
+    "id": "20261105_0000204",
+    "location": "EASTERN XIZANG 🌍",
+    "magnitude": "4.2",
+    "depth": "10 km",
+    "time": "2026-11-05 15:07 UTC",
+    "maps": "https://maps.google.com/?q=30.4398,94.5415"
   }
 ]
