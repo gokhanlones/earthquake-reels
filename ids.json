@@ -190,5 +190,13 @@
     "depth": "26 km",
     "time": "2026-11-04 23:55 UTC",
     "maps": "https://maps.google.com/?q=19.4543,-66.9053"
+  },
+  {
+    "id": "20261105_0000043",
+    "location": "POTOSI, BOLIVIA 🇧🇴",
+    "magnitude": "3",
+    "depth": "203 km",
+    "time": "2026-11-05 03:14 UTC",
+    "maps": "https://maps.google.com/?q=-21.2600,-67.5900"
   }
 ]
