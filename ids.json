@@ -606,5 +606,13 @@
     "depth": "10 km",
     "time": "2026-11-05 16:48 UTC",
     "maps": "https://maps.google.com/?q=11.2400,124.6100"
+  },
+  {
+    "id": "20261105_0000223",
+    "location": "KASHMIR-XINJIANG BORDER REGION 🌍",
+    "magnitude": "4.7",
+    "depth": "110 km",
+    "time": "2026-11-05 16:56 UTC",
+    "maps": "https://maps.google.com/?q=35.2749,77.9021"
   }
 ]
