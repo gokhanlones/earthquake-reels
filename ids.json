@@ -798,5 +798,13 @@
     "depth": "10 km",
     "time": "2026-11-05 21:56 UTC",
     "maps": "https://maps.google.com/?q=17.0900,120.0700"
+  },
+  {
+    "id": "20261105_0000290",
+    "location": "CAUCASUS REGION, RUSSIA 🇷🇺",
+    "magnitude": "3.6",
+    "depth": "90 km",
+    "time": "2026-11-05 20:01 UTC",
+    "maps": "https://maps.google.com/?q=43.1100,45.5100"
   }
 ]
