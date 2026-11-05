@@ -742,5 +742,13 @@
     "depth": "310 km",
     "time": "2026-11-05 19:10 UTC",
     "maps": "https://maps.google.com/?q=-17.3920,-67.1230"
+  },
+  {
+    "id": "20261105_0000249",
+    "location": "LUZON, PHILIPPINES 🇵🇭",
+    "magnitude": "3.4",
+    "depth": "9 km",
+    "time": "2026-11-05 18:26 UTC",
+    "maps": "https://maps.google.com/?q=18.8500,120.0500"
   }
 ]
