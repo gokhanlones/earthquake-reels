@@ -22,5 +22,13 @@
     "depth": "27 km",
     "time": "2026-11-05 23:00 UTC",
     "maps": "https://maps.google.com/?q=-3.7600,101.8700"
+  },
+  {
+    "id": "20261106_0000027",
+    "location": "NEPAL 🇳🇵",
+    "magnitude": "3.9",
+    "depth": "10 km",
+    "time": "2026-11-06 01:25 UTC",
+    "maps": "https://maps.google.com/?q=29.9400,82.0300"
   }
 ]
