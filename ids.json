@@ -470,5 +470,13 @@
     "depth": "35 km",
     "time": "2026-11-06 06:28 UTC",
     "maps": "https://maps.google.com/?q=5.2999,125.0977"
+  },
+  {
+    "id": "20261106_0000131",
+    "location": "KEP. MENTAWAI REGION, INDONESIA 🇮🇩",
+    "magnitude": "4.3",
+    "depth": "14 km",
+    "time": "2026-11-06 10:30 UTC",
+    "maps": "https://maps.google.com/?q=-1.1500,98.7500"
   }
 ]
