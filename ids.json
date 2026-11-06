@@ -942,5 +942,13 @@
     "depth": "97 km",
     "time": "2026-11-06 00:23 UTC",
     "maps": "https://maps.google.com/?q=13.6700,120.4900"
+  },
+  {
+    "id": "20261105_0000339",
+    "location": "NORTHWESTERN IRAN 🌍",
+    "magnitude": "3.7",
+    "depth": "15 km",
+    "time": "2026-11-05 23:41 UTC",
+    "maps": "https://maps.google.com/?q=38.4321,45.7536"
   }
 ]
