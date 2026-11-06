@@ -734,5 +734,13 @@
     "depth": "10 km",
     "time": "2026-11-06 17:00 UTC",
     "maps": "https://maps.google.com/?q=-33.0600,-72.7900"
+  },
+  {
+    "id": "20261106_0000229",
+    "location": "BALI REGION, INDONESIA 🇮🇩",
+    "magnitude": "3.5",
+    "depth": "19 km",
+    "time": "2026-11-06 18:32 UTC",
+    "maps": "https://maps.google.com/?q=-8.4600,115.8900"
   }
 ]
