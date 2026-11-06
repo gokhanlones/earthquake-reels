@@ -846,5 +846,13 @@
     "depth": "17 km",
     "time": "2026-11-06 22:24 UTC",
     "maps": "https://maps.google.com/?q=34.7177,24.9161"
+  },
+  {
+    "id": "20261106_0000276",
+    "location": "CATANDUANES, PHILIPPINES 🇵🇭",
+    "magnitude": "3.9",
+    "depth": "10 km",
+    "time": "2026-11-06 22:25 UTC",
+    "maps": "https://maps.google.com/?q=13.4800,124.3300"
   }
 ]
