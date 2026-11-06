@@ -390,5 +390,13 @@
     "depth": "44 km",
     "time": "2026-11-06 07:23 UTC",
     "maps": "https://maps.google.com/?q=-28.3600,-71.8700"
+  },
+  {
+    "id": "20261106_0000094",
+    "location": "OFFSHORE OAXACA, MEXICO 🇲🇽",
+    "magnitude": "4",
+    "depth": "9 km",
+    "time": "2026-11-06 06:19 UTC",
+    "maps": "https://maps.google.com/?q=15.2500,-96.5660"
   }
 ]
