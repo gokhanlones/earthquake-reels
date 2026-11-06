@@ -486,5 +486,13 @@
     "depth": "10 km",
     "time": "2026-11-06 10:39 UTC",
     "maps": "https://maps.google.com/?q=34.9300,142.2570"
+  },
+  {
+    "id": "20261106_0000138",
+    "location": "SOUTHERN GREECE 🌍",
+    "magnitude": "3",
+    "depth": "5 km",
+    "time": "2026-11-06 11:11 UTC",
+    "maps": "https://maps.google.com/?q=37.2646,22.1000"
   }
 ]
