@@ -694,5 +694,13 @@
     "depth": "10 km",
     "time": "2026-11-06 17:38 UTC",
     "maps": "https://maps.google.com/?q=-2.9000,122.3900"
+  },
+  {
+    "id": "20261106_0000217",
+    "location": "BONIN ISLANDS, JAPAN REGION 🌍",
+    "magnitude": "4.2",
+    "depth": "450 km",
+    "time": "2026-11-06 13:52 UTC",
+    "maps": "https://maps.google.com/?q=26.9139,140.2478"
   }
 ]
