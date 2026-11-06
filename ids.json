@@ -742,5 +742,13 @@
     "depth": "19 km",
     "time": "2026-11-06 18:32 UTC",
     "maps": "https://maps.google.com/?q=-8.4600,115.8900"
+  },
+  {
+    "id": "20261106_0000226",
+    "location": "FIJI REGION 🌍",
+    "magnitude": "4.3",
+    "depth": "567 km",
+    "time": "2026-11-06 17:53 UTC",
+    "maps": "https://maps.google.com/?q=-18.0741,-178.1910"
   }
 ]
