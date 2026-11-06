@@ -558,5 +558,13 @@
     "depth": "10 km",
     "time": "2026-11-06 12:41 UTC",
     "maps": "https://maps.google.com/?q=40.8045,30.8567"
+  },
+  {
+    "id": "20261106_0000139",
+    "location": "OFFSHORE ATACAMA, CHILE 🇨🇱",
+    "magnitude": "3.5",
+    "depth": "54 km",
+    "time": "2026-11-06 11:09 UTC",
+    "maps": "https://maps.google.com/?q=-27.3400,-71.0600"
   }
 ]
