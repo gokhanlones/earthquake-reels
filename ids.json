@@ -326,5 +326,13 @@
     "depth": "220 km",
     "time": "2026-11-06 05:18 UTC",
     "maps": "https://maps.google.com/?q=-30.7800,-69.7800"
+  },
+  {
+    "id": "20261106_0000076",
+    "location": "PUERTO RICO 🇵🇷",
+    "magnitude": "3.5",
+    "depth": "59 km",
+    "time": "2026-11-06 04:03 UTC",
+    "maps": "https://maps.google.com/?q=18.4006,-67.1223"
   }
 ]
