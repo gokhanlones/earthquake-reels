@@ -798,5 +798,13 @@
     "depth": "62 km",
     "time": "2026-11-06 20:26 UTC",
     "maps": "https://maps.google.com/?q=59.4960,-151.9150"
+  },
+  {
+    "id": "20261106_0000241",
+    "location": "SOUTH OF PANAMA 🌍",
+    "magnitude": "4.7",
+    "depth": "35 km",
+    "time": "2026-11-06 19:07 UTC",
+    "maps": "https://maps.google.com/?q=7.3803,-79.8189"
   }
 ]
