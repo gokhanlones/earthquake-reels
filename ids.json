@@ -622,5 +622,13 @@
     "depth": "10 km",
     "time": "2026-11-06 12:36 UTC",
     "maps": "https://maps.google.com/?q=7.6743,-81.1859"
+  },
+  {
+    "id": "20261106_0000188",
+    "location": "WESTERN XIZANG-INDIA BORDER REG. 🌍",
+    "magnitude": "3.5",
+    "depth": "10 km",
+    "time": "2026-11-06 14:20 UTC",
+    "maps": "https://maps.google.com/?q=30.1070,80.5530"
   }
 ]
