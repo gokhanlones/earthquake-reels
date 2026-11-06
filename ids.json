@@ -414,5 +414,13 @@
     "depth": "246 km",
     "time": "2026-11-06 08:14 UTC",
     "maps": "https://maps.google.com/?q=-18.7543,169.2644"
+  },
+  {
+    "id": "20261106_0000115",
+    "location": "CENTRAL MONGOLIA 🌍",
+    "magnitude": "4.4",
+    "depth": "10 km",
+    "time": "2026-11-06 07:20 UTC",
+    "maps": "https://maps.google.com/?q=47.1900,101.8700"
   }
 ]
