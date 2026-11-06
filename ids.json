@@ -670,5 +670,13 @@
     "depth": "106 km",
     "time": "2026-11-06 17:01 UTC",
     "maps": "https://maps.google.com/?q=-20.6800,-68.9900"
+  },
+  {
+    "id": "20261106_0000198",
+    "location": "SAMAR, PHILIPPINES 🇵🇭",
+    "magnitude": "3.9",
+    "depth": "10 km",
+    "time": "2026-11-06 15:20 UTC",
+    "maps": "https://maps.google.com/?q=11.6800,125.7900"
   }
 ]
