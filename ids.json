@@ -630,5 +630,13 @@
     "depth": "4 km",
     "time": "2026-11-07 15:05 UTC",
     "maps": "https://maps.google.com/?q=5.4600,125.4400"
+  },
+  {
+    "id": "20261107_0000167",
+    "location": "OFFSHORE EL SALVADOR 🌍",
+    "magnitude": "3",
+    "depth": "19 km",
+    "time": "2026-11-07 11:25 UTC",
+    "maps": "https://maps.google.com/?q=12.2500,-88.3130"
   }
 ]
