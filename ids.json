@@ -902,5 +902,13 @@
     "depth": "237 km",
     "time": "2026-11-07 00:12 UTC",
     "maps": "https://maps.google.com/?q=-36.6046,177.0043"
+  },
+  {
+    "id": "20261107_0000004",
+    "location": "WESTERN XIZANG 🌍",
+    "magnitude": "3.9",
+    "depth": "182 km",
+    "time": "2026-11-07 00:20 UTC",
+    "maps": "https://maps.google.com/?q=33.9263,81.8844"
   }
 ]
