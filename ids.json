@@ -750,5 +750,13 @@
     "depth": "60 km",
     "time": "2026-11-07 17:30 UTC",
     "maps": "https://maps.google.com/?q=36.2000,139.8000"
+  },
+  {
+    "id": "20261107_0000200",
+    "location": "NORTHERN QINGHAI, CHINA 🇨🇳",
+    "magnitude": "3.2",
+    "depth": "10 km",
+    "time": "2026-11-07 16:06 UTC",
+    "maps": "https://maps.google.com/?q=37.8900,95.5100"
   }
 ]
