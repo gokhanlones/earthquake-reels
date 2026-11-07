@@ -414,5 +414,13 @@
     "depth": "21 km",
     "time": "2026-11-07 08:38 UTC",
     "maps": "https://maps.google.com/?q=19.0335,-67.4432"
+  },
+  {
+    "id": "20261107_0000111",
+    "location": "MADAGASCAR 🇲🇬",
+    "magnitude": "4.1",
+    "depth": "10 km",
+    "time": "2026-11-07 10:23 UTC",
+    "maps": "https://maps.google.com/?q=-15.7600,47.8200"
   }
 ]
