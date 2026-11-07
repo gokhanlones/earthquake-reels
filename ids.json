@@ -94,5 +94,13 @@
     "depth": "10 km",
     "time": "2026-11-06 22:25 UTC",
     "maps": "https://maps.google.com/?q=13.4800,124.3300"
+  },
+  {
+    "id": "20261107_0000015",
+    "location": "MASBATE REGION, PHILIPPINES 🇵🇭",
+    "magnitude": "3.4",
+    "depth": "10 km",
+    "time": "2026-11-07 01:20 UTC",
+    "maps": "https://maps.google.com/?q=12.1300,123.8900"
   }
 ]
