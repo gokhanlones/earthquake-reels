@@ -126,5 +126,13 @@
     "depth": "84 km",
     "time": "2026-11-06 20:31 UTC",
     "maps": "https://maps.google.com/?q=14.7020,-92.2930"
+  },
+  {
+    "id": "20261107_0000017",
+    "location": "SOUTH OF TIMOR 🌍",
+    "magnitude": "4",
+    "depth": "40 km",
+    "time": "2026-11-07 01:41 UTC",
+    "maps": "https://maps.google.com/?q=-11.6100,122.4000"
   }
 ]
