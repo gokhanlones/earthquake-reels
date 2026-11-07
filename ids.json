@@ -654,5 +654,13 @@
     "depth": "571 km",
     "time": "2026-11-07 15:05 UTC",
     "maps": "https://maps.google.com/?q=-20.8440,-178.5280"
+  },
+  {
+    "id": "20261107_0000186",
+    "location": "NAMIBIA 🇳🇦",
+    "magnitude": "4.9",
+    "depth": "8 km",
+    "time": "2026-11-07 15:22 UTC",
+    "maps": "https://maps.google.com/?q=-19.7402,14.6467"
   }
 ]
