@@ -806,5 +806,13 @@
     "depth": "10 km",
     "time": "2026-11-07 19:07 UTC",
     "maps": "https://maps.google.com/?q=9.1779,-82.1216"
+  },
+  {
+    "id": "20261107_0000236",
+    "location": "NEAR S.E. COAST OF AUSTRALIA 🌍",
+    "magnitude": "3.5",
+    "depth": "2 km",
+    "time": "2026-11-07 19:12 UTC",
+    "maps": "https://maps.google.com/?q=-34.1830,150.7044"
   }
 ]
