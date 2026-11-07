@@ -822,5 +822,13 @@
     "depth": "110 km",
     "time": "2026-11-07 19:28 UTC",
     "maps": "https://maps.google.com/?q=-22.1800,-68.6800"
+  },
+  {
+    "id": "20261107_0000234",
+    "location": "SOUTHEAST OF LOYALTY ISLANDS 🌍",
+    "magnitude": "4.3",
+    "depth": "10 km",
+    "time": "2026-11-07 15:55 UTC",
+    "maps": "https://maps.google.com/?q=-22.5556,170.0629"
   }
 ]
