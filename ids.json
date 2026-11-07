@@ -382,5 +382,13 @@
     "depth": "5 km",
     "time": "2026-11-07 08:36 UTC",
     "maps": "https://maps.google.com/?q=-1.4800,-80.4300"
+  },
+  {
+    "id": "20261107_0000089",
+    "location": "JUJUY, ARGENTINA 🇦🇷",
+    "magnitude": "3.2",
+    "depth": "276 km",
+    "time": "2026-11-07 08:40 UTC",
+    "maps": "https://maps.google.com/?q=-22.6400,-66.7400"
   }
 ]
