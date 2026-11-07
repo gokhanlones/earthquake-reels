@@ -214,5 +214,13 @@
     "depth": "110 km",
     "time": "2026-11-07 02:34 UTC",
     "maps": "https://maps.google.com/?q=-29.7100,-68.9500"
+  },
+  {
+    "id": "20261106_0000290",
+    "location": "GULF OF CALIFORNIA 🌍",
+    "magnitude": "3.6",
+    "depth": "13 km",
+    "time": "2026-11-06 22:12 UTC",
+    "maps": "https://maps.google.com/?q=30.8570,-114.4820"
   }
 ]
