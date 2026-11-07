@@ -862,5 +862,13 @@
     "depth": "22 km",
     "time": "2026-11-07 19:55 UTC",
     "maps": "https://maps.google.com/?q=11.2360,-87.3730"
+  },
+  {
+    "id": "20261107_0000252",
+    "location": "PAKISTAN 🇵🇰",
+    "magnitude": "4.2",
+    "depth": "10 km",
+    "time": "2026-11-07 20:37 UTC",
+    "maps": "https://maps.google.com/?q=29.5493,70.3234"
   }
 ]
