@@ -606,5 +606,13 @@
     "depth": "56 km",
     "time": "2026-11-07 14:52 UTC",
     "maps": "https://maps.google.com/?q=-24.1600,-70.4400"
+  },
+  {
+    "id": "20261107_0000177",
+    "location": "NORTH OF PANAMA 🌍",
+    "magnitude": "4.2",
+    "depth": "3 km",
+    "time": "2026-11-07 14:59 UTC",
+    "maps": "https://maps.google.com/?q=11.8278,-80.5608"
   }
 ]
