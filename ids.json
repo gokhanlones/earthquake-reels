@@ -782,5 +782,13 @@
     "depth": "113 km",
     "time": "2026-11-07 18:44 UTC",
     "maps": "https://maps.google.com/?q=-20.4900,-69.2200"
+  },
+  {
+    "id": "20261107_0000215",
+    "location": "OFF COAST OF ECUADOR 🌍",
+    "magnitude": "4.7",
+    "depth": "10 km",
+    "time": "2026-11-07 17:17 UTC",
+    "maps": "https://maps.google.com/?q=-1.8505,-81.1439"
   }
 ]
