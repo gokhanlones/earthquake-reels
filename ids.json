@@ -670,5 +670,13 @@
     "depth": "20 km",
     "time": "2026-11-07 15:42 UTC",
     "maps": "https://maps.google.com/?q=40.3000,142.7000"
+  },
+  {
+    "id": "20261107_0000189",
+    "location": "OFF THE COAST OF EL SALVADOR 🌍",
+    "magnitude": "3.4",
+    "depth": "5 km",
+    "time": "2026-11-07 15:47 UTC",
+    "maps": "https://maps.google.com/?q=12.8850,-90.5360"
   }
 ]
