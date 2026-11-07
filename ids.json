@@ -710,5 +710,13 @@
     "depth": "38 km",
     "time": "2026-11-07 16:04 UTC",
     "maps": "https://maps.google.com/?q=34.8611,137.6910"
+  },
+  {
+    "id": "20261107_0000204",
+    "location": "VALPARAISO, CHILE 🇨🇱",
+    "magnitude": "3.1",
+    "depth": "105 km",
+    "time": "2026-11-07 16:59 UTC",
+    "maps": "https://maps.google.com/?q=-32.6700,-70.2100"
   }
 ]
