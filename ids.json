@@ -166,5 +166,13 @@
     "depth": "10 km",
     "time": "2026-11-08 00:02 UTC",
     "maps": "https://maps.google.com/?q=-45.4201,167.0473"
+  },
+  {
+    "id": "20261107_0000268",
+    "location": "LOS LAGOS, CHILE 🇨🇱",
+    "magnitude": "3.5",
+    "depth": "10 km",
+    "time": "2026-11-07 21:31 UTC",
+    "maps": "https://maps.google.com/?q=-40.1400,-73.6400"
   }
 ]
