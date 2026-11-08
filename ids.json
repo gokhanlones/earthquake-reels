@@ -574,5 +574,13 @@
     "depth": "39 km",
     "time": "2026-11-08 11:58 UTC",
     "maps": "https://maps.google.com/?q=-19.6880,-70.1661"
+  },
+  {
+    "id": "20261108_0000129",
+    "location": "KODIAK ISLAND REGION, ALASKA 🇺🇸",
+    "magnitude": "3.4",
+    "depth": "35 km",
+    "time": "2026-11-08 11:10 UTC",
+    "maps": "https://maps.google.com/?q=57.0567,-154.7132"
   }
 ]
