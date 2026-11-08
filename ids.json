@@ -70,5 +70,13 @@
     "depth": "10 km",
     "time": "2026-11-08 00:33 UTC",
     "maps": "https://maps.google.com/?q=-1.8900,139.0600"
+  },
+  {
+    "id": "20261107_0000291",
+    "location": "MORO GULF, MINDANAO 🇵🇭",
+    "magnitude": "4.9",
+    "depth": "607 km",
+    "time": "2026-11-07 23:25 UTC",
+    "maps": "https://maps.google.com/?q=6.7060,123.6541"
   }
 ]
