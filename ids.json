@@ -198,5 +198,13 @@
     "depth": "60 km",
     "time": "2026-11-07 22:38 UTC",
     "maps": "https://maps.google.com/?q=37.6000,141.8000"
+  },
+  {
+    "id": "20261108_0000031",
+    "location": "HIMACHAL PRADESH, INDIA 🇮🇳",
+    "magnitude": "4.1",
+    "depth": "228 km",
+    "time": "2026-11-08 02:10 UTC",
+    "maps": "https://maps.google.com/?q=31.3572,77.6482"
   }
 ]
