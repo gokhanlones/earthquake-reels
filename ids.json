@@ -982,5 +982,13 @@
     "depth": "10 km",
     "time": "2026-11-08 20:03 UTC",
     "maps": "https://maps.google.com/?q=1.5800,122.3500"
+  },
+  {
+    "id": "20261108_0000281",
+    "location": "BHUTAN 🇧🇹",
+    "magnitude": "3.1",
+    "depth": "5 km",
+    "time": "2026-11-08 23:06 UTC",
+    "maps": "https://maps.google.com/?q=27.8090,90.8650"
   }
 ]
