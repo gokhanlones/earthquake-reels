@@ -758,5 +758,13 @@
     "depth": "10 km",
     "time": "2026-11-08 16:58 UTC",
     "maps": "https://maps.google.com/?q=39.0888,16.4106"
+  },
+  {
+    "id": "20261108_0000191",
+    "location": "CENTRAL KAZAKHSTAN 🌍",
+    "magnitude": "3.7",
+    "depth": "11 km",
+    "time": "2026-11-08 15:38 UTC",
+    "maps": "https://maps.google.com/?q=44.5105,74.4454"
   }
 ]
