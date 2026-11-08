@@ -462,5 +462,13 @@
     "depth": "10 km",
     "time": "2026-11-08 08:36 UTC",
     "maps": "https://maps.google.com/?q=18.8240,96.4360"
+  },
+  {
+    "id": "20261108_0000108",
+    "location": "WESTERN IRAN 🌍",
+    "magnitude": "4.3",
+    "depth": "10 km",
+    "time": "2026-11-08 07:31 UTC",
+    "maps": "https://maps.google.com/?q=33.3096,47.3520"
   }
 ]
