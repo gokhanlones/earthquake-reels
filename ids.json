@@ -742,5 +742,13 @@
     "depth": "223 km",
     "time": "2026-11-08 16:45 UTC",
     "maps": "https://maps.google.com/?q=2.6000,128.4700"
+  },
+  {
+    "id": "20261108_0000193",
+    "location": "CENTRAL TURKEY 🌍",
+    "magnitude": "3.5",
+    "depth": "10 km",
+    "time": "2026-11-08 16:49 UTC",
+    "maps": "https://maps.google.com/?q=37.8700,35.3000"
   }
 ]
