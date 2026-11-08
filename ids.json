@@ -422,5 +422,13 @@
     "depth": "15 km",
     "time": "2026-11-08 07:10 UTC",
     "maps": "https://maps.google.com/?q=11.8600,126.1700"
+  },
+  {
+    "id": "20261108_0000093",
+    "location": "SAN JUAN, ARGENTINA 🇦🇷",
+    "magnitude": "3.3",
+    "depth": "10 km",
+    "time": "2026-11-08 07:26 UTC",
+    "maps": "https://maps.google.com/?q=-31.7000,-67.3000"
   }
 ]
