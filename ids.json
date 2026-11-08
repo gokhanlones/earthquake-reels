@@ -710,5 +710,13 @@
     "depth": "218 km",
     "time": "2026-11-08 15:59 UTC",
     "maps": "https://maps.google.com/?q=-24.1700,-67.5500"
+  },
+  {
+    "id": "20261108_0000184",
+    "location": "VIRGIN ISLANDS REGION 🌍",
+    "magnitude": "3.4",
+    "depth": "21 km",
+    "time": "2026-11-08 14:52 UTC",
+    "maps": "https://maps.google.com/?q=18.9528,-64.2620"
   }
 ]
