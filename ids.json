@@ -78,5 +78,13 @@
     "depth": "607 km",
     "time": "2026-11-07 23:25 UTC",
     "maps": "https://maps.google.com/?q=6.7060,123.6541"
+  },
+  {
+    "id": "20261107_0000292",
+    "location": "SAMOA ISLANDS REGION 🌍",
+    "magnitude": "5.1",
+    "depth": "10 km",
+    "time": "2026-11-07 23:27 UTC",
+    "maps": "https://maps.google.com/?q=-15.6837,-172.9847"
   }
 ]
