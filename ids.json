@@ -94,5 +94,13 @@
     "depth": "36 km",
     "time": "2026-11-08 00:51 UTC",
     "maps": "https://maps.google.com/?q=12.4690,-87.8490"
+  },
+  {
+    "id": "20261107_0000266",
+    "location": "SOUTHWESTERN KASHMIR 🌍",
+    "magnitude": "3.1",
+    "depth": "5 km",
+    "time": "2026-11-07 21:17 UTC",
+    "maps": "https://maps.google.com/?q=34.3060,74.3100"
   }
 ]
