@@ -918,5 +918,13 @@
     "depth": "32 km",
     "time": "2026-11-08 17:00 UTC",
     "maps": "https://maps.google.com/?q=12.6160,-88.7380"
+  },
+  {
+    "id": "20261108_0000245",
+    "location": "CENTRAL ALASKA 🌍",
+    "magnitude": "3",
+    "depth": "21 km",
+    "time": "2026-11-08 20:11 UTC",
+    "maps": "https://maps.google.com/?q=62.1950,-147.8610"
   }
 ]
