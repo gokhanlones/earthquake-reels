@@ -686,5 +686,13 @@
     "depth": "15 km",
     "time": "2026-11-08 15:16 UTC",
     "maps": "https://maps.google.com/?q=36.8490,-24.0850"
+  },
+  {
+    "id": "20261108_0000176",
+    "location": "UTTAR PRADESH, INDIA 🇮🇳",
+    "magnitude": "3.2",
+    "depth": "100 km",
+    "time": "2026-11-08 15:31 UTC",
+    "maps": "https://maps.google.com/?q=28.9124,78.5862"
   }
 ]
