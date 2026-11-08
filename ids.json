@@ -838,5 +838,13 @@
     "depth": "149 km",
     "time": "2026-11-08 18:18 UTC",
     "maps": "https://maps.google.com/?q=17.4430,-94.6360"
+  },
+  {
+    "id": "20261108_0000216",
+    "location": "ORISSA, INDIA 🇮🇳",
+    "magnitude": "3.9",
+    "depth": "10 km",
+    "time": "2026-11-08 18:12 UTC",
+    "maps": "https://maps.google.com/?q=20.9120,86.9960"
   }
 ]
