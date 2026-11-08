@@ -622,5 +622,13 @@
     "depth": "47 km",
     "time": "2026-11-08 12:37 UTC",
     "maps": "https://maps.google.com/?q=19.4585,-65.1912"
+  },
+  {
+    "id": "20261108_0000155",
+    "location": "NEVADA 🇺🇸",
+    "magnitude": "3.7",
+    "depth": "4 km",
+    "time": "2026-11-08 13:55 UTC",
+    "maps": "https://maps.google.com/?q=38.9246,-115.3163"
   }
 ]
