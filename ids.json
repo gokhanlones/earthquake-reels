@@ -926,5 +926,13 @@
     "depth": "21 km",
     "time": "2026-11-08 20:11 UTC",
     "maps": "https://maps.google.com/?q=62.1950,-147.8610"
+  },
+  {
+    "id": "20261108_0000232",
+    "location": "OFF COAST OF OAXACA, MEXICO 🇲🇽",
+    "magnitude": "4.1",
+    "depth": "12 km",
+    "time": "2026-11-08 19:09 UTC",
+    "maps": "https://maps.google.com/?q=15.1830,-94.5630"
   }
 ]
