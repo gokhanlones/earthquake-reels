@@ -46,5 +46,13 @@
     "depth": "5 km",
     "time": "2026-11-07 23:22 UTC",
     "maps": "https://maps.google.com/?q=13.4530,-91.4470"
+  },
+  {
+    "id": "20261107_0000287",
+    "location": "KYUSHU, JAPAN 🇯🇵",
+    "magnitude": "3",
+    "depth": "10 km",
+    "time": "2026-11-07 23:23 UTC",
+    "maps": "https://maps.google.com/?q=32.5000,130.6000"
   }
 ]
