@@ -486,5 +486,13 @@
     "depth": "8 km",
     "time": "2026-11-08 07:45 UTC",
     "maps": "https://maps.google.com/?q=17.9147,-66.8492"
+  },
+  {
+    "id": "20261108_0000113",
+    "location": "OFF EAST COAST OF HONSHU, JAPAN 🇯🇵",
+    "magnitude": "4.7",
+    "depth": "10 km",
+    "time": "2026-11-08 09:23 UTC",
+    "maps": "https://maps.google.com/?q=39.8647,143.5257"
   }
 ]
