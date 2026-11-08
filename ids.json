@@ -678,5 +678,13 @@
     "depth": "37 km",
     "time": "2026-11-08 14:46 UTC",
     "maps": "https://maps.google.com/?q=60.6990,-150.0980"
+  },
+  {
+    "id": "20261108_0000173",
+    "location": "AZORES ISLANDS REGION 🌍",
+    "magnitude": "3",
+    "depth": "15 km",
+    "time": "2026-11-08 15:16 UTC",
+    "maps": "https://maps.google.com/?q=36.8490,-24.0850"
   }
 ]
