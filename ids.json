@@ -1046,5 +1046,13 @@
     "depth": "10 km",
     "time": "2026-11-09 21:41 UTC",
     "maps": "https://maps.google.com/?q=7.2832,-80.7819"
+  },
+  {
+    "id": "20261109_0000322",
+    "location": "NEAR ISLANDS, ALEUTIAN ISLANDS 🌍",
+    "magnitude": "4.7",
+    "depth": "10 km",
+    "time": "2026-11-09 22:03 UTC",
+    "maps": "https://maps.google.com/?q=52.7289,171.6154"
   }
 ]
