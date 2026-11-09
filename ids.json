@@ -438,5 +438,13 @@
     "depth": "168 km",
     "time": "2026-11-09 06:59 UTC",
     "maps": "https://maps.google.com/?q=-7.7100,128.6100"
+  },
+  {
+    "id": "20261109_0000107",
+    "location": "KAMCHATKA PENINSULA, RUSSIA 🇷🇺",
+    "magnitude": "4.6",
+    "depth": "155 km",
+    "time": "2026-11-09 07:04 UTC",
+    "maps": "https://maps.google.com/?q=55.8343,160.9753"
   }
 ]
