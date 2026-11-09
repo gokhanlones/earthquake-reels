@@ -158,5 +158,13 @@
     "depth": "10 km",
     "time": "2026-11-08 22:25 UTC",
     "maps": "https://maps.google.com/?q=36.2021,141.5834"
+  },
+  {
+    "id": "20261108_0000294",
+    "location": "MARIANA ISLANDS REGION 🌍",
+    "magnitude": "4.4",
+    "depth": "212 km",
+    "time": "2026-11-08 22:24 UTC",
+    "maps": "https://maps.google.com/?q=21.5743,143.8084"
   }
 ]
