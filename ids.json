@@ -334,5 +334,13 @@
     "depth": "46 km",
     "time": "2026-11-09 04:35 UTC",
     "maps": "https://maps.google.com/?q=-12.6900,45.5100"
+  },
+  {
+    "id": "20261109_0000070",
+    "location": "OFF COAST OF NORTHERN CALIFORNIA 🌍",
+    "magnitude": "3.8",
+    "depth": "10 km",
+    "time": "2026-11-09 04:49 UTC",
+    "maps": "https://maps.google.com/?q=40.9080,-127.1490"
   }
 ]
