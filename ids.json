@@ -1054,5 +1054,13 @@
     "depth": "10 km",
     "time": "2026-11-09 22:03 UTC",
     "maps": "https://maps.google.com/?q=52.7289,171.6154"
+  },
+  {
+    "id": "20261109_0000327",
+    "location": "PAPUA REGION, INDONESIA 🇮🇩",
+    "magnitude": "3.6",
+    "depth": "10 km",
+    "time": "2026-11-09 22:40 UTC",
+    "maps": "https://maps.google.com/?q=-0.6600,130.3100"
   }
 ]
