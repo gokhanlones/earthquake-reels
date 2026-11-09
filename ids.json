@@ -630,5 +630,13 @@
     "depth": "30 km",
     "time": "2026-11-09 11:39 UTC",
     "maps": "https://maps.google.com/?q=19.1958,-155.4985"
+  },
+  {
+    "id": "20261109_0000161",
+    "location": "OFF COAST OF LOS LAGOS, CHILE 🇨🇱",
+    "magnitude": "4",
+    "depth": "25 km",
+    "time": "2026-11-09 11:45 UTC",
+    "maps": "https://maps.google.com/?q=-41.7200,-76.1700"
   }
 ]
