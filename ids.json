@@ -182,5 +182,13 @@
     "depth": "8 km",
     "time": "2026-11-08 22:08 UTC",
     "maps": "https://maps.google.com/?q=18.1730,-103.2610"
+  },
+  {
+    "id": "20261108_0000296",
+    "location": "OFFSHORE JALISCO, MEXICO 🇲🇽",
+    "magnitude": "3",
+    "depth": "5 km",
+    "time": "2026-11-08 22:57 UTC",
+    "maps": "https://maps.google.com/?q=19.2480,-104.9420"
   }
 ]
