@@ -758,5 +758,13 @@
     "depth": "32 km",
     "time": "2026-11-09 10:54 UTC",
     "maps": "https://maps.google.com/?q=16.7470,-99.1220"
+  },
+  {
+    "id": "20261109_0000221",
+    "location": "WESTERN TEXAS 🌍",
+    "magnitude": "3",
+    "depth": "9 km",
+    "time": "2026-11-09 15:27 UTC",
+    "maps": "https://maps.google.com/?q=31.6255,-104.4470"
   }
 ]
