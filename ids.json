@@ -174,5 +174,13 @@
     "depth": "5 km",
     "time": "2026-11-09 01:56 UTC",
     "maps": "https://maps.google.com/?q=7.5506,-80.6933"
+  },
+  {
+    "id": "20261108_0000298",
+    "location": "OFFSHORE MICHOACAN, MEXICO 🇲🇽",
+    "magnitude": "3.7",
+    "depth": "8 km",
+    "time": "2026-11-08 22:08 UTC",
+    "maps": "https://maps.google.com/?q=18.1730,-103.2610"
   }
 ]
