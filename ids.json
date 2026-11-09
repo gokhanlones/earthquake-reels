@@ -566,5 +566,13 @@
     "depth": "10 km",
     "time": "2026-11-09 10:38 UTC",
     "maps": "https://maps.google.com/?q=-8.2700,121.4700"
+  },
+  {
+    "id": "20261109_0000128",
+    "location": "TIMOR REGION, INDONESIA 🇮🇩",
+    "magnitude": "3.6",
+    "depth": "50 km",
+    "time": "2026-11-09 09:03 UTC",
+    "maps": "https://maps.google.com/?q=-10.4400,124.4000"
   }
 ]
