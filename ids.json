@@ -246,5 +246,13 @@
     "depth": "117 km",
     "time": "2026-11-08 22:25 UTC",
     "maps": "https://maps.google.com/?q=17.2900,-95.1810"
+  },
+  {
+    "id": "20261108_0000283",
+    "location": "MENDOZA, ARGENTINA 🇦🇷",
+    "magnitude": "3",
+    "depth": "104 km",
+    "time": "2026-11-08 23:42 UTC",
+    "maps": "https://maps.google.com/?q=-32.4400,-69.8100"
   }
 ]
