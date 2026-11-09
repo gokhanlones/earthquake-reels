@@ -94,5 +94,13 @@
     "depth": "5 km",
     "time": "2026-11-08 19:50 UTC",
     "maps": "https://maps.google.com/?q=7.4617,-80.4883"
+  },
+  {
+    "id": "20261109_0000019",
+    "location": "SOUTHWEST OF SUMATRA, INDONESIA 🇮🇩",
+    "magnitude": "4.2",
+    "depth": "12 km",
+    "time": "2026-11-09 01:12 UTC",
+    "maps": "https://maps.google.com/?q=-4.0200,100.1900"
   }
 ]
