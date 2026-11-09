@@ -942,5 +942,13 @@
     "depth": "46 km",
     "time": "2026-11-09 19:38 UTC",
     "maps": "https://maps.google.com/?q=-17.4100,-71.6600"
+  },
+  {
+    "id": "20261109_0000282",
+    "location": "KOMANDORSKIYE OSTROVA REGION 🌍",
+    "magnitude": "4.4",
+    "depth": "50 km",
+    "time": "2026-11-09 18:02 UTC",
+    "maps": "https://maps.google.com/?q=55.4000,166.4800"
   }
 ]
