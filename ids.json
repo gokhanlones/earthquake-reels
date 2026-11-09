@@ -678,5 +678,13 @@
     "depth": "530 km",
     "time": "2026-11-09 10:08 UTC",
     "maps": "https://maps.google.com/?q=-25.5630,179.5725"
+  },
+  {
+    "id": "20261109_0000175",
+    "location": "MOROCCO 🇲🇦",
+    "magnitude": "3.8",
+    "depth": "125 km",
+    "time": "2026-11-09 12:37 UTC",
+    "maps": "https://maps.google.com/?q=31.8317,-6.4475"
   }
 ]
