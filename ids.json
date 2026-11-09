@@ -886,5 +886,13 @@
     "depth": "79 km",
     "time": "2026-11-09 17:32 UTC",
     "maps": "https://maps.google.com/?q=17.9740,-68.7958"
+  },
+  {
+    "id": "20261109_0000266",
+    "location": "KEPULAUAN SANGIHE, INDONESIA 🇮🇩",
+    "magnitude": "3.7",
+    "depth": "156 km",
+    "time": "2026-11-09 18:36 UTC",
+    "maps": "https://maps.google.com/?q=4.5700,125.9600"
   }
 ]
