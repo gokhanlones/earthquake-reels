@@ -670,5 +670,13 @@
     "depth": "15 km",
     "time": "2026-11-09 12:28 UTC",
     "maps": "https://maps.google.com/?q=37.5505,35.6260"
+  },
+  {
+    "id": "20261109_0000167",
+    "location": "SOUTH OF FIJI ISLANDS 🌍",
+    "magnitude": "4.3",
+    "depth": "530 km",
+    "time": "2026-11-09 10:08 UTC",
+    "maps": "https://maps.google.com/?q=-25.5630,179.5725"
   }
 ]
