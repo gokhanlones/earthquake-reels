@@ -614,5 +614,13 @@
     "depth": "119 km",
     "time": "2026-11-09 10:26 UTC",
     "maps": "https://maps.google.com/?q=-0.6400,127.4800"
+  },
+  {
+    "id": "20261109_0000157",
+    "location": "KEPULAUAN TALAUD, INDONESIA 🇮🇩",
+    "magnitude": "4.8",
+    "depth": "116 km",
+    "time": "2026-11-09 11:25 UTC",
+    "maps": "https://maps.google.com/?q=4.2300,127.9700"
   }
 ]
