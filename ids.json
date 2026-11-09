@@ -430,5 +430,13 @@
     "depth": "10 km",
     "time": "2026-11-09 05:16 UTC",
     "maps": "https://maps.google.com/?q=-10.9120,165.6396"
+  },
+  {
+    "id": "20261109_0000105",
+    "location": "KEPULAUAN BARAT DAYA, INDONESIA 🇮🇩",
+    "magnitude": "3.7",
+    "depth": "168 km",
+    "time": "2026-11-09 06:59 UTC",
+    "maps": "https://maps.google.com/?q=-7.7100,128.6100"
   }
 ]
