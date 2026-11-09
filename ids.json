@@ -30,5 +30,13 @@
     "depth": "169 km",
     "time": "2026-11-09 00:44 UTC",
     "maps": "https://maps.google.com/?q=-24.3100,-67.2000"
+  },
+  {
+    "id": "20261108_0000228",
+    "location": "MINAHASA, SULAWESI 🇮🇩",
+    "magnitude": "4.3",
+    "depth": "10 km",
+    "time": "2026-11-08 19:06 UTC",
+    "maps": "https://maps.google.com/?q=0.9400,120.7200"
   }
 ]
