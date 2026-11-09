@@ -326,5 +326,13 @@
     "depth": "10 km",
     "time": "2026-11-09 02:40 UTC",
     "maps": "https://maps.google.com/?q=39.2878,73.2982"
+  },
+  {
+    "id": "20261109_0000065",
+    "location": "MAYOTTE REGION 🌍",
+    "magnitude": "4",
+    "depth": "46 km",
+    "time": "2026-11-09 04:35 UTC",
+    "maps": "https://maps.google.com/?q=-12.6900,45.5100"
   }
 ]
