@@ -254,5 +254,13 @@
     "depth": "104 km",
     "time": "2026-11-08 23:42 UTC",
     "maps": "https://maps.google.com/?q=-32.4400,-69.8100"
+  },
+  {
+    "id": "20261109_0000027",
+    "location": "ERITREA 🇪🇷",
+    "magnitude": "4.3",
+    "depth": "10 km",
+    "time": "2026-11-09 01:11 UTC",
+    "maps": "https://maps.google.com/?q=16.1771,38.8821"
   }
 ]
