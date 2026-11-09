@@ -526,5 +526,13 @@
     "depth": "90 km",
     "time": "2026-11-09 06:55 UTC",
     "maps": "https://maps.google.com/?q=22.5610,93.4490"
+  },
+  {
+    "id": "20261109_0000120",
+    "location": "PUERTO RICO REGION 🌍",
+    "magnitude": "3.5",
+    "depth": "18 km",
+    "time": "2026-11-09 07:19 UTC",
+    "maps": "https://maps.google.com/?q=18.9358,-67.4155"
   }
 ]
