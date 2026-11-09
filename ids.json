@@ -918,5 +918,13 @@
     "depth": "28 km",
     "time": "2026-11-09 19:31 UTC",
     "maps": "https://maps.google.com/?q=12.3400,-89.4020"
+  },
+  {
+    "id": "20261109_0000276",
+    "location": "SOLOMON ISLANDS 🇸🇧",
+    "magnitude": "4.6",
+    "depth": "10 km",
+    "time": "2026-11-09 18:51 UTC",
+    "maps": "https://maps.google.com/?q=-10.5301,163.8048"
   }
 ]
