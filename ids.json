@@ -534,5 +534,13 @@
     "depth": "18 km",
     "time": "2026-11-09 07:19 UTC",
     "maps": "https://maps.google.com/?q=18.9358,-67.4155"
+  },
+  {
+    "id": "20261109_0000136",
+    "location": "SERAM, INDONESIA 🇮🇩",
+    "magnitude": "5.4",
+    "depth": "30 km",
+    "time": "2026-11-09 09:48 UTC",
+    "maps": "https://maps.google.com/?q=-3.1569,130.3689"
   }
 ]
