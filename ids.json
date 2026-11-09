@@ -750,5 +750,13 @@
     "depth": "29 km",
     "time": "2026-11-09 10:31 UTC",
     "maps": "https://maps.google.com/?q=16.0680,-95.2470"
+  },
+  {
+    "id": "20261109_0000189",
+    "location": "GUERRERO, MEXICO 🇲🇽",
+    "magnitude": "3.2",
+    "depth": "32 km",
+    "time": "2026-11-09 10:54 UTC",
+    "maps": "https://maps.google.com/?q=16.7470,-99.1220"
   }
 ]
