@@ -294,5 +294,13 @@
     "depth": "10 km",
     "time": "2026-11-09 04:02 UTC",
     "maps": "https://maps.google.com/?q=-8.3100,110.3000"
+  },
+  {
+    "id": "20261109_0000046",
+    "location": "RYUKYU ISLANDS, JAPAN 🇯🇵",
+    "magnitude": "4.4",
+    "depth": "51 km",
+    "time": "2026-11-09 02:12 UTC",
+    "maps": "https://maps.google.com/?q=29.6030,130.3789"
   }
 ]
