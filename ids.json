@@ -574,5 +574,13 @@
     "depth": "59 km",
     "time": "2026-11-10 14:23 UTC",
     "maps": "https://maps.google.com/?q=5.5900,127.3000"
+  },
+  {
+    "id": "20261110_0000197",
+    "location": "OFFSHORE CHIAPAS, MEXICO 🇲🇽",
+    "magnitude": "4",
+    "depth": "10 km",
+    "time": "2026-11-10 11:01 UTC",
+    "maps": "https://maps.google.com/?q=14.6460,-93.1820"
   }
 ]
