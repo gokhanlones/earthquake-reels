@@ -862,5 +862,13 @@
     "depth": "10 km",
     "time": "2026-11-10 22:14 UTC",
     "maps": "https://maps.google.com/?q=7.6548,-80.5854"
+  },
+  {
+    "id": "20261110_0000320",
+    "location": "JIANGSU, CHINA 🇨🇳",
+    "magnitude": "3.9",
+    "depth": "20 km",
+    "time": "2026-11-10 22:15 UTC",
+    "maps": "https://maps.google.com/?q=32.6200,119.6000"
   }
 ]
