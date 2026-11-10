@@ -14,5 +14,13 @@
     "depth": "124 km",
     "time": "2026-11-09 21:37 UTC",
     "maps": "https://maps.google.com/?q=24.6090,95.0280"
+  },
+  {
+    "id": "20261110_0000017",
+    "location": "NORTH OF FRANZ JOSEF LAND 🌍",
+    "magnitude": "4.9",
+    "depth": "10 km",
+    "time": "2026-11-10 02:00 UTC",
+    "maps": "https://maps.google.com/?q=86.7236,65.2936"
   }
 ]
