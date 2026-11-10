@@ -838,5 +838,13 @@
     "depth": "10 km",
     "time": "2026-11-10 21:16 UTC",
     "maps": "https://maps.google.com/?q=32.0000,117.6100"
+  },
+  {
+    "id": "20261110_0000310",
+    "location": "MYANMAR 🇲🇲",
+    "magnitude": "3.3",
+    "depth": "10 km",
+    "time": "2026-11-10 21:31 UTC",
+    "maps": "https://maps.google.com/?q=21.8520,96.1930"
   }
 ]
