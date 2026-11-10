@@ -134,5 +134,13 @@
     "depth": "146 km",
     "time": "2026-11-09 23:53 UTC",
     "maps": "https://maps.google.com/?q=26.9864,86.5341"
+  },
+  {
+    "id": "20261110_0000047",
+    "location": "KEPULAUAN BABAR, INDONESIA 🇮🇩",
+    "magnitude": "4.2",
+    "depth": "154 km",
+    "time": "2026-11-10 04:05 UTC",
+    "maps": "https://maps.google.com/?q=-7.1300,129.6700"
   }
 ]
