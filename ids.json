@@ -710,5 +710,13 @@
     "depth": "250 km",
     "time": "2026-11-10 17:36 UTC",
     "maps": "https://maps.google.com/?q=11.9881,-86.7469"
+  },
+  {
+    "id": "20261110_0000258",
+    "location": "EASTERN NEW GUINEA REG., P.N.G. 🌍",
+    "magnitude": "5.1",
+    "depth": "133 km",
+    "time": "2026-11-10 17:36 UTC",
+    "maps": "https://maps.google.com/?q=-8.7133,147.9477"
   }
 ]
