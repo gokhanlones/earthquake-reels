@@ -374,5 +374,13 @@
     "depth": "38 km",
     "time": "2026-11-10 08:34 UTC",
     "maps": "https://maps.google.com/?q=-0.5781,132.7607"
+  },
+  {
+    "id": "20261110_0000096",
+    "location": "SOUTHERN ITALY 🌍",
+    "magnitude": "3.5",
+    "depth": "9 km",
+    "time": "2026-11-10 07:38 UTC",
+    "maps": "https://maps.google.com/?q=39.2877,16.2035"
   }
 ]
