@@ -438,5 +438,13 @@
     "depth": "15 km",
     "time": "2026-11-10 10:35 UTC",
     "maps": "https://maps.google.com/?q=-5.2000,-76.6200"
+  },
+  {
+    "id": "20261110_0000135",
+    "location": "NEAR N COAST OF PAPUA, INDONESIA 🇮🇩",
+    "magnitude": "3.5",
+    "depth": "83 km",
+    "time": "2026-11-10 10:28 UTC",
+    "maps": "https://maps.google.com/?q=-2.4200,134.5900"
   }
 ]
