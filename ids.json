@@ -1182,5 +1182,13 @@
     "depth": "10 km",
     "time": "2026-11-10 02:00 UTC",
     "maps": "https://maps.google.com/?q=86.7236,65.2936"
+  },
+  {
+    "id": "20261109_0000344",
+    "location": "OFFSHORE COLIMA, MEXICO 🇲🇽",
+    "magnitude": "3.3",
+    "depth": "97 km",
+    "time": "2026-11-09 22:48 UTC",
+    "maps": "https://maps.google.com/?q=18.7730,-104.1030"
   }
 ]
