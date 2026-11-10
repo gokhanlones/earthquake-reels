@@ -830,5 +830,13 @@
     "depth": "70 km",
     "time": "2026-11-10 20:54 UTC",
     "maps": "https://maps.google.com/?q=14.1670,-91.6510"
+  },
+  {
+    "id": "20261110_0000306",
+    "location": "ANHUI, CHINA 🇨🇳",
+    "magnitude": "3.1",
+    "depth": "10 km",
+    "time": "2026-11-10 21:16 UTC",
+    "maps": "https://maps.google.com/?q=32.0000,117.6100"
   }
 ]
