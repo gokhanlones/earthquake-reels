@@ -502,5 +502,13 @@
     "depth": "5 km",
     "time": "2026-11-10 12:11 UTC",
     "maps": "https://maps.google.com/?q=39.3903,39.1090"
+  },
+  {
+    "id": "20261110_0000168",
+    "location": "PAPUA, INDONESIA 🇮🇩",
+    "magnitude": "3.6",
+    "depth": "10 km",
+    "time": "2026-11-10 12:14 UTC",
+    "maps": "https://maps.google.com/?q=-3.8500,140.5800"
   }
 ]
