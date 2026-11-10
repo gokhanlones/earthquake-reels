@@ -694,5 +694,13 @@
     "depth": "7 km",
     "time": "2026-11-10 16:38 UTC",
     "maps": "https://maps.google.com/?q=7.5022,-80.5126"
+  },
+  {
+    "id": "20261110_0000242",
+    "location": "SANTA CRUZ ISLANDS 🌍",
+    "magnitude": "4.8",
+    "depth": "48 km",
+    "time": "2026-11-10 15:52 UTC",
+    "maps": "https://maps.google.com/?q=-10.8979,165.7366"
   }
 ]
