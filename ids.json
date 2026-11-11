@@ -1710,5 +1710,13 @@
     "depth": "13 km",
     "time": "2026-11-11 17:30 UTC",
     "maps": "https://maps.google.com/?q=27.8460,86.5290"
+  },
+  {
+    "id": "20261111_0000236",
+    "location": "HOKKAIDO, JAPAN REGION 🌍",
+    "magnitude": "3.6",
+    "depth": "60 km",
+    "time": "2026-11-11 17:15 UTC",
+    "maps": "https://maps.google.com/?q=41.0000,142.0000"
   }
 ]
