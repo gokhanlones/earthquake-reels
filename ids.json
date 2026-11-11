@@ -1438,5 +1438,13 @@
     "depth": "103 km",
     "time": "2026-11-11 11:36 UTC",
     "maps": "https://maps.google.com/?q=-22.5339,-68.9893"
+  },
+  {
+    "id": "20261111_0000122",
+    "location": "OFF W COAST OF NORTHERN SUMATRA 🌍",
+    "magnitude": "4.3",
+    "depth": "10 km",
+    "time": "2026-11-11 09:44 UTC",
+    "maps": "https://maps.google.com/?q=2.7700,93.2200"
   }
 ]
