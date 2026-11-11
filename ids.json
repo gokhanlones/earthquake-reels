@@ -1350,5 +1350,13 @@
     "depth": "9 km",
     "time": "2026-11-11 09:39 UTC",
     "maps": "https://maps.google.com/?q=43.0189,18.7670"
+  },
+  {
+    "id": "20261111_0000108",
+    "location": "GUAM REGION 🌍",
+    "magnitude": "4.7",
+    "depth": "137 km",
+    "time": "2026-11-11 08:37 UTC",
+    "maps": "https://maps.google.com/?q=12.8418,143.3322"
   }
 ]
