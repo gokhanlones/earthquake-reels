@@ -1750,5 +1750,13 @@
     "depth": "10 km",
     "time": "2026-11-11 17:42 UTC",
     "maps": "https://maps.google.com/?q=-8.0700,119.8700"
+  },
+  {
+    "id": "20261111_0000250",
+    "location": "BOUGAINVILLE REGION, P.N.G. 🌍",
+    "magnitude": "5.1",
+    "depth": "59 km",
+    "time": "2026-11-11 17:38 UTC",
+    "maps": "https://maps.google.com/?q=-6.3288,154.7612"
   }
 ]
