@@ -1382,5 +1382,13 @@
     "depth": "5 km",
     "time": "2026-11-11 10:20 UTC",
     "maps": "https://maps.google.com/?q=7.5390,-81.4241"
+  },
+  {
+    "id": "20261111_0000135",
+    "location": "KEPULAUAN OBI, INDONESIA 🇮🇩",
+    "magnitude": "3.9",
+    "depth": "10 km",
+    "time": "2026-11-11 10:38 UTC",
+    "maps": "https://maps.google.com/?q=-1.0200,128.6500"
   }
 ]
