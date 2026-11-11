@@ -1846,5 +1846,13 @@
     "depth": "393 km",
     "time": "2026-11-11 20:38 UTC",
     "maps": "https://maps.google.com/?q=-21.3542,-177.9398"
+  },
+  {
+    "id": "20261111_0000303",
+    "location": "XIZANG-NEPAL BORDER REGION 🌍",
+    "magnitude": "4.2",
+    "depth": "10 km",
+    "time": "2026-11-11 23:00 UTC",
+    "maps": "https://maps.google.com/?q=28.4400,85.4300"
   }
 ]
