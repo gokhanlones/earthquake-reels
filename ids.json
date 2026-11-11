@@ -1166,5 +1166,13 @@
     "depth": "251 km",
     "time": "2026-11-11 05:30 UTC",
     "maps": "https://maps.google.com/?q=-23.3800,-67.0600"
+  },
+  {
+    "id": "20261111_0000063",
+    "location": "TARAPACA, CHILE 🇨🇱",
+    "magnitude": "3.8",
+    "depth": "29 km",
+    "time": "2026-11-11 05:45 UTC",
+    "maps": "https://maps.google.com/?q=-19.2900,-70.2500"
   }
 ]
