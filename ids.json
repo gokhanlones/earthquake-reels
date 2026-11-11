@@ -1734,5 +1734,13 @@
     "depth": "10 km",
     "time": "2026-11-11 18:26 UTC",
     "maps": "https://maps.google.com/?q=-2.2900,140.0900"
+  },
+  {
+    "id": "20261111_0000258",
+    "location": "ATACAMA, CHILE 🇨🇱",
+    "magnitude": "4",
+    "depth": "116 km",
+    "time": "2026-11-11 18:41 UTC",
+    "maps": "https://maps.google.com/?q=-28.5800,-70.5000"
   }
 ]
