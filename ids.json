@@ -1230,5 +1230,13 @@
     "depth": "10 km",
     "time": "2026-11-11 06:21 UTC",
     "maps": "https://maps.google.com/?q=-62.4284,155.0206"
+  },
+  {
+    "id": "20261111_0000078",
+    "location": "SPAIN 🇪🇸",
+    "magnitude": "3.2",
+    "depth": "5 km",
+    "time": "2026-11-11 06:50 UTC",
+    "maps": "https://maps.google.com/?q=37.9475,-1.4339"
   }
 ]
