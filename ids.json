@@ -1214,5 +1214,13 @@
     "depth": "224 km",
     "time": "2026-11-11 06:15 UTC",
     "maps": "https://maps.google.com/?q=-37.6084,176.9803"
+  },
+  {
+    "id": "20261111_0000067",
+    "location": "OFF COAST OF CHIAPAS, MEXICO 🇲🇽",
+    "magnitude": "4",
+    "depth": "15 km",
+    "time": "2026-11-11 05:37 UTC",
+    "maps": "https://maps.google.com/?q=14.3020,-93.8680"
   }
 ]
