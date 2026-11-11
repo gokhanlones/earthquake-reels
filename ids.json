@@ -1422,5 +1422,13 @@
     "depth": "229 km",
     "time": "2026-11-11 11:10 UTC",
     "maps": "https://maps.google.com/?q=-35.5328,178.0820"
+  },
+  {
+    "id": "20261111_0000144",
+    "location": "EGYPT 🇪🇬",
+    "magnitude": "4.5",
+    "depth": "10 km",
+    "time": "2026-11-11 09:24 UTC",
+    "maps": "https://maps.google.com/?q=29.5260,34.6940"
   }
 ]
