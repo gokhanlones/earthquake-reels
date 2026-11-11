@@ -1478,5 +1478,13 @@
     "depth": "10 km",
     "time": "2026-11-11 12:34 UTC",
     "maps": "https://maps.google.com/?q=14.1140,-93.1130"
+  },
+  {
+    "id": "20261111_0000156",
+    "location": "KEP. TANIMBAR REGION, INDONESIA 🇮🇩",
+    "magnitude": "5.1",
+    "depth": "15 km",
+    "time": "2026-11-11 11:32 UTC",
+    "maps": "https://maps.google.com/?q=-7.9445,130.2513"
   }
 ]
