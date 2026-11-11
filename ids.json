@@ -1022,5 +1022,13 @@
     "depth": "10 km",
     "time": "2026-11-10 22:44 UTC",
     "maps": "https://maps.google.com/?q=19.0230,-103.6320"
+  },
+  {
+    "id": "20261110_0000343",
+    "location": "OFFSHORE GUERRERO, MEXICO 🇲🇽",
+    "magnitude": "3.4",
+    "depth": "16 km",
+    "time": "2026-11-10 22:24 UTC",
+    "maps": "https://maps.google.com/?q=16.1950,-98.8650"
   }
 ]
