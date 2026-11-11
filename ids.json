@@ -1150,5 +1150,13 @@
     "depth": "227 km",
     "time": "2026-11-11 05:10 UTC",
     "maps": "https://maps.google.com/?q=-24.2800,-67.3100"
+  },
+  {
+    "id": "20261111_0000056",
+    "location": "SICILY, ITALY 🇮🇹",
+    "magnitude": "4.6",
+    "depth": "8 km",
+    "time": "2026-11-11 05:12 UTC",
+    "maps": "https://maps.google.com/?q=38.7562,14.0932"
   }
 ]
