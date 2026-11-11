@@ -1822,5 +1822,13 @@
     "depth": "528 km",
     "time": "2026-11-11 19:50 UTC",
     "maps": "https://maps.google.com/?q=-23.5023,-179.8474"
+  },
+  {
+    "id": "20261111_0000297",
+    "location": "ASCENSION ISLAND REGION 🌍",
+    "magnitude": "4.9",
+    "depth": "10 km",
+    "time": "2026-11-11 22:03 UTC",
+    "maps": "https://maps.google.com/?q=-7.9570,-13.4059"
   }
 ]
