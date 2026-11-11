@@ -1086,5 +1086,13 @@
     "depth": "10 km",
     "time": "2026-11-11 01:45 UTC",
     "maps": "https://maps.google.com/?q=49.0876,-127.6912"
+  },
+  {
+    "id": "20261111_0000040",
+    "location": "CRETE, GREECE 🇬🇷",
+    "magnitude": "3.3",
+    "depth": "19 km",
+    "time": "2026-11-11 03:32 UTC",
+    "maps": "https://maps.google.com/?q=35.1719,23.3969"
   }
 ]
