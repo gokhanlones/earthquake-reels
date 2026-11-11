@@ -1222,5 +1222,13 @@
     "depth": "15 km",
     "time": "2026-11-11 05:37 UTC",
     "maps": "https://maps.google.com/?q=14.3020,-93.8680"
+  },
+  {
+    "id": "20261111_0000077",
+    "location": "BALLENY ISLANDS REGION 🌍",
+    "magnitude": "5.1",
+    "depth": "10 km",
+    "time": "2026-11-11 06:21 UTC",
+    "maps": "https://maps.google.com/?q=-62.4284,155.0206"
   }
 ]
