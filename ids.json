@@ -598,5 +598,13 @@
     "depth": "5 km",
     "time": "2026-11-12 14:28 UTC",
     "maps": "https://maps.google.com/?q=7.5854,-80.8606"
+  },
+  {
+    "id": "20261112_0000165",
+    "location": "BAJA CALIFORNIA, MEXICO 🇲🇽",
+    "magnitude": "3.1",
+    "depth": "21 km",
+    "time": "2026-11-12 09:52 UTC",
+    "maps": "https://maps.google.com/?q=31.3790,-115.4840"
   }
 ]
