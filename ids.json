@@ -30,5 +30,13 @@
     "depth": "180 km",
     "time": "2026-11-11 21:35 UTC",
     "maps": "https://maps.google.com/?q=-24.0400,-67.3600"
+  },
+  {
+    "id": "20261112_0000018",
+    "location": "CATAMARCA, ARGENTINA 🇦🇷",
+    "magnitude": "3.2",
+    "depth": "169 km",
+    "time": "2026-11-12 02:10 UTC",
+    "maps": "https://maps.google.com/?q=-27.9900,-66.7600"
   }
 ]
