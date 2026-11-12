@@ -438,5 +438,13 @@
     "depth": "113 km",
     "time": "2026-11-12 09:11 UTC",
     "maps": "https://maps.google.com/?q=-22.0600,-68.6600"
+  },
+  {
+    "id": "20261112_0000106",
+    "location": "SOUTHERN TEXAS 🌍",
+    "magnitude": "3",
+    "depth": "10 km",
+    "time": "2026-11-12 09:20 UTC",
+    "maps": "https://maps.google.com/?q=28.9369,-98.9482"
   }
 ]
