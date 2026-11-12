@@ -902,5 +902,13 @@
     "depth": "5 km",
     "time": "2026-11-12 21:53 UTC",
     "maps": "https://maps.google.com/?q=64.6530,-17.4810"
+  },
+  {
+    "id": "20261112_0000260",
+    "location": "SICHUAN-YUNNAN-GUIZHOU RG, CHINA 🇨🇳",
+    "magnitude": "4.9",
+    "depth": "10 km",
+    "time": "2026-11-12 20:03 UTC",
+    "maps": "https://maps.google.com/?q=27.3700,104.3300"
   }
 ]
