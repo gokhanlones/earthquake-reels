@@ -534,5 +534,13 @@
     "depth": "376 km",
     "time": "2026-11-12 10:17 UTC",
     "maps": "https://maps.google.com/?q=-33.5624,178.9554"
+  },
+  {
+    "id": "20261112_0000139",
+    "location": "NORTH ISLAND OF NEW ZEALAND 🌍",
+    "magnitude": "3.1",
+    "depth": "194 km",
+    "time": "2026-11-12 12:19 UTC",
+    "maps": "https://maps.google.com/?q=-38.7312,175.2152"
   }
 ]
