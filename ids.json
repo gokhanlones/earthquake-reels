@@ -814,5 +814,13 @@
     "depth": "3 km",
     "time": "2026-11-12 17:18 UTC",
     "maps": "https://maps.google.com/?q=41.5665,-109.8783"
+  },
+  {
+    "id": "20261112_0000251",
+    "location": "NORTHERN ALASKA 🌍",
+    "magnitude": "3.3",
+    "depth": "10 km",
+    "time": "2026-11-12 19:18 UTC",
+    "maps": "https://maps.google.com/?q=67.4030,-156.8290"
   }
 ]
