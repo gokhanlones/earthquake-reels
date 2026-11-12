@@ -198,5 +198,13 @@
     "depth": "120 km",
     "time": "2026-11-12 03:48 UTC",
     "maps": "https://maps.google.com/?q=-21.2100,-68.8800"
+  },
+  {
+    "id": "20261112_0000002",
+    "location": "ANTOFAGASTA, CHILE 🇨🇱",
+    "magnitude": "3",
+    "depth": "129 km",
+    "time": "2026-11-12 00:03 UTC",
+    "maps": "https://maps.google.com/?q=-21.8400,-68.5800"
   }
 ]
