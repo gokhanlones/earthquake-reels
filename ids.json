@@ -918,5 +918,13 @@
     "depth": "200 km",
     "time": "2026-11-12 21:57 UTC",
     "maps": "https://maps.google.com/?q=5.5999,-83.7290"
+  },
+  {
+    "id": "20261112_0000282",
+    "location": "NEW IRELAND REGION, P.N.G. 🌍",
+    "magnitude": "5.7",
+    "depth": "26 km",
+    "time": "2026-11-12 22:04 UTC",
+    "maps": "https://maps.google.com/?q=-1.6872,149.8665"
   }
 ]
