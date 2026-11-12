@@ -110,5 +110,13 @@
     "depth": "10 km",
     "time": "2026-11-11 22:59 UTC",
     "maps": "https://maps.google.com/?q=18.4190,-105.6650"
+  },
+  {
+    "id": "20261111_0000321",
+    "location": "OFF COAST OF JALISCO, MEXICO 🇲🇽",
+    "magnitude": "3.5",
+    "depth": "10 km",
+    "time": "2026-11-11 22:28 UTC",
+    "maps": "https://maps.google.com/?q=18.4010,-105.6700"
   }
 ]
