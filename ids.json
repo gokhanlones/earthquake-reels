@@ -678,5 +678,13 @@
     "depth": "201 km",
     "time": "2026-11-12 14:21 UTC",
     "maps": "https://maps.google.com/?q=-24.0600,-67.5200"
+  },
+  {
+    "id": "20261112_0000197",
+    "location": "SOUTHERN ALASKA 🌍",
+    "magnitude": "3.2",
+    "depth": "55 km",
+    "time": "2026-11-12 15:43 UTC",
+    "maps": "https://maps.google.com/?q=59.0350,-152.0750"
   }
 ]
