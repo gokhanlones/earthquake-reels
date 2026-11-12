@@ -950,5 +950,13 @@
     "depth": "60 km",
     "time": "2026-11-12 23:01 UTC",
     "maps": "https://maps.google.com/?q=36.0570,28.6237"
+  },
+  {
+    "id": "20261112_0000301",
+    "location": "HONDURAS 🇭🇳",
+    "magnitude": "4",
+    "depth": "15 km",
+    "time": "2026-11-12 23:21 UTC",
+    "maps": "https://maps.google.com/?q=13.9934,-85.9874"
   }
 ]
