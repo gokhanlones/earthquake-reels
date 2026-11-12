@@ -358,5 +358,13 @@
     "depth": "122 km",
     "time": "2026-11-12 05:17 UTC",
     "maps": "https://maps.google.com/?q=-0.2800,123.1100"
+  },
+  {
+    "id": "20261112_0000083",
+    "location": "KEPULAUAN ALOR, INDONESIA 🇮🇩",
+    "magnitude": "3.5",
+    "depth": "65 km",
+    "time": "2026-11-12 07:40 UTC",
+    "maps": "https://maps.google.com/?q=-8.8800,124.0900"
   }
 ]
