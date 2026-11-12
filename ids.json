@@ -574,5 +574,13 @@
     "depth": "80 km",
     "time": "2026-11-12 09:13 UTC",
     "maps": "https://maps.google.com/?q=15.8920,-94.2620"
+  },
+  {
+    "id": "20261112_0000163",
+    "location": "MICHOACAN, MEXICO 🇲🇽",
+    "magnitude": "3.3",
+    "depth": "10 km",
+    "time": "2026-11-12 10:05 UTC",
+    "maps": "https://maps.google.com/?q=18.4220,-103.4440"
   }
 ]
