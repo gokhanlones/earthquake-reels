@@ -694,5 +694,13 @@
     "depth": "14 km",
     "time": "2026-11-12 15:49 UTC",
     "maps": "https://maps.google.com/?q=7.6645,-81.1645"
+  },
+  {
+    "id": "20261112_0000206",
+    "location": "NEAR COAST OF SOUTHERN PERU 🌍",
+    "magnitude": "3.5",
+    "depth": "46 km",
+    "time": "2026-11-12 15:51 UTC",
+    "maps": "https://maps.google.com/?q=-17.4900,-71.4000"
   }
 ]
