@@ -878,5 +878,13 @@
     "depth": "53 km",
     "time": "2026-11-12 20:53 UTC",
     "maps": "https://maps.google.com/?q=7.1226,-80.8336"
+  },
+  {
+    "id": "20261112_0000268",
+    "location": "PANAMA-COSTA RICA BORDER REGION 🌍",
+    "magnitude": "4",
+    "depth": "1 km",
+    "time": "2026-11-12 21:08 UTC",
+    "maps": "https://maps.google.com/?q=8.2407,-82.2960"
   }
 ]
