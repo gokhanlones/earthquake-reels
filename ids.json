@@ -422,5 +422,13 @@
     "depth": "134 km",
     "time": "2026-11-12 09:00 UTC",
     "maps": "https://maps.google.com/?q=-21.6800,-68.6600"
+  },
+  {
+    "id": "20261112_0000102",
+    "location": "MADHYA PRADESH, INDIA 🇮🇳",
+    "magnitude": "4.3",
+    "depth": "6 km",
+    "time": "2026-11-12 09:04 UTC",
+    "maps": "https://maps.google.com/?q=22.6912,78.2028"
   }
 ]
