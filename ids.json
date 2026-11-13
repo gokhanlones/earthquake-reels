@@ -526,5 +526,13 @@
     "depth": "10 km",
     "time": "2026-11-13 09:55 UTC",
     "maps": "https://maps.google.com/?q=-22.3729,173.4492"
+  },
+  {
+    "id": "20261113_0000124",
+    "location": "NORTHERN PERU 🌍",
+    "magnitude": "4.7",
+    "depth": "10 km",
+    "time": "2026-11-13 10:55 UTC",
+    "maps": "https://maps.google.com/?q=-4.5100,-75.2980"
   }
 ]
