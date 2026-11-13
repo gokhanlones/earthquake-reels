@@ -958,5 +958,13 @@
     "depth": "3 km",
     "time": "2026-11-13 18:52 UTC",
     "maps": "https://maps.google.com/?q=19.6600,121.5800"
+  },
+  {
+    "id": "20261113_0000278",
+    "location": "OFFSHORE TARAPACA, CHILE 🇨🇱",
+    "magnitude": "3.1",
+    "depth": "76 km",
+    "time": "2026-11-13 20:38 UTC",
+    "maps": "https://maps.google.com/?q=-18.0000,-70.5900"
   }
 ]
