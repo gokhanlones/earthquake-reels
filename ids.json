@@ -670,5 +670,13 @@
     "depth": "22 km",
     "time": "2026-11-13 10:33 UTC",
     "maps": "https://maps.google.com/?q=16.9340,-100.2860"
+  },
+  {
+    "id": "20261113_0000172",
+    "location": "SOUTHEAST OF EASTER ISLAND 🌍",
+    "magnitude": "5.2",
+    "depth": "13 km",
+    "time": "2026-11-13 14:12 UTC",
+    "maps": "https://maps.google.com/?q=-36.3984,-98.0482"
   }
 ]
