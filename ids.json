@@ -886,5 +886,13 @@
     "depth": "35 km",
     "time": "2026-11-13 16:55 UTC",
     "maps": "https://maps.google.com/?q=55.1116,-159.5830"
+  },
+  {
+    "id": "20261113_0000230",
+    "location": "SOUTH OF BALI, INDONESIA 🇮🇩",
+    "magnitude": "3.5",
+    "depth": "39 km",
+    "time": "2026-11-13 18:04 UTC",
+    "maps": "https://maps.google.com/?q=-9.3300,115.0300"
   }
 ]
