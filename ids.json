@@ -494,5 +494,13 @@
     "depth": "22 km",
     "time": "2026-11-13 10:07 UTC",
     "maps": "https://maps.google.com/?q=-8.3800,119.4700"
+  },
+  {
+    "id": "20261113_0000120",
+    "location": "HINDU KUSH REGION, AFGHANISTAN 🇦🇫",
+    "magnitude": "4.1",
+    "depth": "115 km",
+    "time": "2026-11-13 10:17 UTC",
+    "maps": "https://maps.google.com/?q=36.1340,68.2520"
   }
 ]
