@@ -734,5 +734,13 @@
     "depth": "15 km",
     "time": "2026-11-13 16:17 UTC",
     "maps": "https://maps.google.com/?q=42.2425,83.7514"
+  },
+  {
+    "id": "20261113_0000207",
+    "location": "ECUADOR 🇪🇨",
+    "magnitude": "3.8",
+    "depth": "10 km",
+    "time": "2026-11-13 16:27 UTC",
+    "maps": "https://maps.google.com/?q=-0.9600,-79.8400"
   }
 ]
