@@ -22,5 +22,13 @@
     "depth": "188 km",
     "time": "2026-11-13 01:44 UTC",
     "maps": "https://maps.google.com/?q=-23.9300,-67.2700"
+  },
+  {
+    "id": "20261112_0000258",
+    "location": "STRAIT OF GIBRALTAR 🌍",
+    "magnitude": "3.2",
+    "depth": "40 km",
+    "time": "2026-11-12 20:08 UTC",
+    "maps": "https://maps.google.com/?q=36.5201,-5.7078"
   }
 ]
