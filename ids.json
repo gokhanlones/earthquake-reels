@@ -126,5 +126,13 @@
     "depth": "10 km",
     "time": "2026-11-13 01:14 UTC",
     "maps": "https://maps.google.com/?q=-13.9450,25.5860"
+  },
+  {
+    "id": "20261112_0000294",
+    "location": "ASSAM, INDIA 🇮🇳",
+    "magnitude": "3.8",
+    "depth": "30 km",
+    "time": "2026-11-12 22:43 UTC",
+    "maps": "https://maps.google.com/?q=26.4270,92.5820"
   }
 ]
