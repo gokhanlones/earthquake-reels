@@ -982,5 +982,13 @@
     "depth": "16 km",
     "time": "2026-11-13 01:05 UTC",
     "maps": "https://maps.google.com/?q=7.5820,-80.8105"
+  },
+  {
+    "id": "20261113_0000013",
+    "location": "DEMOCRATIC REPUBLIC OF THE CONGO 🌍",
+    "magnitude": "5",
+    "depth": "10 km",
+    "time": "2026-11-13 01:12 UTC",
+    "maps": "https://maps.google.com/?q=-6.9392,22.6800"
   }
 ]
