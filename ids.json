@@ -950,5 +950,13 @@
     "depth": "19 km",
     "time": "2026-11-13 20:15 UTC",
     "maps": "https://maps.google.com/?q=19.2000,121.3500"
+  },
+  {
+    "id": "20261113_0000245",
+    "location": "BABUYAN ISL REGION, PHILIPPINES 🇵🇭",
+    "magnitude": "3",
+    "depth": "3 km",
+    "time": "2026-11-13 18:52 UTC",
+    "maps": "https://maps.google.com/?q=19.6600,121.5800"
   }
 ]
