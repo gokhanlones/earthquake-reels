@@ -510,5 +510,13 @@
     "depth": "29 km",
     "time": "2026-11-13 09:46 UTC",
     "maps": "https://maps.google.com/?q=7.9800,127.0900"
+  },
+  {
+    "id": "20261113_0000121",
+    "location": "CENTRAL PERU 🌍",
+    "magnitude": "4.6",
+    "depth": "144 km",
+    "time": "2026-11-13 10:32 UTC",
+    "maps": "https://maps.google.com/?q=-9.1110,-74.5240"
   }
 ]
