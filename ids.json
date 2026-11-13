@@ -230,5 +230,13 @@
     "depth": "528 km",
     "time": "2026-11-13 02:26 UTC",
     "maps": "https://maps.google.com/?q=-17.8800,-178.1050"
+  },
+  {
+    "id": "20261113_0000043",
+    "location": "MINDANAO, PHILIPPINES 🇵🇭",
+    "magnitude": "3.3",
+    "depth": "17 km",
+    "time": "2026-11-13 03:58 UTC",
+    "maps": "https://maps.google.com/?q=9.3000,126.6900"
   }
 ]
