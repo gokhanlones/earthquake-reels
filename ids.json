@@ -806,5 +806,13 @@
     "depth": "168 km",
     "time": "2026-11-13 17:08 UTC",
     "maps": "https://maps.google.com/?q=0.2500,122.2400"
+  },
+  {
+    "id": "20261113_0000225",
+    "location": "PAPUA, INDONESIA 🇮🇩",
+    "magnitude": "3.6",
+    "depth": "55 km",
+    "time": "2026-11-13 17:40 UTC",
+    "maps": "https://maps.google.com/?q=-3.7100,135.2900"
   }
 ]
