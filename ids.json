@@ -558,5 +558,13 @@
     "depth": "226 km",
     "time": "2026-11-13 12:14 UTC",
     "maps": "https://maps.google.com/?q=-24.2300,-67.6900"
+  },
+  {
+    "id": "20261113_0000128",
+    "location": "TONGA 🇹🇴",
+    "magnitude": "4.8",
+    "depth": "114 km",
+    "time": "2026-11-13 11:18 UTC",
+    "maps": "https://maps.google.com/?q=-21.4130,-175.3870"
   }
 ]
