@@ -750,5 +750,13 @@
     "depth": "33 km",
     "time": "2026-11-13 15:09 UTC",
     "maps": "https://maps.google.com/?q=-41.4387,179.3534"
+  },
+  {
+    "id": "20261113_0000212",
+    "location": "DOMINICAN REPUBLIC 🇩🇴",
+    "magnitude": "5.2",
+    "depth": "124 km",
+    "time": "2026-11-13 16:35 UTC",
+    "maps": "https://maps.google.com/?q=18.5050,-68.8894"
   }
 ]
