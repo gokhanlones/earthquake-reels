@@ -782,5 +782,13 @@
     "depth": "10 km",
     "time": "2026-11-13 16:23 UTC",
     "maps": "https://maps.google.com/?q=42.2500,83.6900"
+  },
+  {
+    "id": "20261113_0000219",
+    "location": "NEAR COAST OF NICARAGUA 🌍",
+    "magnitude": "3.6",
+    "depth": "209 km",
+    "time": "2026-11-13 17:11 UTC",
+    "maps": "https://maps.google.com/?q=11.7763,-86.3358"
   }
 ]
