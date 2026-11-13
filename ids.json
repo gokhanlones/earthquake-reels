@@ -182,5 +182,13 @@
     "depth": "56 km",
     "time": "2026-11-12 22:26 UTC",
     "maps": "https://maps.google.com/?q=18.0120,-100.4800"
+  },
+  {
+    "id": "20261113_0000033",
+    "location": "PAGAN REG., N. MARIANA ISLANDS 🌍",
+    "magnitude": "4.9",
+    "depth": "220 km",
+    "time": "2026-11-13 02:55 UTC",
+    "maps": "https://maps.google.com/?q=18.8925,145.6025"
   }
 ]
