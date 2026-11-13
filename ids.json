@@ -262,5 +262,13 @@
     "depth": "5 km",
     "time": "2026-11-13 04:41 UTC",
     "maps": "https://maps.google.com/?q=32.6520,76.5800"
+  },
+  {
+    "id": "20261113_0000048",
+    "location": "MAHARASHTRA-ANDH. PRADESH, INDIA 🇮🇳",
+    "magnitude": "3.9",
+    "depth": "242 km",
+    "time": "2026-11-13 04:50 UTC",
+    "maps": "https://maps.google.com/?q=18.9254,77.6886"
   }
 ]
