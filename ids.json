@@ -150,5 +150,13 @@
     "depth": "49 km",
     "time": "2026-11-13 02:32 UTC",
     "maps": "https://maps.google.com/?q=-16.8100,-72.0600"
+  },
+  {
+    "id": "20261112_0000276",
+    "location": "ICELAND 🇮🇸",
+    "magnitude": "4.6",
+    "depth": "5 km",
+    "time": "2026-11-12 21:53 UTC",
+    "maps": "https://maps.google.com/?q=64.6530,-17.4810"
   }
 ]
