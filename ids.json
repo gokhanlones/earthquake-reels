@@ -134,5 +134,13 @@
     "depth": "127 km",
     "time": "2026-11-13 22:11 UTC",
     "maps": "https://maps.google.com/?q=-35.5303,179.8098"
+  },
+  {
+    "id": "20261113_0000326",
+    "location": "KURIL ISLANDS 🌍",
+    "magnitude": "4.7",
+    "depth": "60 km",
+    "time": "2026-11-13 23:23 UTC",
+    "maps": "https://maps.google.com/?q=50.8300,157.5900"
   }
 ]
