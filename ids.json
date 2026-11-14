@@ -518,5 +518,13 @@
     "depth": "10 km",
     "time": "2026-11-14 07:02 UTC",
     "maps": "https://maps.google.com/?q=-15.0887,-173.4460"
+  },
+  {
+    "id": "20261114_0000128",
+    "location": "SOUTHERN CALIFORNIA 🌍",
+    "magnitude": "3",
+    "depth": "14 km",
+    "time": "2026-11-14 11:05 UTC",
+    "maps": "https://maps.google.com/?q=32.8128,-115.4588"
   }
 ]
