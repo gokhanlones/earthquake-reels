@@ -470,5 +470,13 @@
     "depth": "31 km",
     "time": "2026-11-14 08:21 UTC",
     "maps": "https://maps.google.com/?q=-15.0400,-76.1200"
+  },
+  {
+    "id": "20261114_0000111",
+    "location": "WASHINGTON 🇺🇸",
+    "magnitude": "3.5",
+    "depth": "1 km",
+    "time": "2026-11-14 08:30 UTC",
+    "maps": "https://maps.google.com/?q=48.5095,-119.9137"
   }
 ]
