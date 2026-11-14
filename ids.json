@@ -142,5 +142,13 @@
     "depth": "60 km",
     "time": "2026-11-13 23:23 UTC",
     "maps": "https://maps.google.com/?q=50.8300,157.5900"
+  },
+  {
+    "id": "20261113_0000293",
+    "location": "SIMEULUE, INDONESIA 🇮🇩",
+    "magnitude": "3.3",
+    "depth": "10 km",
+    "time": "2026-11-13 22:29 UTC",
+    "maps": "https://maps.google.com/?q=2.5300,96.9100"
   }
 ]
