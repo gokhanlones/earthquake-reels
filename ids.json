@@ -710,5 +710,13 @@
     "depth": "27 km",
     "time": "2026-11-14 10:25 UTC",
     "maps": "https://maps.google.com/?q=16.0370,-97.5640"
+  },
+  {
+    "id": "20261114_0000186",
+    "location": "BULGARIA 🇧🇬",
+    "magnitude": "3.6",
+    "depth": "5 km",
+    "time": "2026-11-14 15:20 UTC",
+    "maps": "https://maps.google.com/?q=41.7100,24.7900"
   }
 ]
