@@ -886,5 +886,13 @@
     "depth": "35 km",
     "time": "2026-11-14 21:06 UTC",
     "maps": "https://maps.google.com/?q=12.2230,-87.4100"
+  },
+  {
+    "id": "20261114_0000254",
+    "location": "EASTERN TURKEY 🌍",
+    "magnitude": "3.4",
+    "depth": "7 km",
+    "time": "2026-11-14 22:22 UTC",
+    "maps": "https://maps.google.com/?q=39.4195,39.1252"
   }
 ]
