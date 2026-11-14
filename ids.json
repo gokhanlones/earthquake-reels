@@ -790,5 +790,13 @@
     "depth": "520 km",
     "time": "2026-11-14 18:04 UTC",
     "maps": "https://maps.google.com/?q=-22.3400,-63.7500"
+  },
+  {
+    "id": "20261114_0000216",
+    "location": "INDIA-BANGLADESH BORDER REGION 🌍",
+    "magnitude": "3.3",
+    "depth": "253 km",
+    "time": "2026-11-14 18:31 UTC",
+    "maps": "https://maps.google.com/?q=23.0316,88.2671"
   }
 ]
