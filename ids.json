@@ -734,5 +734,13 @@
     "depth": "12 km",
     "time": "2026-11-14 15:33 UTC",
     "maps": "https://maps.google.com/?q=32.8237,-115.4652"
+  },
+  {
+    "id": "20261114_0000193",
+    "location": "EASTERN XIZANG-INDIA BORDER REG. 🌍",
+    "magnitude": "3.1",
+    "depth": "10 km",
+    "time": "2026-11-14 15:58 UTC",
+    "maps": "https://maps.google.com/?q=28.1043,92.5896"
   }
 ]
