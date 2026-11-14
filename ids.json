@@ -606,5 +606,13 @@
     "depth": "138 km",
     "time": "2026-11-14 09:31 UTC",
     "maps": "https://maps.google.com/?q=17.0430,-94.1350"
+  },
+  {
+    "id": "20261114_0000168",
+    "location": "JALISCO, MEXICO 🇲🇽",
+    "magnitude": "3.1",
+    "depth": "14 km",
+    "time": "2026-11-14 09:29 UTC",
+    "maps": "https://maps.google.com/?q=19.5090,-104.0930"
   }
 ]
