@@ -686,5 +686,13 @@
     "depth": "10 km",
     "time": "2026-11-14 15:05 UTC",
     "maps": "https://maps.google.com/?q=32.5000,130.6000"
+  },
+  {
+    "id": "20261114_0000165",
+    "location": "NUEVO LEON, MEXICO 🇲🇽",
+    "magnitude": "3.6",
+    "depth": "5 km",
+    "time": "2026-11-14 10:21 UTC",
+    "maps": "https://maps.google.com/?q=24.7690,-100.2640"
   }
 ]
