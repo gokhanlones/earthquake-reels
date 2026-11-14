@@ -406,5 +406,13 @@
     "depth": "10 km",
     "time": "2026-11-14 06:12 UTC",
     "maps": "https://maps.google.com/?q=19.2690,79.6300"
+  },
+  {
+    "id": "20261114_0000088",
+    "location": "STATE OF YAP, MICRONESIA 🇫🇲",
+    "magnitude": "5.6",
+    "depth": "10 km",
+    "time": "2026-11-14 06:52 UTC",
+    "maps": "https://maps.google.com/?q=9.7260,147.2910"
   }
 ]
