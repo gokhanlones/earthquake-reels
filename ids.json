@@ -222,5 +222,13 @@
     "depth": "21 km",
     "time": "2026-11-14 01:40 UTC",
     "maps": "https://maps.google.com/?q=41.0600,83.5900"
+  },
+  {
+    "id": "20261113_0000327",
+    "location": "OFFSHORE BIO-BIO, CHILE 🇨🇱",
+    "magnitude": "4.6",
+    "depth": "10 km",
+    "time": "2026-11-13 23:55 UTC",
+    "maps": "https://maps.google.com/?q=-37.9220,-74.7229"
   }
 ]
