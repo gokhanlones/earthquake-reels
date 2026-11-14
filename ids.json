@@ -806,5 +806,13 @@
     "depth": "10 km",
     "time": "2026-11-14 19:13 UTC",
     "maps": "https://maps.google.com/?q=7.6822,-81.3861"
+  },
+  {
+    "id": "20261114_0000215",
+    "location": "CHUQUISACA, BOLIVIA 🇧🇴",
+    "magnitude": "3.1",
+    "depth": "18 km",
+    "time": "2026-11-14 17:49 UTC",
+    "maps": "https://maps.google.com/?q=-19.9610,-64.7710"
   }
 ]
