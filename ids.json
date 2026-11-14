@@ -334,5 +334,13 @@
     "depth": "228 km",
     "time": "2026-11-14 04:33 UTC",
     "maps": "https://maps.google.com/?q=-23.8700,-67.1300"
+  },
+  {
+    "id": "20261114_0000069",
+    "location": "EASTERN KASHMIR 🌍",
+    "magnitude": "3.9",
+    "depth": "10 km",
+    "time": "2026-11-14 04:59 UTC",
+    "maps": "https://maps.google.com/?q=34.1560,76.6110"
   }
 ]
