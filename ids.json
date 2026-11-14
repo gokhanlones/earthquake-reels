@@ -46,5 +46,13 @@
     "depth": "10 km",
     "time": "2026-11-13 21:21 UTC",
     "maps": "https://maps.google.com/?q=9.9634,-84.9522"
+  },
+  {
+    "id": "20261113_0000280",
+    "location": "KASHMIR-INDIA BORDER REGION 🌍",
+    "magnitude": "3.3",
+    "depth": "15 km",
+    "time": "2026-11-13 21:08 UTC",
+    "maps": "https://maps.google.com/?q=33.5430,76.4070"
   }
 ]
