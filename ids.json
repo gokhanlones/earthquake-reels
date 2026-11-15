@@ -590,5 +590,13 @@
     "depth": "5 km",
     "time": "2026-11-15 13:24 UTC",
     "maps": "https://maps.google.com/?q=67.2330,-144.3820"
+  },
+  {
+    "id": "20261115_0000138",
+    "location": "OFF EAST COAST OF KAMCHATKA 🌍",
+    "magnitude": "4.1",
+    "depth": "50 km",
+    "time": "2026-11-15 11:21 UTC",
+    "maps": "https://maps.google.com/?q=51.5500,159.4300"
   }
 ]
