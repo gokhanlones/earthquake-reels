@@ -182,5 +182,13 @@
     "depth": "8 km",
     "time": "2026-11-15 02:46 UTC",
     "maps": "https://maps.google.com/?q=36.9033,27.8178"
+  },
+  {
+    "id": "20261115_0000024",
+    "location": "OFF COAST OF NORTHERN PERU 🌍",
+    "magnitude": "4.2",
+    "depth": "31 km",
+    "time": "2026-11-15 02:53 UTC",
+    "maps": "https://maps.google.com/?q=-9.1600,-79.5600"
   }
 ]
