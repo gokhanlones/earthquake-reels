@@ -494,5 +494,13 @@
     "depth": "142 km",
     "time": "2026-11-15 10:19 UTC",
     "maps": "https://maps.google.com/?q=-17.7800,-69.8700"
+  },
+  {
+    "id": "20261115_0000102",
+    "location": "OFFSHORE VALPARAISO, CHILE 🇨🇱",
+    "magnitude": "4",
+    "depth": "18 km",
+    "time": "2026-11-15 10:29 UTC",
+    "maps": "https://maps.google.com/?q=-33.0400,-72.1000"
   }
 ]
