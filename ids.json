@@ -446,5 +446,13 @@
     "depth": "10 km",
     "time": "2026-11-15 09:11 UTC",
     "maps": "https://maps.google.com/?q=-15.7800,-70.7600"
+  },
+  {
+    "id": "20261115_0000087",
+    "location": "UTAH 🇺🇸",
+    "magnitude": "3.4",
+    "depth": "8 km",
+    "time": "2026-11-15 09:27 UTC",
+    "maps": "https://maps.google.com/?q=38.0212,-111.3895"
   }
 ]
