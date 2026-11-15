@@ -470,5 +470,13 @@
     "depth": "5 km",
     "time": "2026-11-15 09:51 UTC",
     "maps": "https://maps.google.com/?q=7.6647,-81.3709"
+  },
+  {
+    "id": "20261115_0000097",
+    "location": "PUNJAB, INDIA 🇮🇳",
+    "magnitude": "3.3",
+    "depth": "77 km",
+    "time": "2026-11-15 10:07 UTC",
+    "maps": "https://maps.google.com/?q=30.7139,75.9311"
   }
 ]
