@@ -662,5 +662,13 @@
     "depth": "10 km",
     "time": "2026-11-15 14:17 UTC",
     "maps": "https://maps.google.com/?q=9.7900,126.5000"
+  },
+  {
+    "id": "20261115_0000170",
+    "location": "NEW MEXICO 🇺🇸",
+    "magnitude": "3",
+    "depth": "10 km",
+    "time": "2026-11-15 14:29 UTC",
+    "maps": "https://maps.google.com/?q=36.2595,-106.8072"
   }
 ]
