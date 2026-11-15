@@ -126,5 +126,13 @@
     "depth": "21 km",
     "time": "2026-11-14 23:27 UTC",
     "maps": "https://maps.google.com/?q=13.2090,-90.5810"
+  },
+  {
+    "id": "20261115_0000015",
+    "location": "LOMBOK REGION, INDONESIA 🇮🇩",
+    "magnitude": "3",
+    "depth": "12 km",
+    "time": "2026-11-15 02:07 UTC",
+    "maps": "https://maps.google.com/?q=-8.3000,116.1700"
   }
 ]
