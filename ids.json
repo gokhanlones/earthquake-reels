@@ -70,5 +70,13 @@
     "depth": "10 km",
     "time": "2026-11-14 21:17 UTC",
     "maps": "https://maps.google.com/?q=32.4000,130.5000"
+  },
+  {
+    "id": "20261114_0000235",
+    "location": "MINDORO, PHILIPPINES 🇵🇭",
+    "magnitude": "3.2",
+    "depth": "95 km",
+    "time": "2026-11-14 21:08 UTC",
+    "maps": "https://maps.google.com/?q=13.6700,120.5600"
   }
 ]
