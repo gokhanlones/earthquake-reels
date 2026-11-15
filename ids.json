@@ -310,5 +310,13 @@
     "depth": "10 km",
     "time": "2026-11-15 04:54 UTC",
     "maps": "https://maps.google.com/?q=-36.3972,138.6754"
+  },
+  {
+    "id": "20261115_0000054",
+    "location": "ECUADOR 🇪🇨",
+    "magnitude": "3.5",
+    "depth": "5 km",
+    "time": "2026-11-15 05:53 UTC",
+    "maps": "https://maps.google.com/?q=-0.9800,-78.1100"
   }
 ]
