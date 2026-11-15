@@ -334,5 +334,13 @@
     "depth": "86 km",
     "time": "2026-11-15 06:47 UTC",
     "maps": "https://maps.google.com/?q=-22.2300,-68.9100"
+  },
+  {
+    "id": "20261115_0000065",
+    "location": "NICARAGUA 🇳🇮",
+    "magnitude": "3.1",
+    "depth": "151 km",
+    "time": "2026-11-15 06:53 UTC",
+    "maps": "https://maps.google.com/?q=11.4390,-85.9570"
   }
 ]
