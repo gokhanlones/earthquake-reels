@@ -158,5 +158,13 @@
     "depth": "10 km",
     "time": "2026-11-15 02:27 UTC",
     "maps": "https://maps.google.com/?q=7.4261,-82.2089"
+  },
+  {
+    "id": "20261114_0000262",
+    "location": "OFF W. COAST OF S. ISLAND, N.Z. 🌍",
+    "magnitude": "3.2",
+    "depth": "40 km",
+    "time": "2026-11-14 23:21 UTC",
+    "maps": "https://maps.google.com/?q=-45.4520,166.9398"
   }
 ]
