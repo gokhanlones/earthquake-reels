@@ -134,5 +134,13 @@
     "depth": "12 km",
     "time": "2026-11-15 02:07 UTC",
     "maps": "https://maps.google.com/?q=-8.3000,116.1700"
+  },
+  {
+    "id": "20261114_0000274",
+    "location": "COLIMA, MEXICO 🇲🇽",
+    "magnitude": "3.1",
+    "depth": "9 km",
+    "time": "2026-11-14 21:24 UTC",
+    "maps": "https://maps.google.com/?q=19.4300,-104.1150"
   }
 ]
